@@ -29,7 +29,7 @@ The documentation contains a detailed description of each available method with 
   - [EGON-> Client](integration/egon-to-client.md)
   
 - **Method list Client -> EGON**
-  - UpdateInventoryCard
+  - [UpdateInventoryCard](method-list/client-to-egon/update-inventory-card.md)
   - CreateNewOrder
   - StornoOrder
   - GetOrderStatus
