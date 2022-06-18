@@ -48,7 +48,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
   - CreateSupplier
   - [ShipmentNotify](method-list/client-to-egon/ShipmentNotify.md)
   - InventoryCardExpiration
-  - CreateOrderReturnLabel
+  - [CreateOrderReturnLabel](method-list/client-to-egon/CreateOrderReturnLabel.md)
   
 - **Method list EGON -> Client**
   - WriteOrderStatus
