@@ -2,7 +2,7 @@
 
 This method modifies (if it already exists) or inserts (if not yet) a product card into the system.
 
-## Input parameters:
+## Input parameters
 
 | parameter                 |              | format    | mandatory          | description                                                  |
 |---------------------------|--------------|-----------|--------------------|--------------------------------------------------------------|
@@ -107,13 +107,13 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
 }
 ```
 
-## Output parameters:
+## Output parameters
 
 | parameter      | format      | description                                 |
 |----------------|-------------|---------------------------------------------|
 | `inventory_id` | (integer)   | created or updated inventory card id        |
 
-### Sample response:
+### Sample response
 
 ```json
 {
