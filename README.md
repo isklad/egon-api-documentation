@@ -19,7 +19,8 @@ merchant, is necessary to implement.
 The documentation contains a detailed description of each available method with the following details:
 
 - Description of input parameters and their values
-- Example request
+- Sample request
+- Description of output parameters and their values
 - Sample Response
 
 ## Subscribe for future changes ![recommended](assets/images/recommended.png)
