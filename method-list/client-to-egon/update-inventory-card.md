@@ -38,7 +38,7 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
 
 ### Sample requests
 
-#### Minimal:
+#### Minimal
 
 ```json
 {
@@ -50,7 +50,7 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
 }
 ```
 
-#### Advanced:
+#### Advanced
 
 ```json
 {
