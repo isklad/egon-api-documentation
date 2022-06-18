@@ -15,6 +15,23 @@ response. The `GET` / `POST` method is used.
 
 ## Sample request
 
+The call field must be encoded into JSON format and sent to the API via POST methods.
+
+Inbound url:
+[https://api.isklad-egon.sk/rest/v1](https://api.isklad-egon.sk/rest/v1) (RAW JSON)
+
+Input data encoded in JSON format (RAW):
+
+| parameter     |                 | format   | description                                          |
+|---------------|-----------------|----------|------------------------------------------------------|
+| `auth`        |                 | (array)  | your private identifier keys to sign in to the API   |
+|               | `auth_id`       | (string) | these identifiers are provided by the merchant       |
+|               | `auth_key`      | (string) | these identifiers are provided by the merchant       |
+|               | `auth_token`    | (string) | these identifiers are provided by the merchant       |
+| `request`     |                 | (array)  | request wrapper                                      |
+|               | `req_method`    | (string) | call method, e.g. `CreateNewOrder`                   |
+|               | `req_data`      | (array)  | call parameters, value depends on called method      |
+
 ```json
 {
   "auth": {
@@ -32,47 +49,34 @@ response. The `GET` / `POST` method is used.
 }
 ```
 
-The call field must be encoded into JSON format and sent to the API via POST methods.
-
-Input data encoded in JSON format (RAW):
-
-| parameter     |                 | format   | description                                          |
-|---------------|-----------------|----------|------------------------------------------------------|
-| `auth`        |                 | (array)  | your private identifier keys to sign in to the API   |
-|               | `auth_id`       | (string) | these identifiers are provided by the merchant       |
-|               | `auth_key`      | (string) | these identifiers are provided by the merchant       |
-|               | `auth_token`    | (string) | these identifiers are provided by the merchant       |
-| `request`     |                 | (array)  | request wrapper                                      |
-|               | `req_method`    | (string) | call method, e.g. `CreateNewOrder`                   |
-|               | `req_data`      | (array)  | call parameters, value depends on called method      |
-
-Inbound url:
-[https://api.isklad-egon.sk/rest/v1](https://api.isklad-egon.sk/rest/v1) (RAW JSON)
-
 ## Sample Response
-
-```json
-{
-  "auth_status": "OK",
-  "response": {
-    "resp_code": 200,
-    "resp_note": "OK",
-    "resp_data": {
-      "param1": 1,
-      "param2": 2
-    }
-  }
-}
-```
 
 The sample answer in the JSON format looks like this:
 
-| parameter      |              | format    | description                             |
-|----------------|--------------|-----------|-----------------------------------------|
-| `auth_status`  |              | (string)  | the result message of the authorization |
-| `response`     |              | (array)   | response wrapper                        |
-|                | `resp_code`  | (string)  | response code                           |
-|                | `resp_note`  | (string)  | message based on `resp_code`            |
-|                | `resp_data`  | (array)   | response data based on called method    |
+| parameter              |             | format    | description                             |
+|------------------------|-------------|-----------|-----------------------------------------|
+| `auth_status`          |             | (integer) | the result code of the authorization    |
+| `auth_status_message`  |             | (string)  | the result message of the authorization |
+| `resp_code`            |             | (string)  | response code                           |
+| `resp_note`            |             | (string)  | message based on `resp_code`            |
+| `response`             |             | (array)   | response wrapper                        |
+|                        | `error`     | (string)  | optional error message                  |
+|                        | `resp_code` | (string)  | response code                           |
+|                        | `resp_note` | (string)  | message based on `resp_code`            |
+|                        | `resp_data` | (array)   | response data based on called method    |
+
+```json
+{
+  "auth_status": 301,
+  "auth_status_message": "301: Bad Request",
+  "resp_code": 200,
+  "resp_note": "200: OK",
+  "response": {
+    "error": "Param [/auth] is mandatory, missing in this request.",
+    "resp_code": 200,
+    "resp_note": "200: OK"
+  }
+}
+```
 
 :bulb: The error codes correspond to the code in the "error codes" section.
