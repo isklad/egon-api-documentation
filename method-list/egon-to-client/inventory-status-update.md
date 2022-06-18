@@ -21,12 +21,13 @@ field with data for this inventory card.
 | ~~`AVAILABLE_INCL_RESERVED_AND_ORDERED`~~ ![deprecated](../../assets/images/deprecated.png)[^1] |            | (integer) | = ALL - EXPIRED - DAMAGED + ORDERED                                   |
 | `PURCHASE_PRICE`                                                                                |            | (decimal) | Last known buying price of product, if not available, value is 'null' |
 | `WITH_VAT`                                                                                      |            | (integer) | Parameter, if price is with VAT                                       |
-| `COUNT_TYPES`                                                                                   |            | (array)   | ![recommended](../../assets/images/recommended.png) usage             |
+| `COUNT_TYPES`                                                                                   |            | (array)   | count types wrapper, list of possible count types                     |
 |                                                                                                 | `ALL`      | (integer) | Counts of all item physically on stock (for accounting purposes)      |
 |                                                                                                 | `EXPIRED`  | (integer) | Count of expired                                                      |
 |                                                                                                 | `DAMAGED`  | (integer) | Count of damaged                                                      |
 |                                                                                                 | `ORDERED`  | (integer) | Count of ordered                                                      |
 |                                                                                                 | `RESERVED` | (integer) | Count of reserved                                                     |
+
 ![recommended](../../assets/images/recommended.png) formulas: 
 
 - display on shop: `ALL` - `EXPIRED` - `DAMAGED` - `ORDERED` - `RESERVED`
