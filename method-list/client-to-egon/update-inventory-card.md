@@ -36,7 +36,21 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
 |                           | `item_id`    | (integer) |                    | ITEM_ID of stock card, which belongs under the combined card |
 |                           | `count`      | (integer) |                    | Count of a stock card, that belongs under the combined card  |
 
-### Sample request:
+### Sample requests
+
+#### Minimal:
+
+```json
+{
+  "req_method": "UpdateInventoryCard",
+  "req_data": {
+    "item_id": 123456,
+    "name": "product name"
+  }
+}
+```
+
+#### Advanced:
 
 ```json
 {
@@ -98,7 +112,6 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
 | parameter      | format      | description                                 |
 |----------------|-------------|---------------------------------------------|
 | `inventory_id` | (integer)   | created or updated inventory card id        |
-
 
 ### Sample response:
 
