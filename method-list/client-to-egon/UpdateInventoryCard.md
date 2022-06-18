@@ -7,6 +7,7 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
 | parameter                 |              | format    | mandatory           | description                                                  |
 |---------------------------|--------------|-----------|---------------------|--------------------------------------------------------------|
 | `item_id`                 |              | (integer) | :heavy_check_mark:  | Card ID at the customer *                                    |
+| `shop_setting_id`         |              | (integer) | :heavy_check_mark:  | id of your shop setting                                      |
 | `parent_catalog_id`       |              | (string)  |                     | parent's catalog number*                                     |
 | `catalog_id`              |              | (string)  |                     | catalog number*                                              |
 | `name`                    |              | (string)  | :heavy_check_mark:  | card name *                                                  |
@@ -51,6 +52,7 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
     "req_method": "UpdateInventoryCard",
     "req_data": {
       "item_id": 123456,
+      "shop_setting_id": 1,
       "name": "product name"
     }
   }
@@ -71,6 +73,7 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
     "req_method": "UpdateInventoryCard",
     "req_data": {
       "item_id": 123456,
+      "shop_setting_id": 1,
       "parent_catalog_id": "A1",
       "catalog_id": "A1A",
       "name": "product name",
