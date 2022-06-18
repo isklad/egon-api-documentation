@@ -74,11 +74,7 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
     "images": [
       {
         "url": "https://domain.tld/img1.jpg",
-        "order": 1
-      },
-      {
-        "url": "https://domain.tld/img1.jpg",
-        "order": 0,
+        "order": 1,
         "enabled": 1
       }
     ],
