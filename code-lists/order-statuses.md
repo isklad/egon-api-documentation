@@ -1,6 +1,6 @@
 # Order status list
 
-XML Feed: [https://www.isklad-egon.sk/xml-feed/order-status.xml](https://www.isklad-egon.sk/xml-feed/order-status.xml)
+XML Feed: [https://api.isklad.eu/xml-feed/order-status.xml](https://api.isklad.eu/xml-feed/order-status.xml)
 
 | ID  | Description                                                 |
 |-----|-------------------------------------------------------------|
