@@ -11,7 +11,7 @@ Creates a return label for packages that are returned from the customer to the w
 | box_count         |     | (integer)      | :heavy_check_mark:      | number of packages we want to generate a label for                                |
 | email_send        |     | (boolean)      | :heavy_check_mark:      | if we want send an email with info to customer set it to true                     |
 
-[^1]: - mandatory only one of them, `order_id` has a priority if both filled
+
 
 ## Sample request
 
@@ -60,3 +60,6 @@ Creates a return label for packages that are returned from the customer to the w
   }
 }
 ```
+
+
+[^1]: - mandatory only one of them, `order_id` has a priority if both filled
