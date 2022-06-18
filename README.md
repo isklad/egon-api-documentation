@@ -29,12 +29,28 @@ The documentation contains a detailed description of each available method with 
   - [EGON-> Client](integration/egon-to-client.md)
   
 - **Method list Client -> EGON**
-  - CreateNewOrder
   - UpdateInventoryCard
+  - CreateNewOrder
+  - StornoOrder
+  - GetOrderStatus
+  - InventoryDetail
+  - CreatePackage
+  - TrackPackage
+  - GetOrderInventoryExpiration
+  - ShippingOptions
+  - PackingOptions
+  - CreateEshopSettings
+  - CreateSupplier
+  - ShipmentNotify
+  - InventoryCardExpiration
+  - CreateOrderReturnLabel
   
 - **Method list EGON -> Client**
   - WriteOrderStatus
+  - GetInvoiceUrl
   - InventoryStatusUpdate
+  - UpdatePackageTracking
+  - ShipmentNotifyConfirm
   
 - **Code lists**
   - [Response and error codes](code-lists/response-codes.md)
