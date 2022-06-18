@@ -55,7 +55,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
   - GetInvoiceUrl
   - [InventoryStatusUpdate](method-list/egon-to-client/InventoryStatusUpdate.md)
   - UpdatePackageTracking
-  - ShipmentNotifyConfirm
+  - [ShipmentNotifyConfirm](method-list/egon-to-client/ShipmentNotifyConfirm.md)
   
 - **Code lists**
   - [Response and error codes](code-lists/response-codes.md)
