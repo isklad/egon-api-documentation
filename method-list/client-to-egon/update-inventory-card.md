@@ -42,67 +42,82 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
 
 ```json
 {
-  "req_method": "UpdateInventoryCard",
-  "req_data": {
-    "item_id": 123456,
-    "name": "product name"
+  "auth": {
+    "auth_id": "AUTH_ID",
+    "auth_key": "AUTH_KEY",
+    "auth_token": "AUTH_TOKEN"
+  },
+  "request": {
+    "req_method": "UpdateInventoryCard",
+    "req_data": {
+      "item_id": 123456,
+      "name": "product name"
+    }
   }
 }
+
 ```
 
 #### Advanced
 
 ```json
 {
-  "req_method": "UpdateInventoryCard",
-  "req_data": {
-    "item_id": 123456,
-    "parent_catalog_id": "A1",
-    "catalog_id": "A1A",
-    "name": "product name",
-    "mj": "pcs",
-    "ean": "123456789012",
-    "enabled": 1,
-    "category": [
-      "category name"
-    ],
-    "producer": "my producer",
-    "price_without_tax": 1.25,
-    "old_price_without_tax": 1.55,
-    "tax": 20,
-    "supplier": "my main supplier",
-    "supplier_other": [
-      "other supplier"
-    ],
-    "short_description": "product description",
-    "long_description": "long product description",
-    "min_order_count": 1,
-    "tech_char": {
-      "param_1": "param value"
-    },
-    "tech_param": {
-      "param_1": "param value"
-    },
-    "images": [
-      {
-        "url": "https://domain.tld/img1.jpg",
-        "order": 1,
-        "enabled": 1
-      }
-    ],
-    "is_electronic_product": 0,
-    "commodity_code": null,
-    "declaration_description": null,
-    "accessories": [
-      {
-        "item_id": "123456",
-        "count": 1
+  "auth": {
+    "auth_id": "AUTH_ID",
+    "auth_key": "AUTH_KEY",
+    "auth_token": "AUTH_TOKEN"
+  },
+  "request": {
+    "req_method": "UpdateInventoryCard",
+    "req_data": {
+      "item_id": 123456,
+      "parent_catalog_id": "A1",
+      "catalog_id": "A1A",
+      "name": "product name",
+      "mj": "pcs",
+      "ean": "123456789012",
+      "enabled": 1,
+      "category": [
+        "category name"
+      ],
+      "producer": "my producer",
+      "price_without_tax": 1.25,
+      "old_price_without_tax": 1.55,
+      "tax": 20,
+      "supplier": "my main supplier",
+      "supplier_other": [
+        "other supplier"
+      ],
+      "short_description": "product description",
+      "long_description": "long product description",
+      "min_order_count": 1,
+      "tech_char": {
+        "param_1": "param value"
       },
-      {
-        "item_id": "1234567",
-        "count": 2
-      }
-    ]
+      "tech_param": {
+        "param_1": "param value"
+      },
+      "images": [
+        {
+          "url": "https://domain.tld/img1.jpg",
+          "order": 1,
+          "enabled": 1
+        }
+      ],
+      "is_electronic_product": 0,
+      "commodity_code": null,
+      "declaration_description": null,
+      "accessories": [
+        {
+          "item_id": "123456",
+          "count": 1
+        },
+        {
+          "item_id": "1234567",
+          "count": 2
+        }
+      ]
+    }
   }
 }
 ```
@@ -117,8 +132,16 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
 
 ```json
 {
-  "resp_data": {
-    "inventory_id": 123
+  "auth_status": 201,
+  "auth_status_message": "201: Auth Accepted",
+  "resp_code": 402,
+  "resp_note": "402: Entry Updated",
+  "response": {
+    "resp_code": 402,
+    "resp_message": "402: Entry Updated",
+    "resp_data": {
+      "inventory_id": 123
+    }
   }
 }
 ```
