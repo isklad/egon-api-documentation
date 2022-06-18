@@ -29,11 +29,13 @@ Creates a return label for packages that are returned from the customer to the w
 
 ## Output parameters:
 
+| parameter       |                     | format    | description                            |
+|-----------------|---------------------|-----------|----------------------------------------|
+| `return_labels` |                     | (array)   | created labels wrapper                 |
+|                 | `id`                | (integer) | id of the generated return label       |
+|                 | `barcode`           | (string)  | barcode of the generated return label  |
+|                 | `label_pdf_base64`  | (string)  | base64 encoded PDF file                |
 
-return_labels -
-id - id of the generated return label
-barcode - barcode of the generated return label
-label_pdf_base64 - base64 encoded PDF file
 
 ## Sample response
 ```json
