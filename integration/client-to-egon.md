@@ -58,9 +58,7 @@ Inbound url:
   "resp_code": 200,
   "resp_note": "200: OK",
   "response": {
-    "error": "Param [/auth] is mandatory, missing in this request.",
-    "resp_code": 200,
-    "resp_note": "200: OK"
+    "error": "Param [/auth] is mandatory, missing in this request."
   }
 }
 ```
@@ -75,8 +73,5 @@ The sample answer in the JSON format looks like this:
 | `resp_note`            |             | (string)  | message based on `resp_code`            |
 | `response`             |             | (array)   | response wrapper                        |
 |                        | `error`     | (string)  | optional error message                  |
-|                        | `resp_code` | (string)  | response code                           |
-|                        | `resp_note` | (string)  | message based on `resp_code`            |
-|                        | `resp_data` | (array)   | response data based on called method    |
 
 :bulb: The error codes correspond to the code in the "error codes" section.
