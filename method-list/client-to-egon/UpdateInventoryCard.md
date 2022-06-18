@@ -4,38 +4,38 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
 
 ## Input parameters
 
-| parameter                 |              | format    | mandatory           | description                                                  |
-|---------------------------|--------------|-----------|---------------------|--------------------------------------------------------------|
-| `item_id`                 |              | (integer) | :heavy_check_mark:  | Card ID at the customer *                                    |
-| `shop_setting_id`         |              | (integer) | :heavy_check_mark:  | id of your shop setting                                      |
-| `parent_catalog_id`       |              | (string)  |                     | parent's catalog number*                                     |
-| `catalog_id`              |              | (string)  |                     | catalog number*                                              |
-| `name`                    |              | (string)  | :heavy_check_mark:  | card name *                                                  |
-| `mj`                      |              | (string)  |                     | unit of measure*                                             |
-| `ean`                     |              | (string)  |                     | EAN barcode                                                  |
-| `enabled`                 |              | (integer) |                     | allowed on the web                                           |
-| `category`                |              | (string)  |                     | Fields of categories, tree structure                         |
-| `producer`                |              | (string)  |                     | manufacturer                                                 |
-| `price_without_tax`       |              | (decimal) |                     | Price without VAT*                                           |
-| `old_price_without_tax`   |              | (decimal) |                     | old price excluding VAT*                                     |
-| `tax`                     |              | (decimal) |                     | value of VAT *                                               |
-| `supplier`                |              | (string)  |                     | the name of the main contractor                              |
-| `supplier_other`          |              | (array)   |                     | Field of other suppliers                                     |
-| `short_description`       |              | (string)  |                     | short description*                                           |
-| `long_description`        |              | (string)  |                     | long description*                                            |
-| `min_order_count`         |              | (integer) |                     | min. amount *                                                |
-| `tech_char`               |              | (array)   |                     | technical characteristics                                    |
-| `tech_param`              |              | (array)   |                     | technical parameters of the variants                         |
-| `images`                  |              | (array)   |                     | Images field                                                 |
-|                           | `url`        | (string)  |                     | link to a photo                                              |
-|                           | `order`      | (integer) |                     | display order - the highest number is the main photo         |
-|                           | `enabled`    | (integer) |                     | whether this photo is enabled (view)                         |
-| `is_electronic_product`   |              | (integer) |                     | lectronic (intangible) product, values 0/1                   |
-| `declaration_description` |              | (string)  |                     | Product description for customs declaration                  |
-| `commodity_code`          |              | (string)  |                     | HS code (for customs declaration)                            |
-| `accessories`             |              | (array)   |                     | If it is combined card, the field of subcards is sent here   |
-|                           | `item_id`    | (integer) |                     | ITEM_ID of stock card, which belongs under the combined card |
-|                           | `count`      | (integer) |                     | Count of a stock card, that belongs under the combined card  |
+| parameter                 |              | format    | mandatory          | description                                                                |
+|---------------------------|--------------|-----------|--------------------|----------------------------------------------------------------------------|
+| `item_id`                 |              | (integer) | :heavy_check_mark: | inventory id from your shop/software                                       |
+| `shop_setting_id`         |              | (integer) |                    | id of your shop setting (if not filled, your first active shop is selected) |
+| `catalog_id`              |              | (string)  |                    | catalog number                                                             |
+| `parent_catalog_id`       |              | (string)  |                    | parent's catalog number                                                    |
+| `name`                    |              | (string)  | :heavy_check_mark: | product  name                                                              |
+| `mj`                      |              | (string)  |                    | unit of measure                                                            |
+| `ean`                     |              | (string)  |                    | EAN barcode                                                                |
+| `enabled`                 |              | (integer) |                    | allowed on the web                                                         |
+| `category`                |              | (string)  |                    | Fields of categories, tree structure                                       |
+| `producer`                |              | (string)  |                    | manufacturer                                                               |
+| `price_without_tax`       |              | (decimal) |                    | Price without VAT                                                          |
+| `old_price_without_tax`   |              | (decimal) |                    | old price excluding VAT                                                    |
+| `tax`                     |              | (decimal) |                    | value of VAT                                                               |
+| `supplier`                |              | (string)  |                    | the name of the main contractor                                            |
+| `supplier_other`          |              | (array)   |                    | Field of other suppliers                                                   |
+| `short_description`       |              | (string)  |                    | short description                                                          |
+| `long_description`        |              | (string)  |                    | long description                                                           |
+| `min_order_count`         |              | (integer) |                    | min. amount                                                                |
+| `tech_char`               |              | (array)   |                    | technical characteristics                                                  |
+| `tech_param`              |              | (array)   |                    | technical parameters of the variants                                       |
+| `images`                  |              | (array)   |                    | Images field                                                               |
+|                           | `url`        | (string)  |                    | link to a photo                                                            |
+|                           | `order`      | (integer) |                    | display order - the highest number is the main photo                       |
+|                           | `enabled`    | (integer) |                    | whether this photo is enabled (view)                                       |
+| `is_electronic_product`   |              | (integer) |                    | lectronic (intangible) product, values 0/1                                 |
+| `declaration_description` |              | (string)  |                    | Product description for customs declaration                                |
+| `commodity_code`          |              | (string)  |                    | HS code (for customs declaration)                                          |
+| `accessories`             |              | (array)   |                    | If it is combined card, the field of subcards is sent here                 |
+|                           | `item_id`    | (integer) |                    | ITEM_ID of stock card, which belongs under the combined card               |
+|                           | `count`      | (integer) |                    | Count of a stock card, that belongs under the combined card                |
 
 ### Sample requests
 
@@ -74,8 +74,8 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
     "req_data": {
       "item_id": 123456,
       "shop_setting_id": 1,
-      "parent_catalog_id": "A1",
       "catalog_id": "A1A",
+      "parent_catalog_id": "A1",
       "name": "product name",
       "mj": "pcs",
       "ean": "123456789012",
