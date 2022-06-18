@@ -39,5 +39,6 @@ The documentation contains a detailed description of each available method with 
 - **Code lists**
   - [Response and error codes](code-lists/response-codes.md)
   - [Order status list](code-lists/order-statuses.md)
+  - [Transport type list](code-lists/transport-type-list.md)
   - [Payment method list](code-lists/payment-method-list.md)
   - [Package tracking code list](code-lists/package-tracking-codes.md)
