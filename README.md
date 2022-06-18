@@ -46,7 +46,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
   - PackingOptions
   - CreateEshopSettings
   - CreateSupplier
-  - ShipmentNotify
+  - [ShipmentNotify](method-list/client-to-egon/ShipmentNotify.md)
   - InventoryCardExpiration
   - CreateOrderReturnLabel
   

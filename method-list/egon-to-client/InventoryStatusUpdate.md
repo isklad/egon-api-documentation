@@ -7,7 +7,7 @@ Request to update stock inventories in client's software. Egon fires it everytim
 Data is created by associative field of inventory cards, where key is the ID of inventory card from client system and value is
 field with data for this inventory card.
 
-| parameter                                                                                       |            | format    | descripton                                                            |
+| parameter                                                                                       |            | format    | description                                                           |
 |-------------------------------------------------------------------------------------------------|------------|-----------|-----------------------------------------------------------------------|
 | `ITEM_ID`                                                                                       |            | (integer) | inventory card ID in client system                                    |
 | `CATALOG_ID`                                                                                    |            | (string)  | Catalog number                                                        |
