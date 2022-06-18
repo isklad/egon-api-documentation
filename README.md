@@ -27,9 +27,14 @@ The documentation contains a detailed description of each available method with 
 - **Integration manuals**
   - [Client-> EGON](integration/client-to-egon.md)
   - [EGON-> Client](integration/egon-to-client.md)
-- **API method list CLient -> EGON**
+  
+- **Method list Client -> EGON**
   - CreateNewOrder
   - UpdateInventoryCard
-- **API method list EGON -> Client**
+  
+- **Method list EGON -> Client**
   - WriteOrderStatus
   - InventoryStatusUpdate
+  
+- **Code lists**
+  - [Response and error codes](code-lists/response-codes.md)
