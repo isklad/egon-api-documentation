@@ -53,7 +53,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
 - **Method list EGON -> Client**
   - WriteOrderStatus
   - GetInvoiceUrl
-  - InventoryStatusUpdate
+  - [InventoryStatusUpdate](method-list/egon-to-client/inventory-status-update.md)
   - UpdatePackageTracking
   - ShipmentNotifyConfirm
   
