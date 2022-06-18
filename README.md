@@ -34,7 +34,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
   - [EGON-> Client](integration/egon-to-client.md)
   
 - **Method list Client -> EGON**
-  - [UpdateInventoryCard](method-list/client-to-egon/update-inventory-card.md)
+  - [UpdateInventoryCard](method-list/client-to-egon/UpdateInventoryCard.md)
   - CreateNewOrder
   - StornoOrder
   - GetOrderStatus
@@ -53,7 +53,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
 - **Method list EGON -> Client**
   - WriteOrderStatus
   - GetInvoiceUrl
-  - [InventoryStatusUpdate](method-list/egon-to-client/inventory-status-update.md)
+  - [InventoryStatusUpdate](method-list/egon-to-client/InventoryStatusUpdate.md)
   - UpdatePackageTracking
   - ShipmentNotifyConfirm
   
