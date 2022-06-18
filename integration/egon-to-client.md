@@ -64,9 +64,9 @@ The sample answer in the JSON format looks like this:
 
 ```json
 {
-  "auth_status": 201,
+  "auth_status": 1,
   "response": {
-    "resp_status": 200
+    "resp_status": 1
   }
 }
 ```
@@ -76,6 +76,13 @@ Data obtained by decoding JSON format:
 |---------------|--------------|-----------|--------------------------------------|
 | `auth_status` |              | (integer) | the result code of the authorization |
 | `response`    |              | (array)   | response wrapper                     |
-|               |`resp_status` | (integer) | response code                        |
+|               |`resp_status` | (integer) | response code, see below             |
 
 :bulb: The error codes correspond to the code in the "error codes" section.
+
+
+### `resp_status` codes:
+| code | descrition  | note                                                                                                |
+|------|-------------|-----------------------------------------------------------------------------------------------------|
+| 0    | ERROR       | when an error has occurred - we recommend a specific error logging yourself and alerting IT to it.  |
+| 1    | OK          | when the request was accepted without errors                                                        |
