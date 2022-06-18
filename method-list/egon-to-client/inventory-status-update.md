@@ -4,8 +4,8 @@ Request to update stock inventories in client's software. Egon fires it everytim
 
 ## Input parameters
 
-Data is created by associative field of stock cards, where key is the ID of stock card from client system and value is
-field with data for this card.
+Data is created by associative field of inventory cards, where key is the ID of inventory card from client system and value is
+field with data for this inventory card.
 
 | parameter                                                                                       |            | format    | descripton                                                            |
 |-------------------------------------------------------------------------------------------------|------------|-----------|-----------------------------------------------------------------------|
