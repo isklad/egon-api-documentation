@@ -36,8 +36,6 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
 |                           | `item_id`    | (integer) |                    | ITEM_ID of stock card, which belongs under the combined card |
 |                           | `count`      | (integer) |                    | Count of a stock card, that belongs under the combined card  |
 
-(*) - mandatory fields
-
 ### Sample request:
 
 ```json
