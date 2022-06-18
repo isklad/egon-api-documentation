@@ -3,6 +3,11 @@
   <img alt="logo" src="assets/images/logo_black.png">
 </picture>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/images/egon_api_white.png">
+  <img alt="logo" src="assets/images/egon_api_black.png">
+</picture>
+
 # Documentation for the RestAPI v1 client
 
 The API Client Web Service ("API") is intended for [isklad.eu](https://isklad.eu) clients who need to transfer data
