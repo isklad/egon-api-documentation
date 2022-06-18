@@ -2,78 +2,78 @@
 
 XML feed: [https://api.isklad.eu/xml-feed/country.xml](https://api.isklad.eu/xml-feed/country.xml)
 
-| ID  | Code | Country              | Currency |
-|-----|------|----------------------|----------|
-| 2   | AE   | United Arab Emirates | AED      |
-| 6   | AL   | Albania              | ALB      |
-| 14  | AT   | Austria              | EUR      |
-| 15  | AU   | Australia            | AUD      |
-| 18  | BA   | Bosnia-Herzegovina   | BAM      |
-| 21  | BE   | Belgium              | EUR      |
-| 23  | BG   | Bulgaria             | BGN      |
-| 29  | BO   | Bolivia              | BOB      |
-| 37  | CA   | Canada               | CAD      |
-| 41  | CH   | Switzerland          | CHF      |
-| 46  | CN   | China                | CNY      |
-| 54  | CY   | Cyprus               | EUR      |
-| 55  | CZ   | Czech Republic       | CZK      |
-| 56  | DE   | Germany              | EUR      |
-| 58  | DK   | Denmark              | DKK      |
-| 60  | DO   | Dominican Republic   | DOP      |
-| 64  | EE   | Estonia              | EUR      |
-| 68  | ES   | Spain                | EUR      |
-| 70  | FI   | Finland              | EUR      |
-| 75  | FR   | France               | EUR      |
-| 78  | GB   | Great Britain        | GBP      |
-| 80  | GE   | Georgia              | GEL      |
-| 81  | GF   | French Guyana        | EUR      |
-| 90  | GR   | Greece               | EUR      |
-| 96  | HK   | Hong Kong            | HKD      |
-| 99  | HR   | Croatia              | HRK      |
-| 101 | HU   | Hungary              | HUF      |
-| 102 | ID   | Indonesia            | IDR      |
-| 103 | IE   | Ireland              | EUR      |
-| 104 | IL   | Israel               | ILS      |
-| 105 | IN   | India                | INR      |
-| 110 | IS   | Iceland              | ISK      |
-| 111 | IT   | Italy                | EUR      |
-| 114 | JP   | Japan                | JPY      |
-| 122 | KR   | South Korea          | KRW      |
-| 129 | LI   | Liechtenstein        | EUR      |
-| 130 | LK   | Sri Lanka            | LKR      |
-| 133 | LT   | Lithuania            | EUR      |
-| 134 | LU   | Luxembourg           | EUR      |
-| 135 | LV   | Latvia               | EUR      |
-| 138 | MC   | Monaco               | EUR      |
-| 139 | MD   | Moldavia             | MDL      |
-| 143 | MK   | Macedonia            | MKD      |
-| 152 | MT   | Malta                | EUR      |
-| 157 | MY   | Malaysia             | USD      |
-| 167 | NL   | Netherlands          | EUR      |
-| 168 | NO   | Norway               | NOK      |
-| 173 | NZ   | New Zealand          | NZD      |
-| 181 | PK   | Pakistan             | PKR      |
-| 182 | PL   | Poland               | PLN      |
-| 185 | PR   | Puerto Rico          | USD      |
-| 186 | PT   | Portugal             | EUR      |
-| 189 | QA   | Qatar                | QAR      |
-| 190 | RE   | Reunion (French)     | EUR      |
-| 191 | RO   | Romania              | RON      |
-| 192 | RU   | Russia               | RUB      |
-| 194 | SA   | Saudi Arabia         | USD      |
-| 198 | SE   | Sweden               | SEK      |
-| 199 | SG   | Singapore            | SGD      |
-| 201 | SI   | Slovenia             | EUR      |
-| 203 | SK   | Slovak republic      | EUR      |
-| 205 | SM   | San Marino           | EUR      |
-| 225 | TR   | Turkey               | TRY      |
-| 228 | TW   | Taiwan               | TWD      |
-| 230 | UA   | Ukraine              | UAH      |
-| 234 | US   | United States        | USD      |
-| 237 | VA   | Vatican City State   | EUR      |
-| 249 | ZA   | South Africa         | ZAR      |
-| 253 | RS   | Serbia               | RSD      |
-| 254 | JE   | Jersey               | JEP      |
-| 256 | GG   | Guernsey             | GBP      |
-| 258 | IC   | Canary Islands       | EUR      |
-| 264 | ME   | Montenegro           | EUR      |
+| ID  | Code | Country              |
+|-----|------|----------------------|
+| 2   | AE   | United Arab Emirates |
+| 6   | AL   | Albania              |
+| 14  | AT   | Austria              |
+| 15  | AU   | Australia            |
+| 18  | BA   | Bosnia-Herzegovina   |
+| 21  | BE   | Belgium              |
+| 23  | BG   | Bulgaria             |
+| 29  | BO   | Bolivia              |
+| 37  | CA   | Canada               |
+| 41  | CH   | Switzerland          |
+| 46  | CN   | China                |
+| 54  | CY   | Cyprus               |
+| 55  | CZ   | Czech Republic       |
+| 56  | DE   | Germany              |
+| 58  | DK   | Denmark              |
+| 60  | DO   | Dominican Republic   |
+| 64  | EE   | Estonia              |
+| 68  | ES   | Spain                |
+| 70  | FI   | Finland              |
+| 75  | FR   | France               |
+| 78  | GB   | Great Britain        |
+| 80  | GE   | Georgia              |
+| 81  | GF   | French Guyana        |
+| 90  | GR   | Greece               |
+| 96  | HK   | Hong Kong            |
+| 99  | HR   | Croatia              |
+| 101 | HU   | Hungary              |
+| 102 | ID   | Indonesia            |
+| 103 | IE   | Ireland              |
+| 104 | IL   | Israel               |
+| 105 | IN   | India                |
+| 110 | IS   | Iceland              |
+| 111 | IT   | Italy                |
+| 114 | JP   | Japan                |
+| 122 | KR   | South Korea          |
+| 129 | LI   | Liechtenstein        |
+| 130 | LK   | Sri Lanka            |
+| 133 | LT   | Lithuania            |
+| 134 | LU   | Luxembourg           |
+| 135 | LV   | Latvia               |
+| 138 | MC   | Monaco               |
+| 139 | MD   | Moldavia             |
+| 143 | MK   | Macedonia            |
+| 152 | MT   | Malta                |
+| 157 | MY   | Malaysia             |
+| 167 | NL   | Netherlands          |
+| 168 | NO   | Norway               |
+| 173 | NZ   | New Zealand          |
+| 181 | PK   | Pakistan             |
+| 182 | PL   | Poland               |
+| 185 | PR   | Puerto Rico          |
+| 186 | PT   | Portugal             |
+| 189 | QA   | Qatar                |
+| 190 | RE   | Reunion (French)     |
+| 191 | RO   | Romania              |
+| 192 | RU   | Russia               |
+| 194 | SA   | Saudi Arabia         |
+| 198 | SE   | Sweden               |
+| 199 | SG   | Singapore            |
+| 201 | SI   | Slovenia             |
+| 203 | SK   | Slovak republic      |
+| 205 | SM   | San Marino           |
+| 225 | TR   | Turkey               |
+| 228 | TW   | Taiwan               |
+| 230 | UA   | Ukraine              |
+| 234 | US   | United States        |
+| 237 | VA   | Vatican City State   |
+| 249 | ZA   | South Africa         |
+| 253 | RS   | Serbia               |
+| 254 | JE   | Jersey               |
+| 256 | GG   | Guernsey             |
+| 258 | IC   | Canary Islands       |
+| 264 | ME   | Montenegro           |
