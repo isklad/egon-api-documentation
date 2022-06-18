@@ -34,33 +34,33 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
   - [EGON-> Client](integration/egon-to-client.md)
   
 - **Method list Client -> EGON**
-  - [UpdateInventoryCard](method-list/client-to-egon/UpdateInventoryCard.md)
-  - CreateNewOrder
-  - StornoOrder
-  - GetOrderStatus
-  - InventoryDetail
-  - CreatePackage
-  - TrackPackage
-  - GetOrderInventoryExpiration
-  - ShippingOptions
-  - PackingOptions
-  - CreateEshopSettings
-  - CreateSupplier
-  - [ShipmentNotify](method-list/client-to-egon/ShipmentNotify.md)
-  - InventoryCardExpiration
+  - [CreateEshopSettings](method-list/client-to-egon/CreateEshopSettings.md)
+  - [CreateNewOrder](method-list/client-to-egon/CreateNewOrder.md)
   - [CreateOrderReturnLabel](method-list/client-to-egon/CreateOrderReturnLabel.md)
+  - [CreatePackage](method-list/client-to-egon/CreatePackage.md)
+  - [CreateSupplier](method-list/client-to-egon/CreateSupplier.md)
+  - [GetOrderInventoryExpiration](method-list/client-to-egon/GetOrderInventoryExpiration.md)
+  - [GetOrderStatus](method-list/client-to-egon/GetOrderStatus.md)
+  - [InventoryCardExpiration](method-list/client-to-egon/InventoryCardExpiration.md)
+  - [InventoryDetail](method-list/client-to-egon/InventoryDetail.md)
+  - [PackingOptions](method-list/client-to-egon/PackingOptions.md)
+  - [ShippingOptions](method-list/client-to-egon/ShippingOptions.md)
+  - [ShipmentNotify](method-list/client-to-egon/ShipmentNotify.md)
+  - [StornoOrder](method-list/client-to-egon/StornoOrder.md)
+  - [TrackPackage](method-list/client-to-egon/TrackPackage.md)
+  - [UpdateInventoryCard](method-list/client-to-egon/UpdateInventoryCard.md)
   
 - **Method list EGON -> Client**
-  - WriteOrderStatus
-  - GetInvoiceUrl
+  - [GetInvoiceUrl](method-list/egon-to-client/GetInvoiceUrl.md)
   - [InventoryStatusUpdate](method-list/egon-to-client/InventoryStatusUpdate.md)
-  - UpdatePackageTracking
   - [ShipmentNotifyConfirm](method-list/egon-to-client/ShipmentNotifyConfirm.md)
-  
+  - [UpdatePackageTracking](method-list/egon-to-client/UpdatePackageTracking.md)
+  - [WriteOrderStatus](method-list/egon-to-client/WriteOrderStatus.md)
+
 - **Code lists**
   - [Response and error codes](code-lists/response-codes.md)
   - [Country list](code-lists/country-list.md)
   - [Order status list](code-lists/order-statuses.md)
-  - [Transport type list](code-lists/transport-type-list.md)
-  - [Payment method list](code-lists/payment-method-list.md)
   - [Package tracking code list](code-lists/package-tracking-codes.md)
+  - [Payment method list](code-lists/payment-method-list.md)
+  - [Transport type list](code-lists/transport-type-list.md)
