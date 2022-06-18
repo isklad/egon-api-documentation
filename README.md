@@ -22,6 +22,9 @@ The documentation contains a detailed description of each available method with 
 - Example request
 - Sample Response
 
+## Subscribe for future changes
+Please subscribe :thumbsup: to this repository and stay informed about our future changes. See more at 
+[Managing subscriptions and notifications on GitHub](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github)
 ## Table of contents:
 
 - **Integration manuals**
