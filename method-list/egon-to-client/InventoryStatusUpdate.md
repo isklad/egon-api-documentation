@@ -64,4 +64,4 @@ field with data for this inventory card.
 }
 ```
 
-[^1]: deprecated, will be removed in the future
+[^1]: deprecated, will be removed in the future. Use `COUNT_TYPES` with custom formula instead.
