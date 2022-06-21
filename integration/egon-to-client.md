@@ -12,7 +12,7 @@ the stock card, etc.
 The interface works on the Request / Response principle over the HTTP protocol. The sending party is the EGON storage
 system.
 
-The interface should be available at URL: http://domena-klienta.sk/cesta-k-api/
+The interface should be available at URL: https://domena-klienta.sk/cesta-k-api/
 
 The EGON storage system initiates communication by sending a request in a specified format and returns a JSON response.
 The GET / POST method is used.

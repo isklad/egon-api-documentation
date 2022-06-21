@@ -1,7 +1,7 @@
 # Integration manual: CLIENT-> EGON
 
 The interface works on the Request / Response principle over the HTTP protocol. Sending page - Client information system
-can be a desktop application, a web portal, a database application, and so on. with internet access.
+can be a desktop application, a web portal, a database application, and so on with internet access.
 
 The interface is available at: [https://api.isklad-egon.sk/rest/v1](https://api.isklad-egon.sk/rest/v1)
 
