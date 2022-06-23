@@ -4,12 +4,12 @@ Creates a return label for packages that are returned from the customer to the w
 
 ## Input parameters:
 
-| parameter         |     | format         | mandatory               | description                                                                       |
-|-------------------|-----|----------------|-------------------------|-----------------------------------------------------------------------------------|
-| order_id          |     | (integer/null) | :heavy_check_mark: [^1] | order id from egon (previously received from [CreateNewOrder](CreateNewOrder.md)) |
- | original_order_id |     | (string/null)  | :heavy_check_mark: [^1] | order id from your shop (previously passed to [CreateNewOrder](CreateNewOrder.md))                     |
-| box_count         |     | (integer)      | :heavy_check_mark:      | number of packages we want to generate a label for                                |
-| email_send        |     | (boolean)      | :heavy_check_mark:      | if we want send an email with info to customer set it to true                     |
+| parameter         |     | format         | allowed values | mandatory               | description                                                                       |
+|-------------------|-----|----------------|----------------|-------------------------|-----------------------------------------------------------------------------------|
+| order_id          |     | (integer/null) |                | :heavy_check_mark: [^1] | order id from egon (previously received from [CreateNewOrder](CreateNewOrder.md))  |
+| original_order_id |     | (string/null)  |                | :heavy_check_mark: [^1] | order id from your shop (previously passed to [CreateNewOrder](CreateNewOrder.md)) |
+| box_count         |     | (integer)      | \>0            | :heavy_check_mark:      | number of packages we want to generate a label for            |
+| email_send        |     | (boolean)      | true/false     | :heavy_check_mark:      | if we want send an email with info to customer set it to true |
 
 
 
