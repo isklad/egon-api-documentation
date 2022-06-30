@@ -110,11 +110,12 @@ order is updated according to the newly sent data.
       "city": "Delivery - City",
       "country": "Delivery - Country",
       "postal_code": "Delivery - ZIP code",
-      "id_delivery": "100",      
+      "id_delivery": "100",
       "payment_card": 0,
       "payment_cod": "1",
-      "items": [                    
-        {"item_id": "1",
+      "items": [
+        {
+          "item_id": "1",
           "name": "product name",
           "count": "5"
         }
@@ -195,7 +196,7 @@ order is updated according to the newly sent data.
       "items": [
         {
           "item_id": 123,
-          "catalog_id": "VODA",
+          "catalog_id": "Water",
           "name": "Product name",
           "count": 1,
           "expiration": 0,
@@ -207,7 +208,7 @@ order is updated according to the newly sent data.
       ],
       "invoice": {
         "invoice_id": 123,
-        "invoice_date": "2022-07-01" 
+        "invoice_date": "2022-08-01" 
       },
       "invoice_url": "https://domain.tld/invoice/123",
       "fa_print": 1,
@@ -247,4 +248,4 @@ order is updated according to the newly sent data.
 }
 ```
 
-[^1]: - ak 1, treba vyplnit cod_price
+[^1]: - if 1, cod_price must be filled in
