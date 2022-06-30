@@ -4,12 +4,12 @@ Creates a return label for packages that are returned from the customer to the w
 
 ## Input parameters:
 
-| parameter         |     | format         | mandatory               | description                                                                       |
-|-------------------|-----|----------------|-------------------------|-----------------------------------------------------------------------------------|
-| order_id          |     | (integer/null) | :heavy_check_mark: [^1] | order id from egon (previously received from [CreateNewOrder](CreateNewOrder.md)) |
- | original_order_id |     | (string/null)  | :heavy_check_mark: [^1] | order id from your shop (previously passed to [CreateNewOrder](CreateNewOrder.md))                     |
-| box_count         |     | (integer)      | :heavy_check_mark:      | number of packages we want to generate a label for                                |
-| email_send        |     | (boolean)      | :heavy_check_mark:      | if we want send an email with info to customer set it to true                     |
+| parameter           |     |     format     |        mandatory        | description                                                                        |
+|:--------------------|:----|:--------------:|:-----------------------:|:-----------------------------------------------------------------------------------|
+| `order_id `         |     | (integer/null) | :heavy_check_mark: [^1] | Order id from egon (previously received from [CreateNewOrder](CreateNewOrder.md))  |
+| `original_order_id` |     | (string/null)  | :heavy_check_mark: [^1] | Order id from your shop (previously passed to [CreateNewOrder](CreateNewOrder.md)) |
+| `box_count`         |     |   (integer)    |   :heavy_check_mark:    | Number of packages we want to generate a label for                                 |
+| `email_send `       |     |   (boolean)    |   :heavy_check_mark:    | If we want send an email with info to customer set it to true                      |
 
 
 
@@ -17,13 +17,20 @@ Creates a return label for packages that are returned from the customer to the w
 
 ```json
 {
+ "auth": {
+  "auth_id": "AUTH_ID",
+  "auth_key": "AUTH_KEY",
+  "auth_token": "AUTH_TOKEN"
+ },
+ "request": {
   "req_method": "CreateOrderReturnLabel",
   "req_data": {
-    "order_id": 132,
-    "original_order_id": 321,
-    "box_count": 2,
-    "email_send": false
+   "order_id": 132,
+   "original_order_id": 321,
+   "box_count": 2,
+   "email_send": false
   }
+ }
 }
 ```
 
