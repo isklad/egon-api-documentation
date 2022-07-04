@@ -2,16 +2,16 @@
 
 The method gains information about items sent out (items added to shipment) and their expiration
 
-## Input parameters:
-| parameter           |     |  format   | allowed values |     mandatory      | description                    |
-|:--------------------|:----|:---------:|:--------------:|:------------------:|:-------------------------------|
-| `original_order_id` |     | (Integer) |                | :heavy_check_mark: | Original order ID              |
-| `order_id`          |     | (Integer) |                | :heavy_check_mark: | iSklad order number (optional) |
+## :arrow_forward: Input parameters:
 
-## Sample request
+| parameter           |     |     format     | allowed values | mandatory / default value | description                                                                        |
+|:--------------------|:----|:--------------:|:--------------:|:-------------------------:|:-----------------------------------------------------------------------------------|
+| `order_id `         |     | (integer/null) |       -        |  :heavy_check_mark: [^1]  | Order id from egon (previously received from [CreateNewOrder](CreateNewOrder.md))  |
+| `original_order_id` |     | (string/null)  |       -        |  :heavy_check_mark: [^1]  | Order id from your shop (previously passed to [CreateNewOrder](CreateNewOrder.md)) |
 
-### Minimal
+### Sample request
 
+#### Minimal
 ```json
 {
   "auth": {
@@ -32,28 +32,36 @@ The method gains information about items sent out (items added to shipment) and 
 ```
 
 
-## Output parameters:
+## :arrow_forward: Output parameters:
 
-| parameter  |                  |  format   | description             |
-|------------|------------------|:---------:|-------------------------|
-| `order_id` |                  | (Integer) | iSklad order number     |
-| `data`     |                  |  (Array)  | Field of sent out items |
-|            | `item_id`        | (Integer) | ITEM_ID of item         |
-|            | `catalog_number` | (String)  | Catalog number of item  |
-|            | `expiration`     | (String)  | Expiration              |
-|            | `count`          | (Integer) | Count                   |
-|            | `price`          | (Decimal) | Price without VAT       |
-|            | `price_with_tax` | (Decimal) | Price with VAT          |
-|            | `tax`            | (Decimal) | VAT rate in%            |
+| parameter   |                   |  format   | description             |
+|:------------|:------------------|:---------:|-------------------------|
+| `order_id`  |                   | (Integer) | Order id from egon      |
+| `data`      |                   |  (Array)  | Field of sent out items |
+|             | `item_id`         | (Integer) | ITEM_ID of item         |
+|             | `catalog_number`  | (String)  | Catalog number of item  |
+|             | `expiration`      | (String)  | Expiration              |
+|             | `count`           | (Integer) | Count                   |
+|             | `price`           | (Decimal) | Price excluding VAT     |
+|             | `price_with_tax`  | (Decimal) | Price including VAT     |
+|             | `tax`             | (Decimal) | VAT rate in%            |
 
 
-## Sample response
+### Sample response
 
 ```json
 {
-  
-  
-  
-  
+  "auth_status": 201,
+  "auth_status_message": "201: Auth Accepted",
+  "resp_code": 403,
+  "resp_note": "403: Content Found",
+  "response": {
+    "order_id": 255636,
+    "data": [],
+    "resp_code": 403,
+    "resp_note": "403: Content Found"
+  }
 }
 ```
+
+[^1]: - mandatory only one of them, `order_id` has a priority if both filled
