@@ -5,7 +5,8 @@ existing original_order_id is sent to us in the system. In this case, if the ord
 order is updated according to the newly sent data.
 
 
-## Input parameters:
+## :arrow_forward: Input parameters:
+
 | parameter                    |                  |    format     |                        allowed values                        | mandatory / default value | description                                                                                                                                                                                                                                                                                        |
 |:-----------------------------|:-----------------|:-------------:|:------------------------------------------------------------:|:-------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `original_order_id`          |                  | (string/null) |                                                              |    :heavy_check_mark:     | Order id from your shop </br>_- Order number from your eshop / system. It is a very important identificator, by which you will be able to find particular order in EGON system. In case you are creating order in EGON manually, you can choose number of your own preference._                    |
@@ -83,7 +84,6 @@ order is updated according to the newly sent data.
 ### Sample request
 
 #### Minimal
-
 ```json
 {
   "auth": {
@@ -220,16 +220,16 @@ order is updated according to the newly sent data.
 }
 ```
 
-### Output parameters:
+## :arrow_forward: Output parameters:
 
-| parameter       |                       |   format    | description |
-|-----------------|-----------------------|:-----------:|-------------|
-| `resp_code`     |                       |  (Integer)  |             |
-| `resp_message`  |                       |  (String)   |             |
-| `resp_data`     |                       |  (Integer)  |             |
-|                 | `order_id`            |  (Integer)  |             |
+| parameter        |                        |   format    | description |
+|:-----------------|:-----------------------|:-----------:|-------------|
+| `resp_code`      |                        |  (Integer)  |             |
+| `resp_message`   |                        |  (String)   |             |
+| `resp_data`      |                        |  (Integer)  |             |
+|                  | `order_id`             |  (Integer)  |             |
 
-#### Sample response
+### Sample response
 
 ```json
 {
