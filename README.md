@@ -34,7 +34,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
   - [EGON-> Client](integration/egon-to-client.md)
   
 - **Method list Client -> EGON**
-  - [CreateEshopSettings](method-list/client-to-egon/CreateEshopSettings.md)
+  - [CreateEshopSetting](method-list/client-to-egon/CreateEshopSetting.md)
   - [CreateNewOrder](method-list/client-to-egon/CreateNewOrder.md)
   - [CreateOrderReturnLabel](method-list/client-to-egon/CreateOrderReturnLabel.md)
   - [CreatePackage](method-list/client-to-egon/CreatePackage.md)
