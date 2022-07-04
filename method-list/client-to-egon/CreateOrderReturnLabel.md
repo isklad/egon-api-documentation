@@ -2,18 +2,18 @@
 
 Creates a return label for packages that are returned from the customer to the warehouse
 
-## Input parameters:
+## :arrow_forward: Input parameters:
 
-| parameter           |     |     format     |        mandatory        | description                                                                        |
-|:--------------------|:----|:--------------:|:-----------------------:|:-----------------------------------------------------------------------------------|
-| `order_id `         |     | (integer/null) | :heavy_check_mark: [^1] | Order id from egon (previously received from [CreateNewOrder](CreateNewOrder.md))  |
-| `original_order_id` |     | (string/null)  | :heavy_check_mark: [^1] | Order id from your shop (previously passed to [CreateNewOrder](CreateNewOrder.md)) |
-| `box_count`         |     |   (integer)    |   :heavy_check_mark:    | Number of packages we want to generate a label for                                 |
-| `email_send `       |     |   (boolean)    |   :heavy_check_mark:    | If we want send an email with info to customer set it to true                      |
+| parameter           |     |     format     | allowed values | mandatory / default value | description                                                                        |
+|:--------------------|:----|:--------------:|:--------------:|:-------------------------:|:-----------------------------------------------------------------------------------|
+| `order_id `         |     | (integer/null) |       -        |  :heavy_check_mark: [^1]  | Order id from egon (previously received from [CreateNewOrder](CreateNewOrder.md))  |
+| `original_order_id` |     | (string/null)  |       -        |  :heavy_check_mark: [^1]  | Order id from your shop (previously passed to [CreateNewOrder](CreateNewOrder.md)) |
+| `box_count`         |     |   (integer)    |       -        |    :heavy_check_mark:     | Number of packages we want to generate a label for                                 |
+| `email_send `       |     |   (boolean)    |       -        |    :heavy_check_mark:     | If we want send an email with info to customer set it to true                      |
 
 
 
-## Sample request
+### Sample request
 
 ```json
 {
@@ -34,18 +34,18 @@ Creates a return label for packages that are returned from the customer to the w
 }
 ```
 
-## Output parameters:
+## :arrow_forward: Output parameters:
 
-| parameter       |                       | format      | description                           |
-|-----------------|-----------------------|-------------|---------------------------------------|
-| `return_labels` |                       | (array)     | created labels wrapper                |
-|                 | `id`                  | (integer)   | id of the generated return label      |
-|                 | `barcode`             | (string)    | barcode of the generated return label |
-|                 | `tracking_url`        | (string)    | url for display tracking status       |
-|                 | `label_pdf_base64`    | (string)    | base64 encoded PDF file               |
+| parameter       |                       |   format    | description                           |
+|:----------------|:----------------------|:-----------:|:--------------------------------------|
+| `return_labels` |                       |   (array)   | created labels wrapper                |
+|                 | `id`                  |  (integer)  | id of the generated return label      |
+|                 | `barcode`             |  (string)   | barcode of the generated return label |
+|                 | `tracking_url`        |  (string)   | url for display tracking status       |
+|                 | `label_pdf_base64`    |  (string)   | base64 encoded PDF file               |
 
 
-## Sample response
+### Sample response
 ```json
 {
   "auth_status": 201,
