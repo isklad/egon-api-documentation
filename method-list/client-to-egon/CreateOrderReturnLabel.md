@@ -12,9 +12,9 @@ Creates a return label for packages that are returned from the customer to the w
 | `email_send `       |     |   (boolean)    |       -        |    :heavy_check_mark:     | If we want send an email with info to customer set it to true                      |
 
 
-
 ### Sample request
 
+#### Minimal
 ```json
 {
  "auth": {
