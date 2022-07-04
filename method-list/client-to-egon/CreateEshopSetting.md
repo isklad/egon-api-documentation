@@ -21,7 +21,6 @@ Creates settings for another eshop.
 ### Sample request
 
 #### Minimal
-
 ```json
 {
   "auth": {
@@ -69,10 +68,10 @@ Creates settings for another eshop.
 ```
 ## :arrow_forward: Output parameters:
 
-| parameter                |     |  format   | description                       |
-|--------------------------|-----|:---------:|-----------------------------------|
-| `SHOP_SETTING_ID`        |     | (Integer) | Eshop ID                          |
-| `SHOP_RECIPIENT_ADDRESS` |     | (String)  | Shop address (for incoming goods) |
+| parameter                 |      |  format   | description                        |
+|:--------------------------|:-----|:---------:|:-----------------------------------|
+| `SHOP_SETTING_ID`         |      | (Integer) | Eshop ID                           |
+| `SHOP_RECIPIENT_ADDRESS`  |      | (String)  | Shop address (for incoming goods)  |
 
 
 ### Sample response
