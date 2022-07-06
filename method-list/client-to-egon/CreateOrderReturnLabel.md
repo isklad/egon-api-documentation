@@ -34,7 +34,7 @@ Creates a return label for packages that are returned from the customer to the w
 | `return_labels` |                    | (array)     | created labels wrapper                  |
 |                 | `id`               | (integer)   | id of the generated return label        |
 |                 | `barcode`          | (string)    | barcode of the generated return label   |
-|                 | `passwors`         | (string)    | password for the generated return label |
+|                 | `password`         | (string)    | password for the generated return label |
 |                 | `tracking_url`     | (string)    | url for display tracking status         |
 |                 | `label_pdf_base64` | (string)    | base64 encoded PDF file                 |
 
