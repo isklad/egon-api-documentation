@@ -36,13 +36,14 @@ Creates a return label for packages that are returned from the customer to the w
 
 ## :arrow_forward: Output parameters:
 
-| parameter       |                       |   format    | description                           |
-|:----------------|:----------------------|:-----------:|:--------------------------------------|
-| `return_labels` |                       |   (array)   | created labels wrapper                |
-|                 | `id`                  |  (integer)  | id of the generated return label      |
-|                 | `barcode`             |  (string)   | barcode of the generated return label |
-|                 | `tracking_url`        |  (string)   | url for display tracking status       |
-|                 | `label_pdf_base64`    |  (string)   | base64 encoded PDF file               |
+| parameter       |                    |  format   | description                             |
+|:----------------|:-------------------|:---------:|:----------------------------------------|
+| `return_labels` |                    |  (array)  | created labels wrapper                  |
+|                 | `id`               | (integer) | id of the generated return label        |
+|                 | `barcode`          | (string)  | barcode of the generated return label   |
+|                 | `password`         | (string)  | password for the generated return label |
+|                 | `tracking_url`     | (string)  | url for display tracking status         |
+|                 | `label_pdf_base64` | (string)  | base64 encoded PDF file                 |
 
 
 ### Sample response
@@ -57,12 +58,14 @@ Creates a return label for packages that are returned from the customer to the w
       {
         "id": 1,
         "barcode": "xy1231",
+        "password": "ABC",
         "tracking_url": "https://tracking-domain.tld/example",
         "label_pdf_base64": "base64string...."
       },
       {
         "id": 2,
         "barcode": "xy1232",
+        "password": "ABC",
         "tracking_url": "https://tracking-domain.tld/example",
         "label_pdf_base64": "base64string...."
       }
@@ -70,6 +73,4 @@ Creates a return label for packages that are returned from the customer to the w
   }
 }
 ```
-
-
 [^1]: - mandatory only one of them, `order_id` has a priority if both filled
