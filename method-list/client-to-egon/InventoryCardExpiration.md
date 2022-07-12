@@ -34,17 +34,17 @@ Method returns products and their expirations
 
 | parameter          |              |                        |                        |                   |  format   | description                                                      |
 |:-------------------|:-------------|:-----------------------|:-----------------------|:------------------|:---------:|:-----------------------------------------------------------------|
-| `inventory_list`   |              |                        |                        |                   |    ()     |                                                                  |
-|                    | `paired`     |                        |                        |                   |    ()     |                                                                  |
-|                    |              | `inventoryItemId`      |                        |                   |    ()     |                                                                  |
-|                    |              |                        | `warehouseInventoryId` |                   |  (Array)  |                                                                  |
+| `inventory_list`   |              |                        |                        |                   | (Object)  |                                                                  |
+|                    | `paired`     |                        |                        |                   | (Object)  |                                                                  |
+|                    |              | `inventoryItemId`      |                        |                   | (Object)  |                                                                  |
+|                    |              |                        | `warehouseInventoryId` |                   | (Object)  |                                                                  |
 |                    |              |                        |                        | `expiration_date` | (String)  | Expiration date                                                  |
 |                    |              |                        |                        | `count `          | (Integer) | quantity / count ???                                             |
-|                    | `non_paired` |                        |                        |                   |    ()     |                                                                  |
-|                    |              | `warehouseInventoryId` |                        |                   |    ()     |                                                                  |
+|                    | `non_paired` |                        |                        |                   | (Object)  |                                                                  |
+|                    |              | `warehouseInventoryId` |                        |                   | (Object)  |                                                                  |
 |                    |              |                        | `expiration_date`      |                   | (String)  | Expiration date                                                  |
 |                    |              |                        | `count `               |                   | (Integer) | quantity / count ???                                             |
-| `inventory_detail` |              |                        |                        |                   |    ()     |                                                                  |
+| `inventory_detail` |              |                        |                        |                   | (Object)  |                                                                  |
 |                    | `????`       |                        |                        |                   | (Object)  |                                                                  |
 |                    |              | `id`                   |                        |                   | (Integer) | ID                                                               |
 |                    |              | `item_id`              |                        |                   | (Integer) | Item ID form your shop                                           |
@@ -99,4 +99,4 @@ Method returns products and their expirations
 ```
 
 
-[^1]: If the field is empty then all ..... ??????
+[^1]: - If the field is empty then all ..... ??????
