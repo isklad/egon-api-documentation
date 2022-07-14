@@ -78,12 +78,40 @@ The method detects the status of the embedded mail through [CreatePackage](Creat
 {
   "auth_status": 201,
   "auth_status_message": "201: Auth Accepted",
-  "resp_code": 404,
-  "resp_note": "404: Content Not Found",
+  "resp_code": 403,
+  "resp_note": "403: Content Found",
   "response": {
-    "resp_code": 404,
-    "resp_message": "404: Content Not Found",
-    "resp_data": []
+    "resp_code": 403,
+    "resp_message": "403: Content Found",
+    "resp_data": [
+      {
+        "order_id": 123456789,
+        "order_status_id": 123,
+        "package_id": 123456789,
+        "delivery_number": "589758426",
+        "delivery_label": "https://domain.tld/example.pdf",
+        "total_cost": 3.89,
+        "tracking_data": [
+          {
+            "timestamp": "2022-05-27 05:45:07",
+            "shipment_status": 1,
+            "shipment_note": "Carrier accepted the data for the shipment",
+            "shipment_status_delivery_company": "900",
+            "shipment_note_delivery_company": "Čekáme na přijetí zásilky do přepravy. [ ]"
+          },
+          {
+            "timestamp": "2021-05-27 05:45:07",
+            "shipment_status": 1,
+            "shipment_note": "Carrier accepted the data for the shipment",
+            "shipment_status_delivery_company": "900",
+            "shipment_note_delivery_company": "Čekáme na přijetí zásilky do přepravy. [ ]"
+          }
+        ],
+        "tracking_url": "https://domain.tld/example/main2.aspx?cls=Package&idSearch=589758426",
+        "estimated_delivery_time": "2022-05-28",
+        "order_errors": []
+      }
+    ]
   }
 }
 ```
