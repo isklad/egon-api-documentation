@@ -2,51 +2,60 @@
 
 Method stores (create or update) information about notified shipment
 
-## Input parameters
+## :arrow_forward: Input parameters:
 
-| parameter             |            | format      | mandatory                     | description                                                    |
-|-----------------------|------------|-------------|-------------------------------|----------------------------------------------------------------|
-| `shipment_notify_id`  |            | (integer)   |                               | (optional for update) - `shipment_notify_id` from first response |
-| `shop_setting_id`     |            | (integer)   | :heavy_check_mark:            | Eshop ID                                                       |
-| `date_from`           |            | (datetime)  | :heavy_check_mark:            | delivery date from                                             |
-| `date_to`             |            | (datetime)  | :heavy_check_mark:            | delivery date to                                               |
-| `tracking_number`     |            | (string)    | :heavy_check_mark:            | tracking number                                                |
-| `supplier_id`         |            | (integer)   | :heavy_check_mark:            | Supplier ID                                                    |
-| `reference_number`    |            | (string)    | :heavy_check_mark:            | reference number                                               |
-| `items`               |            | (array)     | :heavy_check_mark:            | items                                                          |
-|                       | `item_id`  | (integer)   | :heavy_check_mark:            | difference inventory card id                                   |
-|                       | `quantity` | (integer)   | :heavy_check_mark:            | difference inventory quantity                                  |
+| parameter            |            |   format   |                        allowed values                        | mandatory / default value | description                                                             |
+|:---------------------|:-----------|:----------:|:------------------------------------------------------------:|:-------------------------:|:------------------------------------------------------------------------|
+| `shipment_notify_id` |            | (Integer)  |                              -                               |                           | (optional for update) - `shipment_notify_id` return from first response |
+| `shop_setting_id`    |            | (Integer)  | [link](https://egon.isklad.eu/klient/settings-shop-settings) |    :heavy_check_mark:     | Set-to-order setting ID                                                 |
+| `date_from`          |            | (Datetime) |                              -                               |    :heavy_check_mark:     | Delivery date from                                                      |
+| `date_to`            |            | (Datetime) |                              --                              |    :heavy_check_mark:     | Delivery date to                                                        |
+| `tracking_number`    |            |  (String)  |                              -                               |    :heavy_check_mark:     | Tracking number                                                         |
+| `supplier_id`        |            | (Integer)  |                              -                               |    :heavy_check_mark:     | Supplier ID                                                             |
+| `reference_number`   |            |  (String)  |                              -                               |    :heavy_check_mark:     | Reference Nr. of order                                                  |
+| `items`              |            |  (Array)   |                              -                               |    :heavy_check_mark:     | Items                                                                   |
+|                      | `item_id`  | (Integer)  |                              -                               |    :heavy_check_mark:     | Difference inventory card id                                            |
+|                      | `quantity` | (Integer)  |                              -                               |    :heavy_check_mark:     | Difference inventory quantity                                           |
 
 ### Sample request
 
+#### Minimal
+
 ```json
 {
-  "req_method": "ShipmentNotify",
-  "req_data": {
-    "shipment_notify_id": 123465,
-    "shop_setting_id": 1,
-    "date_from": "2020-02-02",
-    "date_to": "2020-02-02",
-    "tracking_number": "1234567890",
-    "supplier_id": 100,
-    "reference_number": "ref123",
-    "items": [
-      {
-        "item_id": 1,
-        "quantity": 10
-      }
-    ]
+  "auth": {
+    "auth_id": "AUTH_ID",
+    "auth_key": "AUTH_KEY",
+    "auth_token": "AUTH_TOKEN"
+  },
+  "request": {
+    "req_method": "ShipmentNotify",
+    "req_data": {
+      "shipment_notify_id": 123456,
+      "shop_setting_id": 1,
+      "date_from": "2022-02-02",
+      "date_to": "2022-02-02",
+      "tracking_number": "1234567890",
+      "supplier_id": 100,
+      "reference_number": "ref123",
+      "items": [
+        {
+          "item_id": 1,
+          "quantity": 10
+        }
+      ]
+    }
   }
 }
 ```
 
-## Output parameters
+## :arrow_forward: Output parameters:
 
 | parameter            | format       | description                       |
 |----------------------|--------------|-----------------------------------|
 | `shipment_notify_id` | (integer)    | created shipment notification ID  |
 
-## Sample response
+### Sample response
 
 ```json
 {
