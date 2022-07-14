@@ -6,21 +6,21 @@ Creates supplier in system
 
 | parameter             |     |  format   |              allowed values              | mandatory / default value | description                        |
 |:----------------------|:----|:---------:|:----------------------------------------:|:-------------------------:|:-----------------------------------|
-| `name`                |     | (String)  |                                          |    :heavy_check_mark:     | Supplier - Name                    |
+| `name`                |     | (String)  |                    -                     |    :heavy_check_mark:     | Supplier - Name                    |
 | `auto_shipment_load ` |     | (Integer) |                  0 / 1                   |    :heavy_check_mark:     | Load shipments automatically       |
 | `country_code`        |     | (String)  | [link](../../code-lists/country-list.md) |    :heavy_check_mark:     | Supplier - Country code            |
-| `delivery_days`       |     | (String)  |                                          |           empty           | Delivery time for goods (days)     |
+| `delivery_days`       |     | (String)  |                    -                     |           empty           | Delivery time for goods (days)     |
 | `vat_payer`           |     | (Integer) |                  0 / 1                   |             0             | VAT payer                          |
-| `street`              |     | (String)  |                                          |           empty           | Supplier - Street                  |
-| `street_number`       |     | (String)  |                                          |           empty           | Supplier - Street number           |
-| `postal_code`         |     | (String)  |                                          |           empty           | Supplier - ZIP code                |
-| `city `               |     | (String)  |                                          |           empty           | Supplier - City                    |
-| `ico`                 |     | (String)  |                                          |           empty           | Supplier - Company ID              |
-| `dic`                 |     | (String)  |                                          |           empty           | Supplier - Tax registration number |
-| `ic_dph`              |     | (String)  |                                          |           empty           | Supplier - VAT ID                  |
-| `email_orders`        |     | (String)  |                                          |           empty           | Email for orders                   |
-| `email_info`          |     | (String)  |                                          |           empty           | Email for info                     |
-| `tax_rate`            |     | (Decimal) |                                          |           empty           | VAT amount in %                    |
+| `street`              |     | (String)  |                    -                     |           empty           | Supplier - Street                  |
+| `street_number`       |     | (String)  |                    -                     |           empty           | Supplier - Street number           |
+| `postal_code`         |     | (String)  |                    -                     |           empty           | Supplier - ZIP code                |
+| `city `               |     | (String)  |                    -                     |           empty           | Supplier - City                    |
+| `ico`                 |     | (String)  |                    -                     |           empty           | Supplier - Company ID              |
+| `dic`                 |     | (String)  |                    -                     |           empty           | Supplier - Tax registration number |
+| `ic_dph`              |     | (String)  |                    -                     |           empty           | Supplier - VAT ID                  |
+| `email_orders`        |     | (String)  |                    -                     |           empty           | Email for orders                   |
+| `email_info`          |     | (String)  |                    -                     |           empty           | Email for info                     |
+| `tax_rate`            |     | (Decimal) |                    -                     |           empty           | VAT amount in %                    |
 
 ### Sample request
 

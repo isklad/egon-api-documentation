@@ -6,11 +6,11 @@ Creates settings for another eshop.
 
 | parameter                         |     |  format   | allowed values | mandatory / default value | description                      |
 |:----------------------------------|:----|:---------:|:--------------:|:-------------------------:|:---------------------------------|
-| `name`                            |     | (String)  |                |    :heavy_check_mark:     | Eshop name                       |
-| `url`                             |     | (String)  |                |    :heavy_check_mark:     | Eshop address                    |
-| `email`                           |     | (String)  |                |    :heavy_check_mark:     | Eshop Email                      |
-| `phone`                           |     | (String)  |                |    :heavy_check_mark:     | Eshop Phone                      |
-| `listener_url`                    |     | (String)  |                |    :heavy_check_mark:     | URL for reverse API (listener)   |
+| `name`                            |     | (String)  |       -        |    :heavy_check_mark:     | Eshop name                       |
+| `url`                             |     | (String)  |       -        |    :heavy_check_mark:     | Eshop address                    |
+| `email`                           |     | (String)  |       -        |    :heavy_check_mark:     | Eshop Email                      |
+| `phone`                           |     | (String)  |       -        |    :heavy_check_mark:     | Eshop Phone                      |
+| `listener_url`                    |     | (String)  |       -        |    :heavy_check_mark:     | URL for reverse API (listener)   |
 | `enable_import_cards `            |     | (Integer) |     0 / 1      |             0             | Allow import of stock cards      |
 | `enable_import_orders `           |     | (Integer) |     0 / 1      |             0             | Allow import of the orders       |
 | `enable_api_listener`             |     | (Integer) |     0 / 1      |             0             | Allow api listener               |
