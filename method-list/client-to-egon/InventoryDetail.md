@@ -4,11 +4,11 @@ Method returns product details (name, count,...)
 
 ## :arrow_forward: Input parameters:
 
-| parameter       |     |  format   | allowed values | mandatory / default value | description                                                    |
-|:----------------|:----|:---------:|:--------------:|:-------------------------:|:---------------------------------------------------------------|
-| `item_id_list`  |     |  (Array)  |       -        |    :heavy_check_mark:     | Field item_id of stock cards [^1]                              |
-| `cached`        |     | (Integer) |     0 / 1      |             0             | cached values - if realtime data are required, send value 0    |
-| `only_on_stock` |     | (Integer) |     0 / 1      |             0             | only in stock                                                  |
+| parameter       |     |  format   | allowed values | mandatory / default value | description                                                 |
+|:----------------|:----|:---------:|:--------------:|:-------------------------:|:------------------------------------------------------------|
+| `item_id_list`  |     |  (Array)  |       -        |    :heavy_check_mark:     | Field item_id of stock cards  (if all, then empty field)    |
+| `cached`        |     | (Integer) |     0 / 1      |             0             | cached values - if realtime data are required, send value 0 |
+| `only_on_stock` |     | (Integer) |     0 / 1      |             0             | only in stock                                               |
 
 ### Sample request
 
