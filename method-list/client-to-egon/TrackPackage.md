@@ -14,7 +14,6 @@ The method detects the status of the embedded mail through [CreatePackage](Creat
 ### Sample request
 
 #### Minimal
-
 ```json
 {
   "auth": {
@@ -32,7 +31,6 @@ The method detects the status of the embedded mail through [CreatePackage](Creat
 ```
 
 #### Advanced
-
 ```json
 {
   "auth": {
@@ -55,7 +53,7 @@ The method detects the status of the embedded mail through [CreatePackage](Creat
 ## :arrow_forward: Output parameters:
 
 | parameter                 |                                    |   format   | description                                    |
-|:--------------------------|:-----------------------------------|:----------:|------------------------------------------------|
+|:--------------------------|:-----------------------------------|:----------:|:-----------------------------------------------|
 | `order_id`                |                                    | (Integer)  | Order id from egon                             |
 | `status_id`               |                                    | (Integer)  | Order Status ID by dial                        |
 | `package_id`              |                                    | (Integer)  | Package ID                                     |
@@ -97,14 +95,14 @@ The method detects the status of the embedded mail through [CreatePackage](Creat
             "shipment_status": 1,
             "shipment_note": "Carrier accepted the data for the shipment",
             "shipment_status_delivery_company": "900",
-            "shipment_note_delivery_company": "Čekáme na přijetí zásilky do přepravy. [ ]"
+            "shipment_note_delivery_company": "We are waiting for the shipment to be accepted for transport.[ ]"
           },
           {
             "timestamp": "2021-05-27 05:45:07",
             "shipment_status": 1,
             "shipment_note": "Carrier accepted the data for the shipment",
             "shipment_status_delivery_company": "900",
-            "shipment_note_delivery_company": "Čekáme na přijetí zásilky do přepravy. [ ]"
+            "shipment_note_delivery_company": "We are waiting for the shipment to be accepted for transport. [ ]"
           }
         ],
         "tracking_url": "https://domain.tld/example/main2.aspx?cls=Package&idSearch=589758426",

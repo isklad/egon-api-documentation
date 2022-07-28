@@ -13,7 +13,6 @@ The method cancels an existing order in the system. Cancellation of orders is on
 ### Sample request
 
 #### Minimal
-
 ```json
 {
   "auth": {
@@ -32,7 +31,6 @@ The method cancels an existing order in the system. Cancellation of orders is on
 ```
 
 #### Advanced
-
 ```json
 {
   "auth": {
@@ -53,10 +51,10 @@ The method cancels an existing order in the system. Cancellation of orders is on
 
 ## :arrow_forward: Output parameters:
 
-| parameter       |     |  format   | description                        |
-|:----------------|:----|:---------:|------------------------------------|
-| `order_id`      |     | (Integer) | Order id from egon                 |
-| `new_status_id` |     | (Integer) | The order ID created in the system |
+| parameter       |     |  format   | description                         |
+|:----------------|:----|:---------:|:------------------------------------|
+| `order_id`      |     | (Integer) | Order id from egon                  |
+| `new_status_id` |     | (Integer) | The order ID created in the system  |
 
 ### Sample response
 

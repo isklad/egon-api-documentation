@@ -64,18 +64,18 @@ The method inserts a parcel into the system (sending without fulfillment).
       "shop_setting_id": 1,
       "customer_name": "Customer Name",
       "customer_surname": "Customer Surname",
-      "customer_phone": "+421 123 567 789",
+      "customer_phone": "+421123567789",
       "customer_email": "abcd@defgh.com",
       "name": "Delivery - Name",
       "surname": " Delivery - Surname",
-      "phone": "+421 123 567 789",
+      "phone": "+421123567789",
       "email": "delivery@mail.com",
       "street": "Delivery - Street",
       "street_number": "Delivery - Street Number ",
       "city": "Delivery - City",
       "country": "Delivery - Country",
       "postal_code": "Delivery - ZIP code",
-      "id_delivery": "100",
+      "id_delivery": "Transport ID",
       "payment_card": 0,
       "payment_cod": 0,
       "packages": {
@@ -104,11 +104,11 @@ The method inserts a parcel into the system (sending without fulfillment).
       "reference_number ": "#EAV123",
       "customer_name": "Customer Name",
       "customer_surname": "Customer Surname",
-      "customer_phone": "+421 123 567 789",
+      "customer_phone": "+421123567789",
       "customer_email": "abcd@defgh.com",
       "name": "Delivery - Name",
       "surname": " Delivery - Surname",
-      "phone": "+421 123 567 789",
+      "phone": "+421123567789",
       "email": "delivery@mail.com",
       "company": "Delivery - Company",
       "street": "Delivery - Street",
@@ -125,7 +125,7 @@ The method inserts a parcel into the system (sending without fulfillment).
       "note": "Note",
       "currency": "EUR",
       "destination_country_code": "SK",
-      "id_delivery": "100",
+      "id_delivery": "Transport ID",
       "delivery_branch_id": 1,
       "external_branch_id": 1,
       "id_payment": 1,
@@ -148,9 +148,9 @@ The method inserts a parcel into the system (sending without fulfillment).
 ```
 ## :arrow_forward: Output parameters:
 
-| parameter  |      |  format  | description |
-|:-----------|:-----|:--------:|:------------|
-| `order_id` |      | (string) | Order ID    |
+| parameter  |  format  | description |
+|:-----------|:--------:|:------------|
+| `order_id` | (string) | Order ID    |
 
 
 ### Sample response

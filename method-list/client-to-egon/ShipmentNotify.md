@@ -51,9 +51,9 @@ Method stores (create or update) information about notified shipment
 
 ## :arrow_forward: Output parameters:
 
-| parameter            | format       | description                       |
-|----------------------|--------------|-----------------------------------|
-| `shipment_notify_id` | (integer)    | created shipment notification ID  |
+| parameter            |  format   | description                       |
+|:---------------------|:---------:|:----------------------------------|
+| `shipment_notify_id` | (integer) | created shipment notification ID  |
 
 ### Sample response
 

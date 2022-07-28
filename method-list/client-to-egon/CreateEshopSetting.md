@@ -34,7 +34,7 @@ Creates settings for another eshop.
       "name": "name",
       "url": "https://domain.tld/",
       "email": "abcd@defgh.com",
-      "phone": "+421 123 567 789",
+      "phone": "+421123567789",
       "listener_url": "https://domain.tld/example"
     }
   }
@@ -55,7 +55,7 @@ Creates settings for another eshop.
       "name": "name",
       "url": "https://domain.tld/",
       "email": "abcd@defgh.com",
-      "phone": "+421 123 567 789",
+      "phone": "+421123567789",
       "listener_url": "https://domain.tld/example",
       "enable_import_cards": 0,
       "enable_import_orders": 0,
@@ -68,10 +68,10 @@ Creates settings for another eshop.
 ```
 ## :arrow_forward: Output parameters:
 
-| parameter                 |      |  format   | description                        |
-|:--------------------------|:-----|:---------:|:-----------------------------------|
-| `SHOP_SETTING_ID`         |      | (Integer) | Eshop ID                           |
-| `SHOP_RECIPIENT_ADDRESS`  |      | (String)  | Shop address (for incoming goods)  |
+| parameter                 |  format   | description                        |
+|:--------------------------|:---------:|:-----------------------------------|
+| `SHOP_SETTING_ID`         | (Integer) | Eshop ID                           |
+| `SHOP_RECIPIENT_ADDRESS`  | (String)  | Shop address (for incoming goods)  |
 
 
 ### Sample response

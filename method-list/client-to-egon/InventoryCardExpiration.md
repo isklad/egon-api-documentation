@@ -23,7 +23,7 @@ Method returns products and their expirations
   "request": {
     "req_method": "InventoryCardExpiration",
     "req_data": {
-      "item_id_list": [59333],
+      "item_id_list": [111111],
       "include_non_paired": 1
     }
   }
@@ -81,8 +81,8 @@ Method returns products and their expirations
     "inventory_details": {
       "2": {
         "id": 2,
-        "item_id": 59333,
-        "name": "UNIVERSAL NUTRITION 100% BEEF Aminos 400 tbl",
+        "item_id": 11111,
+        "name": "PRODUCT NAME",
         "count_types": {
           "all": 0,
           "expired": 0,

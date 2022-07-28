@@ -11,7 +11,7 @@ order is updated according to the newly sent data.
 |:-----------------------------|:-----------------|:-------------:|:------------------------------------------------------------:|:-------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `original_order_id`          |                  | (string/null) |                              -                               |    :heavy_check_mark:     | Order id from your shop </br>_- Order number from your eshop / system. It is a very important identificator, by which you will be able to find particular order in EGON system. In case you are creating order in EGON manually, you can choose number of your own preference._                    |
 | `shop_setting_id`            |                  |   (Integer)   | [link](https://egon.isklad.eu/klient/settings-shop-settings) |    :heavy_check_mark:     | Set-to-order setting ID                                                                                                                                                                                                                                                                            |
-| `business_relationship`      |                  |   (String)    |                          b2b / b2c                           |            b2c            | Business relationship (b2b/b2c) </br>_- Based on the order designation by the Business Relationship parameter, the system monitors the settings of the goods cards "Block before expiration" or "Block before expiration for B2B" and reserves the goods for the order according to this setting._ || `reference_number`           |                  | (String)  |                                                              |                    | Reference nr of order                                                                                                                                                                                                                                                                              || `customer_name`              |                  | (String)  |                                                              | :heavy_check_mark: | Customer - Name                                                                                                                                                                                                                                                                                    |
+| `business_relationship`      |                  |   (String)    |                          b2b / b2c                           |            b2c            | Business relationship (b2b/b2c) </br>_- Based on the order designation by the Business Relationship parameter, the system monitors the settings of the goods cards "Block before expiration" or "Block before expiration for B2B" and reserves the goods for the order according to this setting._ |
 | `reference_number`           |                  |   (String)    |                              -                               |           empty           | Reference Nr. of order                                                                                                                                                                                                                                                                             |
 | `customer_name`              |                  |   (String)    |                              -                               |    :heavy_check_mark:     | Customer - Name                                                                                                                                                                                                                                                                                    |
 | `customer_surname`           |                  |   (String)    |                              -                               |    :heavy_check_mark:     | Customer - Surname                                                                                                                                                                                                                                                                                 |
@@ -37,7 +37,8 @@ order is updated according to the newly sent data.
 | `fa_country`                 |                  |   (String)    |                              -                               |           empty           | Billing - Country                                                                                                                                                                                                                                                                                  |
 | `fa_postal_code`             |                  |   (String)    |                              -                               |           empty           | Billing - ZIP code                                                                                                                                                                                                                                                                                 |
 | `fa_ico`                     |                  |   (String)    |                              -                               |           empty           | Billing - ID                                                                                                                                                                                                                                                                                       |
-| `fa_dic`                     |                  |   (String)    |                              -                               |           empty           | Billing - VAT ID                                                                                                                                                                                                                                                                                   |
+| `fa_dic`                     |                  |   (String)    |                              -                               |           empty           | Billing - Tax registration number                                                                                                                                                                                                                                                                  |
+| `fa_icdph`                   |                  |   (String)    |                              -                               |           empty           | Billing - VAT ID                                                                                                                                                                                                                                                                                   |
 | `auto_process`               |                  |   (Integer)   |                            0 / 1                             |             0             | Whether the order is to be held or processed (not a required parameter)                                                                                                                                                                                                                            |
 | `on_label`                   |                  |   (String)    |                              -                               |           empty           | The name of the sender on the shipping label                                                                                                                                                                                                                                                       |
 | `gps_lat`                    |                  |   (String)    |                              -                               |           empty           | Latitude                                                                                                                                                                                                                                                                                           |
@@ -98,18 +99,18 @@ order is updated according to the newly sent data.
       "shop_setting_id": 1,
       "customer_name": "Customer Name",
       "customer_surname": "Customer Surname",
-      "customer_phone": "+421 123 567 789",
+      "customer_phone": "+421123567789",
       "customer_email": "abcd@defgh.com",
       "name": "Delivery - Name",
       "surname": " Delivery - Surname",
-      "phone": "+421 123 567 789",
+      "phone": "+421123567789",
       "email": "delivery@mail.com",
       "street": "Delivery - Street",
       "street_number": "Delivery - Street Number ",
       "city": "Delivery - City",
       "country": "Delivery - Country",
       "postal_code": "Delivery - ZIP code",
-      "id_delivery": "100",
+      "id_delivery": "Transport ID",
       "payment_card": 0,
       "payment_cod": "1",
       "items": [
@@ -174,7 +175,7 @@ order is updated according to the newly sent data.
       "note": "Note",
       "currency": "EUR",
       "destination_country_code": "SK",
-      "id_delivery": "100",
+      "id_delivery": "Transport ID",
       "delivery_branch_id": 1,
       "external_branch_id": 1,
       "default_tax": 21,
@@ -222,12 +223,12 @@ order is updated according to the newly sent data.
 
 ## :arrow_forward: Output parameters:
 
-| parameter        |                        |   format    | description |
-|:-----------------|:-----------------------|:-----------:|-------------|
-| `resp_code`      |                        |  (Integer)  |             |
-| `resp_message`   |                        |  (String)   |             |
-| `resp_data`      |                        |  (Integer)  |             |
-|                  | `order_id`             |  (Integer)  |             |
+| parameter        |                        |   format    | description  |
+|:-----------------|:-----------------------|:-----------:|:-------------|
+| `resp_code`      |                        |  (Integer)  |              |
+| `resp_message`   |                        |  (String)   |              |
+| `resp_data`      |                        |  (Integer)  |              |
+|                  | `order_id`             |  (Integer)  |              |
 
 ### Sample response
 

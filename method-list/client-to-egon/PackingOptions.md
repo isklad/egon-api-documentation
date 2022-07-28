@@ -11,7 +11,6 @@ Sends back information about packaging options.
 ### Sample request
 
 #### Minimal
-
 ```json
 {
   "auth": {
@@ -30,20 +29,20 @@ Sends back information about packaging options.
 
 ## :arrow_forward: Output parameters:
 
-| parameter    |         |            |     |  format   | description                |
-|:-------------|:--------|:-----------|:----|:---------:|----------------------------|
-| `CATEGORIES` |         |            |     |  (Array)  |                            |
-|              | `ID`    |            |     | (Integer) | Category ID                |
-|              | `NAME`  |            |     | (String)  | Category name              |
-|              | `BOXES` |            |     |  (Array)  | Catalog nr.                |
-|              |         | `ID`       |     | (Integer) | Packaging ID               |
-|              |         | `NAME`     |     | (String)  | Packaging name             |
-|              |         | `WIDTH`    |     | (Integer) | Packaging width            |
-|              |         | `HEIGHT`   |     | (Integer) | Packaging height           |
-|              |         | `WEIGHT`   |     | (Integer) | Packaging weight           |
-|              |         | `LAYERS`   |     | (Integer) | Number of packaging layers |
-|              |         | `MAX_LOAD` |     | (Integer) | Maximal load of packaging  |
-|              |         | `PRICE`    |     | (Decimal) | Packaging price            |
+| parameter    |         |            |  format   | description                 |
+|:-------------|:--------|:-----------|:---------:|:----------------------------|
+| `CATEGORIES` |         |            |  (Array)  |                             |
+|              | `ID`    |            | (Integer) | Category ID                 |
+|              | `NAME`  |            | (String)  | Category name               |
+|              | `BOXES` |            |  (Array)  | Catalog nr.                 |
+|              |         | `ID`       | (Integer) | Packaging ID                |
+|              |         | `NAME`     | (String)  | Packaging name              |
+|              |         | `WIDTH`    | (Integer) | Packaging width             |
+|              |         | `HEIGHT`   | (Integer) | Packaging height            |
+|              |         | `WEIGHT`   | (Integer) | Packaging weight            |
+|              |         | `LAYERS`   | (Integer) | Number of packaging layers  |
+|              |         | `MAX_LOAD` | (Integer) | Maximal load of packaging   |
+|              |         | `PRICE`    | (Decimal) | Packaging price             |
 
 ### Sample response
 

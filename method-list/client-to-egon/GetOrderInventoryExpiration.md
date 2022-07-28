@@ -51,17 +51,17 @@ The method gains information about items sent out (items added to shipment) and 
 
 ## :arrow_forward: Output parameters:
 
-| parameter   |                   |  format   | description             |
-|:------------|:------------------|:---------:|-------------------------|
-| `order_id`  |                   | (Integer) | Order id from egon      |
-| `data`      |                   |  (Array)  | Field of sent out items |
-|             | `item_id`         | (Integer) | ITEM_ID of item         |
-|             | `catalog_number`  | (String)  | Catalog number of item  |
-|             | `expiration`      | (String)  | Expiration              |
-|             | `price`           | (Decimal) | Price excluding VAT     |
-|             | `price_with_tax`  | (Decimal) | Price including VAT     |
-|             | `tax`             | (Decimal) | VAT rate in%            |
-|             | `count`           | (Integer) | Quantity                |
+| parameter   |                   |  format   | description              |
+|:------------|:------------------|:---------:|:-------------------------|
+| `order_id`  |                   | (Integer) | Order id from egon       |
+| `data`      |                   |  (Array)  | Field of sent out items  |
+|             | `item_id`         | (Integer) | ITEM_ID of item          |
+|             | `catalog_number`  | (String)  | Catalog number of item   |
+|             | `expiration`      | (String)  | Expiration               |
+|             | `price`           | (Decimal) | Price excluding VAT      |
+|             | `price_with_tax`  | (Decimal) | Price including VAT      |
+|             | `tax`             | (Decimal) | VAT rate in%             |
+|             | `count`           | (Integer) | Quantity                 |
 
 ### Sample response
 

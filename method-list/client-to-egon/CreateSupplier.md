@@ -58,7 +58,7 @@ Creates supplier in system
       "name": "Supplier Name",
       "auto_shipment_load": 0,
       "country_code": "SK",
-      "delivery_days": " ",
+      "delivery_days": "Delivery days",
       "vat_payer": 0,
       "street": "Supplier - Street",
       "street_number": "Supplier - Street number",
@@ -77,9 +77,9 @@ Creates supplier in system
 
 ## :arrow_forward: Output parameters:
 
-| parameter       |      |  format   | description |
-|:----------------|:-----|:---------:|-------------|
-| `SUPPLIER_ID `  |      | (Integer) | Supplier ID |
+| parameter       |  format   | description  |
+|:----------------|:---------:|:-------------|
+| `SUPPLIER_ID `  | (Integer) | Supplier ID  |
 
 ### Sample response
 
