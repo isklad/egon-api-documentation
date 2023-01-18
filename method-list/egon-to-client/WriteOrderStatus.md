@@ -43,6 +43,7 @@ Request to write an order status to the client system.
 |                           | `price`          |                                    |   (Decimal)   |                                                                        |
 | `order_errors`            |                  |                                    |    (Array)    | Wrong order parameters                                                 |
 | `invoice_url`             |                  |                                    | (String/null) | Order invoice url                                                      |
+| `invoice_id`             |                  |                                    | (Integer/null) | Order invoice id (specific for invoicing system)                                                      |
 
 ### Sample request
 
@@ -105,7 +106,8 @@ Request to write an order status to the client system.
       ],
       "order_errors": {
       },
-      "invoice_url": "https://domain.tld/invoices/invoice1.pdf"
+      "invoice_url": "https://domain.tld/invoices/invoice1.pdf",
+      "invoice_id": 123
     }
   }
 }
