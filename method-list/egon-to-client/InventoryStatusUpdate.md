@@ -9,6 +9,7 @@ value is field with data for this inventory card.
 
 | parameter                                                                                       |                      |  format   | description                                                           |
 |:------------------------------------------------------------------------------------------------|:---------------------|:---------:|:----------------------------------------------------------------------|
+| `ID`  |    | (Integer) | inventory card ID in EGON                  |
 | `ITEM_ID`                                                                                       |                      | (Integer) | inventory card ID in client system                                    |
 | `CATALOG_ID`                                                                                    |                      | (String)  | Catalog number                                                        |
 | `EAN`                                                                                           |                      | (String)  | inventory card EAN                                                    |
@@ -45,6 +46,7 @@ value is field with data for this inventory card.
     "req_method": "InventoryStatusUpdate",
     "req_data": {
       "123456": {
+        "ID": 123,
         "ITEM_ID": "123456",
         "CATALOG_ID": "abc",
         "EAN": "123456789012",
