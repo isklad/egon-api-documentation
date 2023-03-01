@@ -31,7 +31,7 @@ value is field with data for this inventory card.
 |                                                                                                 | `EXPIRATION_BLOCKED` | (Integer) | Quantity of blocked items by expiration, but not expired yet          |
 
 > **![recommended](../../assets/images/recommended.png) formulas:**
-> - display on shop: `ALL` - `EXPIRED` - `DAMAGED` - `ORDERED` - `RESERVED`
+> - display on shop: `ALL` - `EXPIRED` - `EXPIRATION_BLOCKED` - `DAMAGED` - `ORDERED` - `RESERVED`
 > - accounting purposes: `ALL`
 
 ### Sample request
