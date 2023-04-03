@@ -4,46 +4,61 @@ Request to write an order status to the client system.
 
 ## :arrow_forward: Input parameters:
 
-| parameter                 |                  |                                    |    format     | description                                                            |
-|:--------------------------|:-----------------|:-----------------------------------|:-------------:|:-----------------------------------------------------------------------|
-| `order_original_id`       |                  |                                    |   (String)    | The original order number for the client                               |
-| `reference_number`        |                  |                                    |   (String)    | Reference Nr. of order                                                 |
-| `order_id`                |                  |                                    |   (Integer)   | Order ID from EGON                                                     |
-| `status_id`               |                  |                                    |   (Integer)   | EGON status ID                                                         |
-| `status_name`             |                  |                                    |   (String)    | Status name from EGON                                                  |
-| `api_update_enabled`      |                  |                                    |   (Boolean)   | If update over api in this status is enabled then true otherwise false |
-| `change_timestamp`        |                  |                                    |  (Datetime)   | Timestamp of state change                                              |
-| `delivery_id`             |                  |                                    |   (Integer)   | Traffic ID                                                             |
-| `order_items`             |                  |                                    |   (Object)    | Order items                                                            |
-|                           | `ITEM_ID`        |                                    |   (Integer)   | ITEM_ID eshop card                                                     |
-|                           | `COUNT`          |                                    |   (Integer)   | Number of pieces in order                                              |
-|                           | `COUNT_RESERVED` |                                    |   (Integer)   | Number of reserved pieces in the order                                 |
-| `packages`                |                  |                                    |    (Array)    |                                                                        |
-|                           | `PACKAGE_NR`     |                                    |   (String)    | Tracking number                                                        |
-|                           | `TRACKING_URL`   |                                    |   (String)    | Tracking link                                                          |
-|                           | `TRACKING_DATA`  |                                    |    (Array)    | Field with data from tracking                                          |
-|                           |                  | `timestamp`                        |  (Datetime)   | Time from state                                                        |
-|                           |                  | `shipment_status`                  |   (Integer)   | Status code from the codebook                                          |
-|                           |                  | `shipment_note`                    |   (String)    | The name of the status from the dial                                   |
-|                           |                  | `shipment_status_delivery_company` |   (String)    | Status ID from courier company                                         |
-|                           |                  | `shipment_note_delivery_company`   |   (String)    | The name of the state from the courier company                         |
-|                           | `IMAGES`         |                                    |    (Array)    | Pictures                                                               |
-|                           | `WEIGHT`         |                                    |   (Integer)   | Weight                                                                 |
-|                           | `WIDTH`          |                                    |   (Integer)   | Width                                                                  |
-|                           | `HEIGHT`         |                                    |   (Integer)   | Height                                                                 |
-|                           | `DEPTH`          |                                    |   (Integer)   | Depth                                                                  |
-|                           | `LABEL`          |                                    |   (String)    | Label                                                                  |
-| `shipp_company_id`        |                  |                                    |   (Integer)   | Id the carrier in the system                                           |
-| `shipp_company`           |                  |                                    |   (String)    | Shipper                                                                |
-| `estimated_delivery_time` |                  |                                    |    (Date)     | Assumption date of delivery                                            |
-| `total_cost`              |                  |                                    |   (Decimal)   | Total expense                                                          |
-| `cost_by_item`            |                  |                                    |    (Array)    | Costs per individual items                                             |
-|                           | `item_id`        |                                    |   (Integer)   |                                                                        |
-|                           | `name`           |                                    |   (String)    |                                                                        |
-|                           | `price`          |                                    |   (Decimal)   |                                                                        |
-| `order_errors`            |                  |                                    |    (Array)    | Wrong order parameters                                                 |
-| `invoice_url`             |                  |                                    | (String/null) | Order invoice url                                                      |
-| `invoice_id`             |                  |                                    | (Integer/null) | Order invoice id (specific for invoicing system)                                                      |
+
+| parameter                 |                  |                                    |     format     | description                                                                         |
+|:--------------------------|:-----------------|:-----------------------------------|:--------------:|:------------------------------------------------------------------------------------|
+| `order_original_id`       |                  |                                    |    (String)    | The original order number for the client                                            |
+| `reference_number`        |                  |                                    |    (String)    | Reference Nr. of order                                                              |
+| `order_id`                |                  |                                    |   (Integer)    | Order ID from EGON                                                                  |
+| `status_id`               |                  |                                    |   (Integer)    | EGON status ID                                                                      |
+| `status_name`             |                  |                                    |    (String)    | Status name from EGON                                                               |
+| `api_update_enabled`      |                  |                                    |   (Boolean)    | If update over api in this status is enabled then true otherwise false              |
+| `change_timestamp`        |                  |                                    |   (Datetime)   | Timestamp of state change                                                           |
+| `delivery_id`             |                  |                                    |   (Integer)    | Traffic ID                                                                          |
+| `order_items`             |                  |                                    |    (Object)    | Order items                                                                         |
+|                           | `ITEM_ID`        |                                    |   (Integer)    | ITEM_ID eshop card                                                                  |
+|                           | `COUNT`          |                                    |   (Integer)    | Number of pieces in order                                                           |
+|                           | `COUNT_RESERVED` |                                    |   (Integer)    | Number of reserved pieces in the order                                              |
+| `packages`                |                  |                                    |    (Array)     |                                                                                     |
+|                           | `PACKAGE_NR`     |                                    |    (String)    | Tracking number ![deprecated](../../assets/images/deprecated.png)[^1]               |
+|                           | `TRACKING_URL`   |                                    |    (String)    | Tracking link ![deprecated](../../assets/images/deprecated.png)[^1]                 |
+|                           | `TRACKING_DATA`  |                                    |    (Array)     | Field with data from tracking ![deprecated](../../assets/images/deprecated.png)[^1] |
+|                           |                  | `timestamp`                        |   (Datetime)   | Time from state                                                                     |
+|                           |                  | `shipment_status`                  |   (Integer)    | Status code from the codebook                                                       |
+|                           |                  | `shipment_note`                    |    (String)    | The name of the status from the dial                                                |
+|                           |                  | `shipment_status_delivery_company` |    (String)    | Status ID from courier company                                                      |
+|                           |                  | `shipment_note_delivery_company`   |    (String)    | The name of the state from the courier company                                      |
+|                           | `IMAGES`         |                                    |    (Array)     | Pictures ![deprecated](../../assets/images/deprecated.png)[^1]                      |
+|                           | `WEIGHT`         |                                    |   (Integer)    | Weight ![deprecated](../../assets/images/deprecated.png)[^1]                        |
+|                           | `WIDTH`          |                                    |   (Integer)    | Width ![deprecated](../../assets/images/deprecated.png)[^1]                         |
+|                           | `HEIGHT`         |                                    |   (Integer)    | Height ![deprecated](../../assets/images/deprecated.png)[^1]                        |
+|                           | `DEPTH`          |                                    |   (Integer)    | Depth ![deprecated](../../assets/images/deprecated.png)[^1]                         |
+|                           | `LABEL`          |                                    |    (String)    | Label ![deprecated](../../assets/images/deprecated.png)[^1]                         |
+|                           | `package_nr`     |                                    |    (String)    | Tracking number                                                                     |
+|                           | `trackiing_url`  |                                    |    (String)    | Tracking link                                                                       |
+|                           | `tracking_data`  |                                    |    (Array)     | Field with data from tracking                                                       |
+|                           |                  | `timestamp`                        |   (Datetime)   | Time from state                                                                     |
+|                           |                  | `shipment_status`                  |   (Integer)    | Status code from the codebook                                                       |
+|                           |                  | `shipment_note`                    |    (String)    | The name of the status from the dial                                                |
+|                           |                  | `shipment_status_delivery_company` |    (String)    | Status ID from courier company                                                      |
+|                           |                  | `shipment_note_delivery_company`   |    (String)    | The name of the state from the courier company                                      |
+|                           | `images`         |                                    |    (Array)     | Pictures                                                                            |
+|                           | `weight`         |                                    |   (Integer)    | Weight                                                                              |
+|                           | `width`          |                                    |   (Integer)    | Width                                                                               |
+|                           | `height`         |                                    |   (Integer)    | Height                                                                              |
+|                           | `depth`          |                                    |   (Integer)    | Depth                                                                               |
+|                           | `label`          |                                    |    (String)    | Label                                                                               |
+| `shipp_company_id`        |                  |                                    |   (Integer)    | Id the carrier in the system                                                        |
+| `shipp_company`           |                  |                                    |    (String)    | Shipper                                                                             |
+| `estimated_delivery_time` |                  |                                    |     (Date)     | Assumption date of delivery                                                         |
+| `total_cost`              |                  |                                    |   (Decimal)    | Total expense                                                                       |
+| `cost_by_item`            |                  |                                    |    (Array)     | Costs per individual items                                                          |
+|                           | `item_id`        |                                    |   (Integer)    |                                                                                     |
+|                           | `name`           |                                    |    (String)    |                                                                                     |
+|                           | `price`          |                                    |   (Decimal)    |                                                                                     |
+| `order_errors`            |                  |                                    |    (Array)     | Wrong order parameters                                                              |
+| `invoice_url`             |                  |                                    | (String/null)  | Order invoice url                                                                   |
+| `invoice_id`              |                  |                                    | (Integer/null) | Order invoice id (specific for invoicing system)                                    |                                     |
 
 ### Sample request
 
@@ -90,7 +105,25 @@ Request to write an order status to the client system.
           "WIDTH": 410,
           "HEIGHT": 110,
           "DEPTH": 510,
-          "LABEL": "https://domain.tld/delivery-labels/2022/09/1662474334_opb_7464753.pdf"
+          "LABEL": "https://domain.tld/delivery-labels/2022/09/1662474334_opb_7464753.pdf",
+          "package_nr": "ABC123456",
+          "tracking_url": "https://domain.tld/trackandtrace/parcelNumbers=ABC123456",
+          "tracking_data": [
+            {
+              "timestamp": "2022-09-06 16:25:33",
+              "shipment_status": 13,
+              "shipment_note": "Undelivered mail - incomplete / not found",
+              "shipment_status_delivery_company": "13",
+              "shipment_note_delivery_company": "Company name"
+            }
+          ],
+          "images": {
+          },
+          "weight": 624,
+          "width": 410,
+          "height": 110,
+          "depth": 510,
+          "label": "https://domain.tld/delivery-labels/2022/09/1662474334_opb_7464753.pdf"
         }
       ],
       "shipp_company_id": 291,
@@ -139,3 +172,4 @@ The sample answer in the JSON format looks like this:
   }
 }
 ```
+[^1]: Deprecated, will be removed in the future (use lowercase version instead).
