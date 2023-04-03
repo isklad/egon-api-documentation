@@ -35,7 +35,7 @@ Request to write an order status to the client system.
 |                           | `DEPTH`          |                                    |   (Integer)    | Depth ![deprecated](../../assets/images/deprecated.png)[^1]                         |
 |                           | `LABEL`          |                                    |    (String)    | Label ![deprecated](../../assets/images/deprecated.png)[^1]                         |
 |                           | `package_nr`     |                                    |    (String)    | Tracking number                                                                     |
-|                           | `trackiing_url`  |                                    |    (String)    | Tracking link                                                                       |
+|                           | `tracking_url`  |                                    |    (String)    | Tracking link                                                                       |
 |                           | `tracking_data`  |                                    |    (Array)     | Field with data from tracking                                                       |
 |                           |                  | `timestamp`                        |   (Datetime)   | Time from state                                                                     |
 |                           |                  | `shipment_status`                  |   (Integer)    | Status code from the codebook                                                       |
