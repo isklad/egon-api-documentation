@@ -43,8 +43,8 @@ Associative field with info about package.
           "timestamp": "2022-08-24 18:51:16",
           "shipment_status": 4,
           "shipment_note": "Shipment is being delivered",
-          "shipment_status_delivery_company": "transit",
-          "shipment_note_delivery_company": "Company name "
+          "shipment_status_delivery_company": "delivered",
+          "shipment_note_delivery_company": "Shipment is being delivered by courier"
         }
       ],
       "tracking_url": "https://domain.tld/ABC123456",
