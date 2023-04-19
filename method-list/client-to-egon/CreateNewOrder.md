@@ -1,7 +1,7 @@
 # CreateNewOrder
 
 The method inserts a new order into the warehouse system. This method also serves to update orders if a request with an
-existing original_order_id is sent to us in the system. In this case, if the order is in the state of 0,1,11, the
+existing original_order_id is sent to us in the system. In this case, if the order is in the state of 0,1,2,11,12 the
 order is updated according to the newly sent data.
 
 
