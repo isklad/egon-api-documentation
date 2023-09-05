@@ -66,20 +66,6 @@ The method returns the current status information for the order
 |                           | `COUNT`          |                                    |   (Integer)    | Number of pieces in order                                                           |
 |                           | `COUNT_RESERVED` |                                    |   (Integer)    | Number of reserved pieces in the order                                              |
 | `packages`                |                  |                                    |    (Array)     |                                                                                     |
-|                           | `PACKAGE_NR`     |                                    |    (String)    | Tracking number ![deprecated](../../assets/images/deprecated.png)[^2]               |
-|                           | `TRACKING_URL`   |                                    |    (String)    | Tracking link ![deprecated](../../assets/images/deprecated.png)[^1]                 |
-|                           | `TRACKING_DATA`  |                                    |    (Array)     | Field with data from tracking ![deprecated](../../assets/images/deprecated.png)[^2] |
-|                           |                  | `timestamp`                        |   (Datetime)   | Time from state                                                                     |
-|                           |                  | `shipment_status`                  |   (Integer)    | Status code from the codebook                                                       |
-|                           |                  | `shipment_note`                    |    (String)    | The name of the status from the dial                                                |
-|                           |                  | `shipment_status_delivery_company` |    (String)    | Status ID from courier company                                                      |
-|                           |                  | `shipment_note_delivery_company`   |    (String)    | The name of the state from the courier company                                      |
-|                           | `IMAGES`         |                                    |    (Array)     | Pictures ![deprecated](../../assets/images/deprecated.png)[^2]                      |
-|                           | `WEIGHT`         |                                    |   (Integer)    | Weight ![deprecated](../../assets/images/deprecated.png)[^2]                        |
-|                           | `WIDTH`          |                                    |   (Integer)    | Width ![deprecated](../../assets/images/deprecated.png)[^2]                         |
-|                           | `HEIGHT`         |                                    |   (Integer)    | Height ![deprecated](../../assets/images/deprecated.png)[^2]                        |
-|                           | `DEPTH`          |                                    |   (Integer)    | Depth ![deprecated](../../assets/images/deprecated.png)[^2]                         |
-|                           | `LABEL`          |                                    |    (String)    | Label ![deprecated](../../assets/images/deprecated.png)[^2]                         |
 |                           | `package_nr`     |                                    |    (String)    | Tracking number                                                                     |
 |                           | `tracking_url`  |                                    |    (String)    | Tracking link                                                                       |
 |                           | `tracking_data`  |                                    |    (Array)     | Field with data from tracking                                                       |
@@ -135,24 +121,6 @@ The method returns the current status information for the order
       ],
       "packages": [
         {
-          "PACKAGE_NR": "ABC123456",
-          "TRACKING_URL": "https://domain.tld/trackandtrace/parcelNumbers=ABC123456",
-          "TRACKING_DATA": [
-            {
-              "timestamp": "2022-09-06 16:25:33",
-              "shipment_status": 13,
-              "shipment_note": "Undelivered mail - incomplete / not found",
-              "shipment_status_delivery_company": "13",
-              "shipment_note_delivery_company": "Company name"
-            }
-          ],
-          "IMAGES": {
-          },
-          "WEIGHT": 624,
-          "WIDTH": 410,
-          "HEIGHT": 110,
-          "DEPTH": 510,
-          "LABEL": "https://domain.tld/delivery-labels/2022/09/1662474334_opb_7464753.pdf",
           "package_nr": "ABC123456",
           "tracking_url": "https://domain.tld/trackandtrace/parcelNumbers=ABC123456",
           "tracking_data": [
