@@ -36,7 +36,6 @@ The method inserts a parcel into the system (sending without fulfillment).
 | `delivery_branch_id`       |          |  (Integer)   |         [link](../../code-lists/transport-type-list.md)          |           empty           | Pickup point ID                                                                    |
 | `external_branch_id`       |          |   (String)   |                               [^1]                               |           empty           | Pickup point ID from an external company (e.g., Packeta)                           |
 | `id_payment`               |          |  (Integer)   |         [link](../../code-lists/payment-method-list.md)          |           empty           | ID payment                                                                         |
-| `payment_card`             |          |  (Integer)   |                              0 / 1                               |    :heavy_check_mark:     | Card Payment                                                                       |
 | `payment_cod`              |          |  (Integer)   |                              0 / 1                               |    :heavy_check_mark:     | Payment - Cash on Delivery                                                         |
 | `cod_price_without_tax`    |          |  (Decimal)   |                                -                                 |           empty           | Amount in Cash excluding VAT                                                       |
 | `cod_price`                |          |  (Decimal)   |                              - [^2]                              |           empty           | Amount in Cash including VAT                                                       |
@@ -76,7 +75,6 @@ The method inserts a parcel into the system (sending without fulfillment).
       "country": "Delivery - Country",
       "postal_code": "Delivery - ZIP code",
       "id_delivery": "Transport ID",
-      "payment_card": 0,
       "payment_cod": 0,
       "packages": {
         "1": {
@@ -130,7 +128,6 @@ The method inserts a parcel into the system (sending without fulfillment).
       "delivery_branch_id": 1,
       "external_branch_id": 1,
       "id_payment": 1,
-      "payment_card": 0,
       "payment_cod": 0,
       "cod_price_without_tax": 100,
       "cod_price": 121,
