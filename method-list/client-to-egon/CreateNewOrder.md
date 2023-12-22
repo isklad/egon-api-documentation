@@ -51,7 +51,6 @@ order is updated according to the newly sent data.
 | `external_branch_id`         |                  |   (String)   | [link](../../code-lists/transport-type-list.md)[^1]          |           empty           | Pickup point ID from an external company (e.g., Packeta)                                                                                                                                                                                                                                           |
 | `default_tax`                |                  |  (Decimal)   |                              -                               |           empty           | default TAX %                                                                                                                                                                                                                                                                                      |
 | `id_payment`                 |                  |  (Integer)   |       [link](../../code-lists/payment-method-list.md)        |           empty           | ID payment                                                                                                                                                                                                                                                                                         |
-| `payment_card`               |                  |  (Integer)   |                            0 / 1                             |    :heavy_check_mark:     | Card Payment                                                                                                                                                                                                                                                                                       |
 | `payment_cod`                |                  |  (Integer)   |                            0 / 1                             |    :heavy_check_mark:     | Payment - Cash on Delivery                                                                                                                                                                                                                                                                         |
 | `cod_price_without_tax`      |                  |  (Decimal)   |                              -                               |           empty           | Amount in Cash excluding VAT                                                                                                                                                                                                                                                                       |
 | `cod_price`                  |                  |  (Decimal)   |                            - [^2]                            |           empty           | Amount in Cash including VAT                                                                                                                                                                                                                                                                       |
@@ -111,7 +110,6 @@ order is updated according to the newly sent data.
       "country": "Delivery - Country",
       "postal_code": "Delivery - ZIP code",
       "id_delivery": "Transport ID",
-      "payment_card": 0,
       "payment_cod": "1",
       "items": [
         {
@@ -180,7 +178,6 @@ order is updated according to the newly sent data.
       "external_branch_id": 1,
       "default_tax": 21,
       "id_payment": 1,
-      "payment_card": 0,      
       "payment_cod": 0,
       "cod_price_without_tax": 100,
       "cod_price": 121, 
