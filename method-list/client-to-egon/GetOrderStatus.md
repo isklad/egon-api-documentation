@@ -66,7 +66,7 @@ The method returns the current status information for the order
 |                           | `COUNT_RESERVED`   |                                    |   (Integer)    | Number of reserved pieces in the order                                 |
 |                           | `ISSUE_CARD_ITEMS` |                                    |    (Array)     | array of items in issue card                                           |
 |                           |                    | `INVENTORY_ID`                     |   (Integer)    | Inventory ID of the warehouse card                                     |
-|                           |                    | `QR_CODE`                          | (String/null)  | QR code (if have) of he item                                           |
+|                           |                    | `QR_CODE`                          | (String/null)  | QR code (if have) of the item                                          |
 | `packages`                |                    |                                    |    (Array)     |                                                                        |
 |                           | `package_nr`       |                                    |    (String)    | Tracking number                                                        |
 |                           | `tracking_url`     |                                    |    (String)    | Tracking link                                                          |
