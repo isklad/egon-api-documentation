@@ -57,6 +57,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
   - [ShipmentNotifyConfirm](method-list/egon-to-client/ShipmentNotifyConfirm.md)
   - [UpdatePackageTracking](method-list/egon-to-client/UpdatePackageTracking.md)
   - [WriteOrderStatus](method-list/egon-to-client/WriteOrderStatus.md)
+  - [MyOrderClaimUpdate](method-list/egon-to-client/MyOrderClaimUpdate.md)
 
 - **Code lists**
   - [Response and error codes](code-lists/response-codes.md)
