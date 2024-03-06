@@ -1,6 +1,7 @@
 # CreateSupplier
 
-Creates supplier in system
+Creates supplier in system. If the `ICO` parameter is filled, the system checks if the supplier already exists. If the supplier exists, the system updates the supplier. 
+If the supplier does not exist, the system creates a new supplier.
 
 ## :arrow_forward: Input parameters:
 
