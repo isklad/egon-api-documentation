@@ -36,6 +36,7 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
 | `accessories`             |           |  (Array)  |                              -                               |                           | If it is combined card, the field of subcards is sent here   |
 |                           | `item_id` | (Integer) |                              -                               |                           | ITEM_ID of stock card, which belongs under the combined card |
 |                           | `count`   | (Integer) |                              -                               |                           | Count of a stock card, that belongs under the combined card  |
+| `weight_grams`            |           | (Integer) |                              -                               |        default: 0         | Weigh of a product in grams                                  |
 
 ### Sample requests
 
@@ -127,9 +128,9 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
 
 ## :arrow_forward: Output parameters
 
-| parameter      |  format   | description                           |
-|:---------------|:---------:|:--------------------------------------|
-| `inventory_id` | (integer) | created or updated inventory card id  |
+| parameter      |  format   | description                          |
+|:---------------|:---------:|:-------------------------------------|
+| `inventory_id` | (integer) | created or updated inventory card id |
 
 ### Sample response
 
