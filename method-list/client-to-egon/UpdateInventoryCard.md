@@ -121,7 +121,8 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
           "count": 2
         }
       ]
-    }
+    },
+    "weight_grams": 100
   }
 }
 ```
