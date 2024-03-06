@@ -79,6 +79,8 @@ order is updated according to the newly sent data.
 | `invoice_url`                |                  | (String)  |                              -                               |           empty           | Link order invoice in PDF format                                                                                                                                                                                                                                                                   |
 | `fa_print`                   |                  | (Integer) |                            0 / 1                             |             0             | PRINT/ PRINT NOT the invoice for shipment                                                                                                                                                                                                                                                          |
 | `attachments`                |                  |  (Array)  |                              -                               |           empty           | Attachments to an order                                                                                                                                                                                                                                                                            |
+| `packages`                   |                  | (Object)  |                              -                               |                           | Array of packages (mandatory/only for `order_type` = `external`)                                                                                                                                                                                                                                   |
+|                              | `weight`         | (Integer) |                              -                               |                           | Weight in grams                                                                                                                                                                                                                                                                                    |
 
 ### Sample request
 
@@ -221,13 +223,14 @@ order is updated according to the newly sent data.
 
 ## :arrow_forward: Output parameters:
 
-| parameter      |               |  format   | description                                                 |
-|:---------------|:--------------|:---------:|:------------------------------------------------------------|
-| `resp_code`    |               | (Integer) |                                                             |
-| `resp_message` |               | (String)  |                                                             |
-| `resp_data`    |               | (Integer) |                                                             |
-|                | `order_id`    | (Integer) |                                                             |
-|                | `myorder_url` | (string)  | Url adress of the created order detail in myorder.isklad.eu |
+| parameter      |                   |  format   | description                                                 |
+|:---------------|:------------------|:---------:|:------------------------------------------------------------|
+| `resp_code`    |                   | (Integer) |                                                             |
+| `resp_message` |                   | (String)  |                                                             |
+| `resp_data`    |                   | (Integer) |                                                             |
+|                | `order_id`        | (Integer) | ID of the created order                                     |
+|                | `order_status_id` | (Integer) | Status ID of the created order                               |
+|                | `myorder_url`     | (string)  | Url adress of the created order detail in myorder.isklad.eu |
 
 ### Sample response
 
@@ -242,6 +245,7 @@ order is updated according to the newly sent data.
     "resp_message": "401: Entry Created",
     "resp_data": {
       "order_id": 6205572,
+      "order_status_id": 0,
       "myorder_url": "https://myorder.isklad.eu/..."
     }
   }
