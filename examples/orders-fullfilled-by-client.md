@@ -114,7 +114,7 @@ Shipment/label order is an order that is not fulfilled by iSklad. The client is 
 ```
 ### Create an order - [CreateNewOrder](../method-list/client-to-egon/CreateNewOrder.md)
 - contains all the details of the order, including items, delivery, payment, etc.
-- for customs - an invoice is also needed
+- for customs - the invoice data is also needed
 - is recommended to fill all the fields, you have in your system
 ```json
 {
