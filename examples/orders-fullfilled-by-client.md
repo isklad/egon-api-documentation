@@ -9,7 +9,7 @@ The client is responsible for the fulfillment process and isklad only provides s
 {
   "req_method": "CreateNewOrder",
   "req_data": {
-    "order_type": "external",
+    "order_type": "shipping_label",
     "original_order_id": 202206015,
     "shop_setting_id": 1,
     "customer_name": "Customer Name",

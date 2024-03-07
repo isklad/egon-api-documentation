@@ -1,7 +1,7 @@
 # CreatePackage ![deprecated](../../assets/images/deprecated.png)
 
 Method is DEPRECATED and will be removed in the future.
-Use the `CreateNewOrder` method instead (with `order_type` = `external`);
+Use the `CreateNewOrder` method instead (with `order_type` = `shipping_label`);
 
 The method inserts a parcel into the system (sending without fulfillment).
 
