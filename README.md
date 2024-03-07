@@ -29,7 +29,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
 
 ## Table of contents:
 
-- **Examples and throubleshooting**
+- **Examples**
   - [Create a regular order](examples/orders-fulfilled-by-isklad.md) - if the fulfillment process is **managed by iSklad**
   - [Create a shipment/label](examples/orders-fullfilled-by-client.md) - if the fulfillment process is **managed by an external company, or client himself**
 - **Integration manuals**

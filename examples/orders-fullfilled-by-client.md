@@ -38,7 +38,7 @@ Shipment/label order is an order that is not fulfilled by iSklad. The client is 
 }
 ```
 
-## ::arrow_forward:: Advanced ![recommended](../assets/images/recommended.png) sample request:
+## :arrow_forward: Advanced ![recommended](../assets/images/recommended.png) sample request:
 - NOTE: showing only `request` request part
 
 ### Create a supplier - [CreateSupplier](../method-list/client-to-egon/CreateSupplier.md) - with details of your inventory card
@@ -176,7 +176,12 @@ Shipment/label order is an order that is not fulfilled by iSklad. The client is 
       "invoice_id": 123,
       "invoice_date": "2022-08-01"
     },
-    "invoice_url": "https://domain.tld/invoice/123"
+    "invoice_url": "https://domain.tld/invoice/123",
+    "packages": [
+      {
+        "weight": 500
+      }
+    ]
   }
 }
 ```
