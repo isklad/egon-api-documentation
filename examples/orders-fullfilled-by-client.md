@@ -2,7 +2,7 @@
 Shipment/label order is an order that is not fulfilled by iSklad. The client is responsible for the fulfillment process.
 
 ## :arrow_forward: Minimal sample request:
-- :arrow_forward: showing only `request` request part
+- NOTE: showing only `request` request part
 ### Create just an order - [CreateNewOrder](../method-list/client-to-egon/CreateNewOrder.md)
 ```json
 {
@@ -38,8 +38,8 @@ Shipment/label order is an order that is not fulfilled by iSklad. The client is 
 }
 ```
 
-## :check_mark_button: Advanced ![recommended](../assets/images/recommended.png) sample request:
-- :arrow_forward: showing only `request` request part
+## ::arrow_forward:: Advanced ![recommended](../assets/images/recommended.png) sample request:
+- NOTE: showing only `request` request part
 
 ### Create a supplier - [CreateSupplier](../method-list/client-to-egon/CreateSupplier.md) - with details of your inventory card
 - your supplier data is needed for some delivery companies (e.g. for customs), so it is recommended to create it
