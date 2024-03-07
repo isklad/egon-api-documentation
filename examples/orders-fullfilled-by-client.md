@@ -1,12 +1,13 @@
 # Create a shipment/label
-Shipment/label order is an order that is not fulfilled by iSklad. The client is responsible for the fulfillment process.
+Shipment/label order is an order that is not fulfilled by iSklad. 
+The client is responsible for the fulfillment process and isklad only provides shipping label.
 
 ## :arrow_forward: Minimal sample request:
 - NOTE: showing only `request` request part
-### Create just an order - [CreateNewOrder](../method-list/client-to-egon/CreateNewOrder.md)
+### Create order/shipment - [CreateNewOrder](../method-list/client-to-egon/CreateNewOrder.md)
 ```json
 {
-  "req_method": "CreatePackage",
+  "req_method": "CreateNewOrder",
   "req_data": {
     "order_type": "external",
     "original_order_id": 202206015,
@@ -112,7 +113,7 @@ Shipment/label order is an order that is not fulfilled by iSklad. The client is 
   }
 }
 ```
-### Create an order - [CreateNewOrder](../method-list/client-to-egon/CreateNewOrder.md)
+### Create an order/shipment - [CreateNewOrder](../method-list/client-to-egon/CreateNewOrder.md)
 - contains all the details of the order, including items, delivery, payment, etc.
 - for customs - the invoice data is also needed
 - is recommended to fill all the fields, you have in your system
