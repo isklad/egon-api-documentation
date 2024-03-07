@@ -50,7 +50,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
   - [ShipmentNotify](method-list/client-to-egon/ShipmentNotify.md)
   - [ShippingOptions](method-list/client-to-egon/ShippingOptions.md)
   - [StornoOrder](method-list/client-to-egon/StornoOrder.md)
-  - [TrackPackage](method-list/client-to-egon/TrackPackage.md)
+  - [TrackPackage](method-list/client-to-egon/TrackPackage.md) ![deprecated](/assets/images/deprecated.png)
   - [UpdateInventoryCard](method-list/client-to-egon/UpdateInventoryCard.md)
   
 - **Method list EGON -> Client**
@@ -58,7 +58,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
   - [InventoryStatusUpdate](method-list/egon-to-client/InventoryStatusUpdate.md)
   - [OrderReturnLabelTracking](method-list/egon-to-client/OrderReturnLabelTracking.md)
   - [ShipmentNotifyConfirm](method-list/egon-to-client/ShipmentNotifyConfirm.md)
-  - [UpdatePackageTracking](method-list/egon-to-client/UpdatePackageTracking.md)
+  - [UpdatePackageTracking](method-list/egon-to-client/UpdatePackageTracking.md) ![deprecated](/assets/images/deprecated.png)
   - [WriteOrderStatus](method-list/egon-to-client/WriteOrderStatus.md)
   - [MyOrderClaimUpdate](method-list/egon-to-client/MyOrderClaimUpdate.md)
 
