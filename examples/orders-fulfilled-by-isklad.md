@@ -1,4 +1,4 @@
-# Create regular order
+# Create a regular order
 Regular order is an order that is fulfilled by iSklad. The client is responsible only for creating the order and iSklad takes care of the rest of the process.
 
 ## :check_box_with_check: Minimal sample request:
