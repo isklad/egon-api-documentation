@@ -120,9 +120,9 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
           "item_id": "1234567",
           "count": 2
         }
-      ]
-    },
-    "weight_grams": 100
+      ],
+      "weight_grams": 100
+    }
   }
 }
 ```
