@@ -1,4 +1,4 @@
-# TrackPackage
+# TrackPackage ![deprecated](../../assets/images/deprecated.png)
 
 The method detects the status of the embedded mail through [CreatePackage](CreatePackage.md). Returns tracking
 information.

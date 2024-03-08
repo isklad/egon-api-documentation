@@ -1,4 +1,4 @@
-# UpdatePackageTracking
+# UpdatePackageTracking ![deprecated](../../assets/images/deprecated.png)
 
 Request to update tracking statuses for respective package/ shipment.
 
