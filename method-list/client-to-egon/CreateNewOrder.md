@@ -223,14 +223,15 @@ order is updated according to the newly sent data.
 
 ## :arrow_forward: Output parameters:
 
-| parameter      |                   |  format   | description                                                 |
-|:---------------|:------------------|:---------:|:------------------------------------------------------------|
-| `resp_code`    |                   | (Integer) |                                                             |
-| `resp_message` |                   | (String)  |                                                             |
-| `resp_data`    |                   | (Integer) |                                                             |
-|                | `order_id`        | (Integer) | ID of the created order                                     |
-|                | `order_status_id` | (Integer) | Status ID of the created order                              |
-|                | `myorder_url`     | (string)  | Url adress of the created order detail in myorder.isklad.eu |
+| parameter      |                     |  format   | description                                                       |
+|:---------------|:--------------------|:---------:|:------------------------------------------------------------------|
+| `resp_code`    |                     | (Integer) |                                                                   |
+| `resp_message` |                     | (String)  |                                                                   |
+| `resp_data`    |                     | (Integer) |                                                                   |
+|                | `order_id`          | (Integer) | ID of the created order                                           |
+|                | `order_status_id`   | (Integer) | Status ID of the created order                                    |
+|                | `myorder_url`       | (string)  | Url adress of the created order detail in myorder.isklad.eu       |
+|                | `order_status_data` | (string)  | Complete data from the [GetOrderStatus](GetOrderStatus.md) method |
 
 ### Sample response
 
@@ -246,7 +247,8 @@ order is updated according to the newly sent data.
     "resp_data": {
       "order_id": 6205572,
       "order_status_id": 0,
-      "myorder_url": "https://myorder.isklad.eu/..."
+      "myorder_url": "https://myorder.isklad.eu/...",
+      "order_status_data": "(Full object/data from GetOrderStatus method)"
     }
   }
 }

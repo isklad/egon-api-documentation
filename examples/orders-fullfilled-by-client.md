@@ -186,14 +186,6 @@ The client is responsible for the fulfillment process and isklad only provides s
   }
 }
 ```
-### Get the final order details - [GetOrderStatus](../method-list/client-to-egon/GetOrderStatus.md)
-- contains all the details of the order, including the delivery labels
-- you can find the created labels in the response under `packages/label`
-```json
-{
-  "req_method": "GetOrderStatus",
-  "req_data": {
-    "order_id": 132321
-  }
-}
-```
+### Find the final Shipment/label url (PDF) from the CreateNewOrder response 
+- `order_status_data` contains all the details of the order, including the delivery labels (Full object/data from [GetOrderStatus](../method-list/client-to-egon/GetOrderStatus.md)
+- you can find the created label in the response under `order_status_data/packages/label`
