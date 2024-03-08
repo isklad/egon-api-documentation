@@ -230,7 +230,7 @@ order is updated according to the newly sent data.
 | `resp_data`    |                     | (Integer) |                                                                   |
 |                | `order_id`          | (Integer) | ID of the created order                                           |
 |                | `order_status_id`   | (Integer) | Status ID of the created order                                    |
-|                | `myorder_url`       | (string)  | Url adress of the created order detail in myorder.isklad.eu       |
+|                | `myorder_url`       | (string)  | Url address of the created order detail in myorder.isklad.eu      |
 |                | `order_status_data` | (string)  | Complete data from the [GetOrderStatus](GetOrderStatus.md) method |
 
 ### Sample response
