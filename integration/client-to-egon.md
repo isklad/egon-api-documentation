@@ -3,7 +3,7 @@
 The interface works on the Request / Response principle over the HTTP protocol. Sending page - Client information system
 can be a desktop application, a web portal, a database application, and so on with internet access.
 
-The interface is available at: [https://api.isklad-egon.sk/rest/v1](https://api.isklad-egon.sk/rest/v1)
+The interface is available at: [https://api.isklad.eu/rest/v1](https://api.isklad.eu/rest/v1)
 
 :bulb: iSklad API Connector - PHP package for API communication -> Available for download here:
 [https://github.com/zoltanlaca/isklad-api-connector](https://github.com/zoltanlaca/isklad-api-connector)
@@ -27,7 +27,7 @@ Input data encoded in JSON format (RAW):
 |           | `req_method` | (string) |    :heavy_check_mark:     | call method, e.g. `CreateNewOrder`                 |
 |           | `req_data`   | (array)  |    :heavy_check_mark:     | call parameters, value depends on called method    |
 
-Endpoint: [https://api.isklad-egon.sk/rest/v1](https://api.isklad-egon.sk/rest/v1) (RAW JSON)
+Endpoint: [https://api.isklad.eu/rest/v1](https://api.isklad.eu/rest/v1) (RAW JSON)
 
 ### Sample request
 
