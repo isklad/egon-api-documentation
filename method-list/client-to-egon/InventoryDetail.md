@@ -52,30 +52,31 @@ Method returns product details (name, count,...)
 
 ## :arrow_forward: Output parameters:
 
-| parameter           |                |                     |          |   format   | description                                                         |
-|:--------------------|:---------------|:--------------------|:---------|:----------:|:--------------------------------------------------------------------|
-| `inventory_details` |                |                     |          |  (Array)   |                                                                     |
-|                     | `id`           |                     |          | (Integer)  | ID                                                                  |
-|                     | `item_id`      |                     |          | (Integer)  | ITEM ID from eshop                                                  |
-|                     | `catalog_id`   |                     |          |  (String)  | Catalog nr.                                                         |
-|                     | `ean`          |                     |          |  (String)  | EAN                                                                 |
-|                     | `name`         |                     |          |  (String)  | Product Name                                                        |
-|                     | `count_types`  |                     |          |  (Object)  |                                                                     |
-|                     |                | `all`               |          | (Integer)  | Quantity of all items physically on stock (for accounting purposes) |
-|                     |                | `expired`           |          | (Integer)  | Quantity of expired items                                           |
-|                     |                | `damaged`           |          | (Integer)  | Quantity of damaged items                                           |
-|                     |                | `ordered`           |          | (Integer)  | Quantity of ordered items                                           |
-|                     |                | `reserved`          |          | (Integer)  | Quantity of reserved items                                          |
-|                     |                | `expirationBlocked` |          | (Integer)  | Quantity of blocked items by expiration, but not expired yet        |
-|                     |                | `changed_at`        |          | (String)   | Last change datetime                                                |
-|                     | `paired_cards` |                     |          |  (Object)  |                                                                     |
-|                     |                | `id`                |          | (Integer)  | ID of paired inventory                                              |
-|                     |                | `type_id`           |          | (Integer)  | ID of inventory type [^1]                                           |
-|                     |                | `size`              |          |  (Object)  |                                                                     |
-|                     |                |                     | `width`  | (Integer)  | Width of paired inventory                                           |
-|                     |                |                     | `height` | (Integer)  | Height of paired inventory                                          |
-|                     |                |                     | `depth`  | (Integer)  | Depth of paired inventory                                           |
-|                     |                | `weight`            |          | (Integer)  | Weight of paired inventory                                          |
+| parameter           |                 |                     |          |  format   | description                                                         |
+|:--------------------|:----------------|:--------------------|:---------|:---------:|:--------------------------------------------------------------------|
+| `inventory_details` |                 |                     |          |  (Array)  |                                                                     |
+|                     | `id`            |                     |          | (Integer) | ID                                                                  |
+|                     | `item_id`       |                     |          | (Integer) | ITEM ID from eshop                                                  |
+|                     | `catalog_id`    |                     |          | (String)  | Catalog nr.                                                         |
+|                     | `ean`           |                     |          | (String)  | EAN                                                                 |
+|                     | `name`          |                     |          | (String)  | Product Name                                                        |
+|                     | `can_be_folded` |                     |          | (Boolean) | Determines if the object can be folded.                             |
+|                     | `count_types`   |                     |          | (Object)  |                                                                     |
+|                     |                 | `all`               |          | (Integer) | Quantity of all items physically on stock (for accounting purposes) |
+|                     |                 | `expired`           |          | (Integer) | Quantity of expired items                                           |
+|                     |                 | `damaged`           |          | (Integer) | Quantity of damaged items                                           |
+|                     |                 | `ordered`           |          | (Integer) | Quantity of ordered items                                           |
+|                     |                 | `reserved`          |          | (Integer) | Quantity of reserved items                                          |
+|                     |                 | `expirationBlocked` |          | (Integer) | Quantity of blocked items by expiration, but not expired yet        |
+|                     |                 | `changed_at`        |          | (String)  | Last change datetime                                                |
+|                     | `paired_cards`  |                     |          | (Object)  |                                                                     |
+|                     |                 | `id`                |          | (Integer) | ID of paired inventory                                              |
+|                     |                 | `type_id`           |          | (Integer) | ID of inventory type [^1]                                           |
+|                     |                 | `size`              |          | (Object)  |                                                                     |
+|                     |                 |                     | `width`  | (Integer) | Width of paired inventory                                           |
+|                     |                 |                     | `height` | (Integer) | Height of paired inventory                                          |
+|                     |                 |                     | `depth`  | (Integer) | Depth of paired inventory                                           |
+|                     |                 | `weight`            |          | (Integer) | Weight of paired inventory                                          |
 
 ### Sample response
 
@@ -94,6 +95,7 @@ Method returns product details (name, count,...)
         "catalog_id": "test",
         "ean": "unknown ean",
         "name": "test",
+        "can_be_folded": false,
         "count_types": {
           "all": 0,
           "expired": 0,

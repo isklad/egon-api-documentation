@@ -9,17 +9,17 @@ value is field with data for this inventory card.
 
 | parameter                                                                                       |                      |  format   | description                                                           |
 |:------------------------------------------------------------------------------------------------|:---------------------|:---------:|:----------------------------------------------------------------------|
-| `ID`  |    | (Integer) | inventory card ID in EGON                  |
+| `ID`                                                                                            |                      | (Integer) | inventory card ID in EGON                                             |
 | `ITEM_ID`                                                                                       |                      | (Integer) | inventory card ID in client system                                    |
 | `CATALOG_ID`                                                                                    |                      | (String)  | Catalog number                                                        |
 | `EAN`                                                                                           |                      | (String)  | inventory card EAN                                                    |
 | `ESHOP_ID`                                                                                      |                      | (Integer) | eshop ID, to which the card belongs                                   |
-| ~~`COUNT`~~ ![deprecated](../../assets/images/deprecated.png)[^1]                               |                      | (Integer) | = `ALL` - `RESERVED` - `EXPIRED` - `EXPIRATION_BLOCKED` -`DAMAGED`                          |
-| ~~`COUNT_INCLUDED_RESERVED`~~ ![deprecated](../../assets/images/deprecated.png)[^1]             |                      | (Integer) | = `ALL` - `EXPIRED` - `EXPIRATION_BLOCKED` - `DAMAGED`                                       |
+| ~~`COUNT`~~ ![deprecated](../../assets/images/deprecated.png)[^1]                               |                      | (Integer) | = `ALL` - `RESERVED` - `EXPIRED` - `EXPIRATION_BLOCKED` -`DAMAGED`    |
+| ~~`COUNT_INCLUDED_RESERVED`~~ ![deprecated](../../assets/images/deprecated.png)[^1]             |                      | (Integer) | = `ALL` - `EXPIRED` - `EXPIRATION_BLOCKED` - `DAMAGED`                |
 | ~~`RESERVED_FOR_ORDERS`~~ ![deprecated](../../assets/images/deprecated.png)[^1]                 |                      | (Integer) | = `RESERVED`                                                          |
 | ~~`DAMAGED`~~ ![deprecated](../../assets/images/deprecated.png)[^1]                             |                      | (Integer) | = `DAMAGED`                                                           |
 | ~~`ORDERED`~~ ![deprecated](../../assets/images/deprecated.png)[^1]                             |                      | (Integer) | = `ORDERED`                                                           |
-| ~~`AVAILABLE_INCL_RESERVED_AND_ORDERED`~~ ![deprecated](../../assets/images/deprecated.png)[^1] |                      | (Integer) | = `ALL` - `EXPIRED` - `EXPIRATION_BLOCKED` - `DAMAGED` + `ORDERED`                           |
+| ~~`AVAILABLE_INCL_RESERVED_AND_ORDERED`~~ ![deprecated](../../assets/images/deprecated.png)[^1] |                      | (Integer) | = `ALL` - `EXPIRED` - `EXPIRATION_BLOCKED` - `DAMAGED` + `ORDERED`    |
 | `PURCHASE_PRICE`                                                                                |                      | (Decimal) | Last known buying price of product, if not available, value is 'null' |
 | `WITH_VAT`                                                                                      |                      | (Integer) | Parameter, if price is with VAT                                       |
 | `COUNT_TYPES` ![recommended](../../assets/images/recommended.png)                               |                      |  (Array)  | count types wrapper, list of possible count types                     |
@@ -29,6 +29,7 @@ value is field with data for this inventory card.
 |                                                                                                 | `ORDERED`            | (Integer) | Quantity of ordered items                                             |
 |                                                                                                 | `RESERVED`           | (Integer) | Quantity of reserved items                                            |
 |                                                                                                 | `EXPIRATION_BLOCKED` | (Integer) | Quantity of blocked items by expiration, but not expired yet          |
+| `CAN_BE_FOLDED`                                                                                 |                      | (Boolean) | Determines if the object can be folded.                               |
 
 > **![recommended](../../assets/images/recommended.png) formulas:**
 > - display on shop: `ALL` - `EXPIRED` - `EXPIRATION_BLOCKED` - `DAMAGED` - `ORDERED` - `RESERVED`
@@ -66,7 +67,8 @@ value is field with data for this inventory card.
           "ORDERED": 15,
           "RESERVED": 21,
           "EXPIRATION_BLOCKED": 0
-        }
+        },
+        "CAN_BE_FOLDED": false
       }
     }
   }
