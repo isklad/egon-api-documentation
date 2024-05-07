@@ -52,6 +52,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
   - [StornoOrder](method-list/client-to-egon/StornoOrder.md)
   - [TrackPackage](method-list/client-to-egon/TrackPackage.md) ![deprecated](/assets/images/deprecated.png)
   - [UpdateInventoryCard](method-list/client-to-egon/UpdateInventoryCard.md)
+  - [ChangeClaimStatus](method-list/client-to-egon/ChangeClaimStatus.md)
   
 - **Method list EGON -> Client**
   - [GetInvoiceUrl](method-list/egon-to-client/GetInvoiceUrl.md)
