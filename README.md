@@ -63,6 +63,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
   - [UpdatePackageTracking](method-list/egon-to-client/UpdatePackageTracking.md) ![deprecated](/assets/images/deprecated.png)
   - [WriteOrderStatus](method-list/egon-to-client/WriteOrderStatus.md)
   - [MyOrderClaimUpdate](method-list/egon-to-client/MyOrderClaimUpdate.md)
+  - [GetShippingLabel](method-list/egon-to-client/GetShippingLabel.md)
 
 - **Code lists**
   - [Response and error codes](code-lists/response-codes.md)
