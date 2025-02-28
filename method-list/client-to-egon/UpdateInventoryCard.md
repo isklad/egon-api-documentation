@@ -36,7 +36,8 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
 | `accessories`             |           |  (Array)  |                              -                               |                           | If it is combined card, the field of subcards is sent here   |
 |                           | `item_id` | (Integer) |                              -                               |                           | ITEM_ID of stock card, which belongs under the combined card |
 |                           | `count`   | (Integer) |                              -                               |                           | Count of a stock card, that belongs under the combined card  |
-| `weight_grams`            |           | (Integer) |                              -                               |        default: 0         | Weigh of a product in grams                                  |
+| `weight_grams`            |           | (Integer) |                              -                               |       default: `0`        | Weigh of a product in grams                                  |
+| `adult_restricted`        |           | (Integer) |                              -                               |       default: `0`        | `0` = not restricted, `1` = only for adults                  |
 
 ### Sample requests
 
@@ -121,7 +122,8 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
           "count": 2
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "adult_restricted": 1
     }
   }
 }
