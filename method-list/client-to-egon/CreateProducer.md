@@ -1,6 +1,7 @@
 # CreateProducer
 
-Creates a producer in system.
+Creates a producer in system. The system checks if the producer already exist by `name` parameter. If the producer exists, the system updates the producer.
+If the producer does not exist, the system creates a new producer.
 
 ## :arrow_forward: Input parameters:
 
@@ -52,7 +53,7 @@ Creates a producer in system.
 
 | parameter      |  format   | description |
 |:---------------|:---------:|:------------|
-| `PRODUCER_ID ` | (Integer) | Supplier ID |
+| `PRODUCER_ID ` | (Integer) | Producer ID |
 
 ### Sample response
 
