@@ -4,20 +4,23 @@ The method stores information about the notified shipment
 
 ## :arrow_forward: Input parameters:
 
-| parameter               |             | format          | description                                                                                     |
-|-------------------------|-------------|-----------------|-------------------------------------------------------------------------------------------------|
-| `shipment_notify_id`    |             | (integer)       | Notification ID, previously received from [ShipmentNotify](../client-to-egon/ShipmentNotify.md) |
-| `shipment_arrived_at`   |             | (datetime/null) | Shipment receive date                                                                           |
-| `shipment_confirmed_at` |             | (datetime/null) | Date of comparison (after pairing of all product cards)                                         |
-| `items`                 |             | (array)         | List of received goods                                                                          |
-|                         | `item_id`   | (integer)       | received inventory card id                                                                      |
-|                         | `quantity`  | (integer)       | received inventory quantity                                                                     |
-| `items_notified`        |             | (array)         | List of pre-advised items                                                                       |
-|                         | `item_id`   | (integer)       | advised inventory card id                                                                       |
-|                         | `quantity`  | (integer)       | advised inventory quantity                                                                      |
-| `differences`           |             | (array)         | The difference between the received and notified list of goods                                  |
-|                         | `item_id`   | (integer)       | difference inventory card id                                                                    |
-|                         | `quantity`  | (integer)       | difference inventory quantity                                                                   |
+| parameter               |                  | format          | description                                                                                     |
+|-------------------------|------------------|-----------------|-------------------------------------------------------------------------------------------------|
+| `shipment_notify_id`    |                  | (integer)       | Notification ID, previously received from [ShipmentNotify](../client-to-egon/ShipmentNotify.md) |
+| `shipment_arrived_at`   |                  | (datetime/null) | Shipment receive date                                                                           |
+| `shipment_confirmed_at` |                  | (datetime/null) | Date of comparison (after pairing of all product cards)                                         |
+| `items`                 |                  | (array)         | List of received goods                                                                          |
+|                         | `item_id`        | (integer)       | received inventory card id                                                                      |
+|                         | `quantity`       | (integer)       | received inventory quantity                                                                     |
+| `items_notified`        |                  | (array)         | List of pre-advised items                                                                       |
+|                         | `item_id`        | (integer)       | advised inventory card id                                                                       |
+|                         | `quantity`       | (integer)       | advised inventory quantity                                                                      |
+| `differences`           |                  | (array)         | The difference between the received and notified list of goods                                  |
+|                         | `item_id`        | (integer)       | difference inventory card id                                                                    |
+|                         | `quantity`       | (integer)       | difference inventory quantity                                                                   |
+| `paired_packages`       |                  | (array)         | List of paired packages/items                                                                   |
+|                         | `package_id`     | (integer)       | package ID                                                                                      |
+|                         | `package_box_id` | (integer)       | package box ID                                                                                  |
 
 ### Sample request
 
@@ -44,7 +47,13 @@ The method stores information about the notified shipment
       "differences": {
         "item_id": 1,
         "quantity": -5
-      }
+      },
+      "paired_packages": [
+        {
+          "package_id": 1,
+          "package_box_id": 1
+        }
+      ]
     }
   }
 }
