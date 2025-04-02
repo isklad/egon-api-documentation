@@ -24,7 +24,7 @@ The method stores information about the notified shipment
 |                         | `warehouse_inventory_id` | (integer/null)  | difference warehouse inventory card id                                                          |
 |                         | `inventory_id`           | (integer/null)  | difference inventory card id                                                                    |
 |                         | `item_id`                | (integer)       | difference inventory card item_id                                                               |
-|                         | `ean`                    | (integer)       | difference ean                                                                                  |
+|                         | `ean`                    | (string/null)   | difference ean                                                                                  |
 |                         | `count`                  | (integer)       | difference inventory quantity                                                                   |
 |                         | `countNotified`          | (integer)       | difference inventory quantity notified                                                          |
 |                         | `difference`             | (integer)       | difference quantity                                                                             |
