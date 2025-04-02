@@ -12,16 +12,19 @@ The method stores information about the notified shipment
 | `items`                 |                          | (array)         | List of received goods                                                                          |
 |                         | `warehouse_inventory_id` | (integer)       | received warehouse inventory card id                                                            |
 |                         | `inventory_id`           | (integer/null)  | received inventory card id                                                                      |
+|                         | `ean`                    | (string)        | received inventory ean                                                                          |
 |                         | `item_id`                | (integer/null)  | received inventory card item_id                                                                 |
 |                         | `count`                  | (integer)       | received inventory quantity                                                                     |
 | `items_notified`        |                          | (array)         | List of pre-advised items                                                                       |
 |                         | `inventory_id`           | (integer/null)  | advised inventory card id                                                                       |
 |                         | `item_id`                | (integer/null)  | advised inventory card item_id                                                                  |
+|                         | `ean`                    | (string/null)   | advised ean                                                                                     |
 |                         | `count`                  | (integer)       | advised inventory quantity                                                                      |
 | `differences`           |                          | (array)         | The difference between the received and notified list of goods                                  |
 |                         | `warehouse_inventory_id` | (integer/null)  | difference warehouse inventory card id                                                          |
 |                         | `inventory_id`           | (integer/null)  | difference inventory card id                                                                    |
 |                         | `item_id`                | (integer)       | difference inventory card item_id                                                               |
+|                         | `ean`                    | (integer)       | difference ean                                                                                  |
 |                         | `count`                  | (integer)       | difference inventory quantity                                                                   |
 |                         | `countNotified`          | (integer)       | difference inventory quantity notified                                                          |
 |                         | `difference`             | (integer)       | difference quantity                                                                             |
@@ -47,6 +50,7 @@ The method stores information about the notified shipment
         {
           "warehouse_inventory_id": 1,
           "inventory_id": null,
+          "ean": "1234567890123",
           "item_id": null,
           "count": 10
         }
@@ -55,6 +59,7 @@ The method stores information about the notified shipment
         {
           "inventory_id": 1,
           "item_id": 1,
+          "ean": null,
           "count": 15
         }
       ],
@@ -63,6 +68,7 @@ The method stores information about the notified shipment
           "warehouse_inventory_id": 1,
           "inventory_id": 1,
           "item_id": 1,
+          "ean": null,
           "count": 10,
           "countNotified": 15,
           "difference": -5
