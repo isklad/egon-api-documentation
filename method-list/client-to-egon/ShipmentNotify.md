@@ -38,7 +38,7 @@ Method stores (create or update) information about notified shipment
       "shop_setting_id": 1,
       "date_from": "2022-02-02",
       "date_to": "2022-02-02",
-      "priority": false,
+      "priority": 0,
       "packages": [
         {
           "tracking_number": "1234567890"
