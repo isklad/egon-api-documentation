@@ -10,6 +10,7 @@ Method stores (create or update) information about notified shipment
 | `shop_setting_id`    |                   | (Integer)  | [link](https://egon.isklad.eu/klient/settings-shop-settings) |    :heavy_check_mark:     | Set-to-order setting ID                                                                                                         |
 | `date_from`          |                   | (Datetime) |                              -                               |    :heavy_check_mark:     | Delivery date from                                                                                                              |
 | `date_to`            |                   | (Datetime) |                              -                               |    :heavy_check_mark:     | Delivery date to                                                                                                                |
+| `priority`           |                   | (Boolean)  |                              -                               |      (default false)      | If the shipment has priority                                                                                                    |
 | `packages`           |                   |  (Array)   |                              -                               |    :heavy_check_mark:     | Array of packages, at least one is mandatory                                                                                    |
 |                      | `tracking_number` |  (String)  |                              -                               |    :heavy_check_mark:     | Tracking number of the package (printed as barcode on label)                                                                    |
 | `supplier_id`        |                   | (Integer)  |                              -                               |    :heavy_check_mark:     | Supplier ID                                                                                                                     |
@@ -37,6 +38,7 @@ Method stores (create or update) information about notified shipment
       "shop_setting_id": 1,
       "date_from": "2022-02-02",
       "date_to": "2022-02-02",
+      "priority": false,
       "packages": [
         {
           "tracking_number": "1234567890"
