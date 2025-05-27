@@ -5,10 +5,10 @@
 
 # Documentation for the EGON RestAPI v1 client
 
-The API Client Web Service is intended for [isklad.eu](https://isklad.eu) clients who need to transfer data
-between their information system (e-commerce) and isklad.eu's information system (called **EGON**) via this service.
+The API Client Web Service is intended for [isklad.com](https://isklad.com) clients who need to transfer data
+between their information system (e-commerce) and isklad.com's information system (called **EGON**) via this service.
 
-The API is implemented on isklad.eu and is accessible via the Internet. Provides a set of methods for exchanging storage
+The API is implemented on isklad.com and is accessible via the Internet. Provides a set of methods for exchanging storage
 card data, orders, shipping methods, payments, invoices, etc ...
 
 The documentation contains a detailed description of each available method with the following details:
@@ -18,8 +18,8 @@ The documentation contains a detailed description of each available method with 
 - Description of output parameters and their values
 - Sample Response
 
-The isklad.eu project is constantly developing and the set of methods is being continuously complemented by other new
-services. For this reason, the most up-to-date version of this documentation, which is provided by your isklad.eu
+The isklad.com project is constantly developing and the set of methods is being continuously complemented by other new
+services. For this reason, the most up-to-date version of this documentation, which is provided by your isklad.com
 merchant, is necessary to implement.
 
 ## Subscribe for future changes ![recommended](assets/images/recommended.png)

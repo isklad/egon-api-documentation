@@ -1,6 +1,6 @@
 # Payment methods
 
-XML Feed: [https://api.isklad.eu/xml-feed/payment.xml](https://api.isklad.eu/xml-feed/payment.xml)
+XML Feed: [https://api.isklad.com/xml-feed/payment.xml](https://api.isklad.com/xml-feed/payment.xml)
 
 | ID   | Description                         |
 |------|-------------------------------------|
