@@ -4,40 +4,40 @@ This method modifies (if it already exists) or inserts (if not yet) a product ca
 
 ## :arrow_forward: Input parameters:
 
-| parameter                 |           |  format   |                        allowed values                        | mandatory / default value | description                                                  |
-|:--------------------------|:----------|:---------:|:------------------------------------------------------------:|:-------------------------:|:-------------------------------------------------------------|
-| `item_id`                 |           | (Integer) |                              -                               |    :heavy_check_mark:     | Inventory ID from your shop/software                         |
-| `shop_setting_id`         |           | (Integer) | [link](https://egon.isklad.eu/klient/settings-shop-settings) |    :heavy_check_mark:     | Set-to-order setting ID                                      |
-| `catalog_id`              |           | (String)  |                              -                               |                           | Catalog number                                               |
-| `parent_catalog_id`       |           | (String)  |                              -                               |                           | Parent's catalog number                                      |
-| `name`                    |           | (String)  |                              -                               |    :heavy_check_mark:     | Product  name                                                |
-| `mj`                      |           | (String)  |                              -                               |                           | Unit of measure                                              |
-| `ean`                     |           | (String)  |                              -                               |                           | EAN barcode                                                  |
-| `enabled`                 |           | (Integer) |                              -                               |                           | Allowed on the web                                           |
-| `category`                |           |  (Array)  |                              -                               |                           | Fields of categories, tree structure                         |
-| `producer`                |           | (String)  |                              -                               |                           | Manufacturer                                                 |
-| `price_without_tax`       |           | (Decimal) |                              -                               |                           | Price without VAT                                            |
-| `old_price_without_tax`   |           | (Decimal) |                              -                               |                           | Old price excluding VAT                                      |
-| `tax`                     |           | (Decimal) |                              -                               |                           | Value of VAT                                                 |
-| `supplier`                |           | (String)  |                              -                               |                           | The name of the main contractor                              |
-| `supplier_other`          |           |  (Array)  |                              -                               |                           | Field of other suppliers                                     |
-| `short_description`       |           | (String)  |                              -                               |                           | Short description                                            |
-| `long_description`        |           | (String)  |                              -                               |                           | Long description                                             |
-| `min_order_count`         |           | (Integer) |                              -                               |                           | Min. amount                                                  |
-| `tech_char`               |           |  (Array)  |                              -                               |                           | Technical characteristics                                    |
-| `tech_param`              |           |  (Array)  |                              -                               |                           | Technical parameters of the variants                         |
-| `images`                  |           |  (Array)  |                              -                               |                           | Images field                                                 |
-|                           | `url`     | (String)  |                              -                               |                           | Link to a photo                                              |
-|                           | `order`   | (Integer) |                              -                               |                           | Display order - the highest number is the main photo         |
-|                           | `enabled` | (Integer) |                              -                               |                           | Whether this photo is enabled (view)                         |
-| `is_electronic_product`   |           | (Integer) |                              -                               |                           | Electronic (intangible) product, values 0/1                  |
-| `declaration_description` |           | (String)  |                              -                               |                           | Product description for customs declaration                  |
-| `commodity_code`          |           | (String)  |                              -                               |                           | HS code (for customs declaration)                            |
-| `accessories`             |           |  (Array)  |                              -                               |                           | If it is combined card, the field of subcards is sent here   |
-|                           | `item_id` | (Integer) |                              -                               |                           | ITEM_ID of stock card, which belongs under the combined card |
-|                           | `count`   | (Integer) |                              -                               |                           | Count of a stock card, that belongs under the combined card  |
-| `weight_grams`            |           | (Integer) |                              -                               |       default: `0`        | Weigh of a product in grams                                  |
-| `adult_restricted`        |           | (Integer) |                              -                               |       default: `0`        | `0` = not restricted, `1` = only for adults                  |
+| parameter                 |           |  format   |                        allowed values                         | mandatory / default value | description                                                  |
+|:--------------------------|:----------|:---------:|:-------------------------------------------------------------:|:-------------------------:|:-------------------------------------------------------------|
+| `item_id`                 |           | (Integer) |                               -                               |    :heavy_check_mark:     | Inventory ID from your shop/software                         |
+| `shop_setting_id`         |           | (Integer) | [link](https://egon.isklad.com/klient/settings-shop-settings) |    :heavy_check_mark:     | Set-to-order setting ID                                      |
+| `catalog_id`              |           | (String)  |                               -                               |                           | Catalog number                                               |
+| `parent_catalog_id`       |           | (String)  |                               -                               |                           | Parent's catalog number                                      |
+| `name`                    |           | (String)  |                               -                               |    :heavy_check_mark:     | Product  name                                                |
+| `mj`                      |           | (String)  |                               -                               |                           | Unit of measure                                              |
+| `ean`                     |           | (String)  |                               -                               |                           | EAN barcode                                                  |
+| `enabled`                 |           | (Integer) |                               -                               |                           | Allowed on the web                                           |
+| `category`                |           |  (Array)  |                               -                               |                           | Fields of categories, tree structure                         |
+| `producer`                |           | (String)  |                               -                               |                           | Manufacturer                                                 |
+| `price_without_tax`       |           | (Decimal) |                               -                               |                           | Price without VAT                                            |
+| `old_price_without_tax`   |           | (Decimal) |                               -                               |                           | Old price excluding VAT                                      |
+| `tax`                     |           | (Decimal) |                               -                               |                           | Value of VAT                                                 |
+| `supplier`                |           | (String)  |                               -                               |                           | The name of the main contractor                              |
+| `supplier_other`          |           |  (Array)  |                               -                               |                           | Field of other suppliers                                     |
+| `short_description`       |           | (String)  |                               -                               |                           | Short description                                            |
+| `long_description`        |           | (String)  |                               -                               |                           | Long description                                             |
+| `min_order_count`         |           | (Integer) |                               -                               |                           | Min. amount                                                  |
+| `tech_char`               |           |  (Array)  |                               -                               |                           | Technical characteristics                                    |
+| `tech_param`              |           |  (Array)  |                               -                               |                           | Technical parameters of the variants                         |
+| `images`                  |           |  (Array)  |                               -                               |                           | Images field                                                 |
+|                           | `url`     | (String)  |                               -                               |                           | Link to a photo                                              |
+|                           | `order`   | (Integer) |                               -                               |                           | Display order - the highest number is the main photo         |
+|                           | `enabled` | (Integer) |                               -                               |                           | Whether this photo is enabled (view)                         |
+| `is_electronic_product`   |           | (Integer) |                               -                               |                           | Electronic (intangible) product, values 0/1                  |
+| `declaration_description` |           | (String)  |                               -                               |                           | Product description for customs declaration                  |
+| `commodity_code`          |           | (String)  |                               -                               |                           | HS code (for customs declaration)                            |
+| `accessories`             |           |  (Array)  |                               -                               |                           | If it is combined card, the field of subcards is sent here   |
+|                           | `item_id` | (Integer) |                               -                               |                           | ITEM_ID of stock card, which belongs under the combined card |
+|                           | `count`   | (Integer) |                               -                               |                           | Count of a stock card, that belongs under the combined card  |
+| `weight_grams`            |           | (Integer) |                               -                               |       default: `0`        | Weigh of a product in grams                                  |
+| `adult_restricted`        |           | (Integer) |                               -                               |       default: `0`        | `0` = not restricted, `1` = only for adults                  |
 
 ### Sample requests
 
