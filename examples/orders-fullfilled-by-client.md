@@ -32,7 +32,10 @@ The client is responsible for the fulfillment process and isklad only provides s
     "items": [],
     "packages": [
       {
-        "weight": 500
+        "weight": 500,
+        "height": 100,
+        "width": 100,
+        "length": 100
       }
     ]
   }
@@ -180,7 +183,10 @@ The client is responsible for the fulfillment process and isklad only provides s
     "invoice_url": "https://domain.tld/invoice/123",
     "packages": [
       {
-        "weight": 500
+        "weight": 500,
+        "height": 100,
+        "width": 100,
+        "length": 100
       }
     ]
   }
