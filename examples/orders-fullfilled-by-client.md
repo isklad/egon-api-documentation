@@ -35,7 +35,7 @@ The client is responsible for the fulfillment process and isklad only provides s
         "weight": 500,
         "height": 100,
         "width": 100,
-        "length": 100
+        "depth": 100
       }
     ]
   }
@@ -186,7 +186,7 @@ The client is responsible for the fulfillment process and isklad only provides s
         "weight": 500,
         "height": 100,
         "width": 100,
-        "length": 100
+        "depth": 100
       }
     ]
   }
