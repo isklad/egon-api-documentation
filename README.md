@@ -54,6 +54,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
   - [UpdateInventoryCard](method-list/client-to-egon/UpdateInventoryCard.md)
   - [ChangeClaimStatus](method-list/client-to-egon/ChangeClaimStatus.md)
   - [StockMovements](method-list/client-to-egon/StockMovements.md)
+  - [CreateMyOrderOTP](method-list/client-to-egon/CreateMyOrderOTP.md)
   
 - **Method list EGON -> Client**
   - [GetInvoiceUrl](method-list/egon-to-client/GetInvoiceUrl.md)
