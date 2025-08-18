@@ -23,6 +23,7 @@ Request to write an order status to the client system.
 |                           |                          | `QR_CODE`                          | (String/null)  | QR code (if have) of the item                                          |
 | `packages`                |                          |                                    |    (Array)     |                                                                        |
 |                           | `package_nr`             |                                    |    (String)    | Tracking number                                                        |
+|                           | `package_password`       |                                    | (String/null)  | Password for e.g. returns (for pickup points)                          |
 |                           | `tracking_url`           |                                    |    (String)    | Tracking link                                                          |
 |                           | `tracking_data`          |                                    |    (Array)     | Field with data from tracking                                          |
 |                           |                          | `timestamp`                        |   (Datetime)   | Time from state                                                        |
@@ -84,6 +85,7 @@ Request to write an order status to the client system.
       "packages": [
         {
           "package_nr": "ABC123456",
+          "package_password": null,
           "tracking_url": "https://domain.tld/trackandtrace/parcelNumbers=ABC123456",
           "tracking_data": [
             {
