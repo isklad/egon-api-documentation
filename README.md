@@ -39,7 +39,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
 - **Method list Client -> EGON**
   - [CreateEshopSetting](method-list/client-to-egon/CreateEshopSetting.md)
   - [CreateNewOrder](method-list/client-to-egon/CreateNewOrder.md)
-  - [CreateOrderReturnLabel](method-list/client-to-egon/CreateOrderReturnLabel.md)
+  - [CreateOrderReturnLabel](method-list/client-to-egon/CreateOrderReturnLabel.md) ![deprecated](/assets/images/deprecated.png)
   - [CreateProducer](method-list/client-to-egon/CreateProducer.md)
   - [CreateSupplier](method-list/client-to-egon/CreateSupplier.md)
   - [GetOrderInventoryExpiration](method-list/client-to-egon/GetOrderInventoryExpiration.md)

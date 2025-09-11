@@ -1,4 +1,4 @@
-# CreateOrderReturnLabel
+# CreateOrderReturnLabel ![deprecated](/assets/images/deprecated.png)
 
 Creates a return label for packages that are returned from the customer to the warehouse
 
