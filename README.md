@@ -3,7 +3,7 @@
   <img alt="logo" src="assets/images/logo_black.png">
 </picture>
 
-# Documentation for the EGON RestAPI v1 client
+# Documentation for the EGON RestAPI client
 
 The API Client Web Service is intended for [isklad.com](https://isklad.com) clients who need to transfer data
 between their information system (e-commerce) and isklad.com's information system (called **EGON**) via this service.
