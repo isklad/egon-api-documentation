@@ -59,7 +59,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
 - **Method list EGON -> Client**
   - [GetInvoiceUrl](method-list/egon-to-client/GetInvoiceUrl.md)
   - [InventoryStatusUpdate](method-list/egon-to-client/InventoryStatusUpdate.md)
-  - [OrderReturnLabelTracking](method-list/egon-to-client/OrderReturnLabelTracking.md)
+  - [OrderReturnLabelTracking](method-list/egon-to-client/OrderReturnLabelTracking.md) ![deprecated](/assets/images/deprecated.png)
   - [ShipmentNotifyConfirm](method-list/egon-to-client/ShipmentNotifyConfirm.md)
   - [UpdatePackageTracking](method-list/egon-to-client/UpdatePackageTracking.md) ![deprecated](/assets/images/deprecated.png)
   - [WriteOrderStatus](method-list/egon-to-client/WriteOrderStatus.md)

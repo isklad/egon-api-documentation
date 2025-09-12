@@ -1,4 +1,4 @@
-# OrderReturnLabelTracking
+# OrderReturnLabelTracking ![deprecated](/assets/images/deprecated.png)
 
 Request to update tracking statuses for respective return package created before by CreateOrderReturnLabel.
 
