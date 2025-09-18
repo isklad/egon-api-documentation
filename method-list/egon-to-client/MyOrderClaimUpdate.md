@@ -4,51 +4,51 @@ Request to trigger the update of the claim status in the client's system.
 
 ## :arrow_forward: Input parameters:
 
-| parameter |             |                     |        |     format     | description                                  |
-|:----------|:------------|:--------------------|:-------|:--------------:|:---------------------------------------------|
-| `claim`   |             |                     |        |    (Object)    | The claim object                             |
-|           | `id`        |                     |        |   (Integer)    | Claim ID                                     |
-|           | `status`    |                     |        |    (Object)    | Claim status object                          |
-|           |             | `id`                |        |   (integer)    | Claim status ID                              |
-|           |             | `name`              |        |    (String)    | Claim status name                            |
-|           | `order`     |                     |        |    (Object)    | Order object                                 |
-|           |             | `id`                |        |   (integer)    | Order ID                                     |
-|           |             | `original_order_id` |        |    (String)    | Original order id (from the client's system) |
-|           | `delivery`  |                     |        |    (Object)    | Delivery object                              |
-|           |             | `id`                |        |   (integer)    | Delivery ID                                  |
-|           |             | `name`              |        |    (String)    | Delivery name                                |
-|           |             | `branch`            |        | (Object/null)  | Delivery branch object                       |
-|           |             |                     | `id`   |   (Integer)    | Delivery branch ID                           |
-|           |             |                     | `name` |    (String)    | Delivery branch name                         |
-|           | `bank`      |                     |        |    (Object)    | Bank account object                          |
-|           |             | `iban`              |        | (String/null)  | Customers bank account IBAN                  |
-|           |             | `swift`             |        | (String/null)  | Customers bank account SWIFT                 |
-|           |             | `name`              |        | (String/null)  | Customers bank account name                  |
-|           | `packages`  |                     |        |    (Array)     | Package array                                |
-|           |             | `id`                |        |   (Integer)    | Package ID                                   |
-|           |             | `awb`               |        |    (String)    | Package AWB (barcode)                        |
-|           |             | `password`          |        | (String/null)  | Package password                             |
-|           |             | `label`             |        | (String/null)  | Package label url address                    |
-|           | `prices`    |                     |        |    (Object)    | Prices object                                |
-|           |             | `currency`          |        |    (String)    | Prices currency                              |
-|           |             | `goods`             |        |    (Float)     | Price sum of the claimed items               |
-|           |             | `delivery`          |        |    (Float)     | Price of the delivery (from order)           |
-|           |             | `refund`            |        |    (Float)     | Price of the claim refund                    |
-|           | `items`     |                     |        |    (Array)     | Claimed items array                          |
-|           |             | `id`                |        |   (Integer)    | Claim item ID                                |
-|           |             | `item_id`           |        | (Integer/null) | Item ID from the client inventory            |
-|           |             | `catalog_id`        |        | (String/null)  | Catalog ID from the client inventory         |
-|           |             | `name`              |        | (String/null)  | Name ID from the client inventory            |
-|           |             | `quantity`          |        |   (Integer)    | Quantity of the returned items               |
-|           |             | `description`       |        |    (String)    | Returned items description                   |
-|           |             | `price`             |        |    (Float)     | Returned items price                         |
-|           |             | `return_type`       |        |    (Object)    | Returned type object                         |
-|           |             |                     | `id`   |   (Integer)    | Returned type ID                             |
-|           |             |                     | `name` |    (String)    | Returned type name                           |
-| `history` |             |                     |        |    (Array)     | Array of the status history entries          |
-|           | `status_id` |                     |        |   (Integer)    | Status id of the history entry               |
-|           | `timestamp` |                     |        |   (DateTime)   | Datetime of the history entry (Y-m-d H:i:s)  |
-|           | `note`      |                     |        |    (String)    | Note of the history entry                    |
+| parameter |             |                     |        |     format     | description                                              |
+|:----------|:------------|:--------------------|:-------|:--------------:|:---------------------------------------------------------|
+| `claim`   |             |                     |        |    (Object)    | The claim object                                         |
+|           | `id`        |                     |        |   (Integer)    | Claim ID                                                 |
+|           | `status`    |                     |        |    (Object)    | Claim status object                                      |
+|           |             | `id`                |        |   (integer)    | Claim status ID [Status list](myorder_claim_statuses.md) |
+|           |             | `name`              |        |    (String)    | Claim status name                                        |
+|           | `order`     |                     |        |    (Object)    | Order object                                             |
+|           |             | `id`                |        |   (integer)    | Order ID                                                 |
+|           |             | `original_order_id` |        |    (String)    | Original order id (from the client's system)             |
+|           | `delivery`  |                     |        |    (Object)    | Delivery object                                          |
+|           |             | `id`                |        |   (integer)    | Delivery ID                                              |
+|           |             | `name`              |        |    (String)    | Delivery name                                            |
+|           |             | `branch`            |        | (Object/null)  | Delivery branch object                                   |
+|           |             |                     | `id`   |   (Integer)    | Delivery branch ID                                       |
+|           |             |                     | `name` |    (String)    | Delivery branch name                                     |
+|           | `bank`      |                     |        |    (Object)    | Bank account object                                      |
+|           |             | `iban`              |        | (String/null)  | Customers bank account IBAN                              |
+|           |             | `swift`             |        | (String/null)  | Customers bank account SWIFT                             |
+|           |             | `name`              |        | (String/null)  | Customers bank account name                              |
+|           | `packages`  |                     |        |    (Array)     | Package array                                            |
+|           |             | `id`                |        |   (Integer)    | Package ID                                               |
+|           |             | `awb`               |        |    (String)    | Package AWB (barcode)                                    |
+|           |             | `password`          |        | (String/null)  | Package password                                         |
+|           |             | `label`             |        | (String/null)  | Package label url address                                |
+|           | `prices`    |                     |        |    (Object)    | Prices object                                            |
+|           |             | `currency`          |        |    (String)    | Prices currency                                          |
+|           |             | `goods`             |        |    (Float)     | Price sum of the claimed items                           |
+|           |             | `delivery`          |        |    (Float)     | Price of the delivery (from order)                       |
+|           |             | `refund`            |        |    (Float)     | Price of the claim refund                                |
+|           | `items`     |                     |        |    (Array)     | Claimed items array                                      |
+|           |             | `id`                |        |   (Integer)    | Claim item ID                                            |
+|           |             | `item_id`           |        | (Integer/null) | Item ID from the client inventory                        |
+|           |             | `catalog_id`        |        | (String/null)  | Catalog ID from the client inventory                     |
+|           |             | `name`              |        | (String/null)  | Name ID from the client inventory                        |
+|           |             | `quantity`          |        |   (Integer)    | Quantity of the returned items                           |
+|           |             | `description`       |        |    (String)    | Returned items description                               |
+|           |             | `price`             |        |    (Float)     | Returned items price                                     |
+|           |             | `return_type`       |        |    (Object)    | Returned type object                                     |
+|           |             |                     | `id`   |   (Integer)    | Returned type ID                                         |
+|           |             |                     | `name` |    (String)    | Returned type name                                       |
+| `history` |             |                     |        |    (Array)     | Array of the status history entries                      |
+|           | `status_id` |                     |        |   (Integer)    | Status id of the history entry                           |
+|           | `timestamp` |                     |        |   (DateTime)   | Datetime of the history entry (Y-m-d H:i:s)              |
+|           | `note`      |                     |        |    (String)    | Note of the history entry                                |
 
 ### Sample request
 
