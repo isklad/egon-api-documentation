@@ -2,6 +2,8 @@
 
 Change status of a MyOrder claim.
 
+Only status 4 Refunded is allowed.
+
 ## :arrow_forward: Input parameters:
 
 | parameter |          |      |  format   | allowed values |     mandatory      | description                                             |
