@@ -54,10 +54,10 @@ the order is not sent yet. Otherwise, resp_code = 303: Method Not Allowed
 
 ## :arrow_forward: Output parameters:
 
-| parameter       |     |  format   | description                         |
-|:----------------|:----|:---------:|:------------------------------------|
-| `order_id`      |     | (Integer) | Order id from egon                  |
-| `new_status_id` |     | (Integer) | The order ID created in the system  |
+| parameter       |     |  format   | description                                   |
+|:----------------|:----|:---------:|:----------------------------------------------|
+| `order_id`      |     | (Integer) | Order id from egon                            |
+| `new_status_id` |     | (Integer) | The order status ID after the Storno process  |
 
 ### Sample response
 
