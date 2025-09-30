@@ -58,6 +58,7 @@ the order is not sent yet. Otherwise, resp_code = 303: Method Not Allowed
 |:----------------|:----|:---------:|:----------------------------------------------|
 | `order_id`      |     | (Integer) | Order id from egon                            |
 | `new_status_id` |     | (Integer) | The order status ID after the Storno process  |
+| `message`       |     | (String)  | Message/note                                  |
 
 ### Sample response
 
@@ -70,7 +71,8 @@ the order is not sent yet. Otherwise, resp_code = 303: Method Not Allowed
   "response": {
     "resp_data": {
       "order_id": 123456789,
-      "new_status_id": 9
+      "new_status_id": 9,
+      "message": "Order cancelled"
     },
     "resp_code": 402,
     "resp_note": "402: Entry Updated"
