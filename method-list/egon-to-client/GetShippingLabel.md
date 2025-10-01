@@ -127,7 +127,7 @@ The sample answer in the JSON format looks like this:
     "resp_status": 1,
     "awb": "123456789",
     "awb_extended": "1234567890",
-    "base64pdf": "JVBERi0xLjQKJeLjz9MKMyAwIG9iago8PC9UeXBlL0NhdGFsb2cvUGFnZXMgMiAwIFIvTGFuZ...",
+    "base_64_pdf": "JVBERi0xLjQKJeLjz9MKMyAwIG9iago8PC9UeXBlL0NhdGFsb2cvUGFnZXMgMiAwIFIvTGFuZ...",
     "tracking_url": "https://tracking.url.tld/123456789"
   }
 }
