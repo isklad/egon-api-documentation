@@ -64,6 +64,9 @@ The method returns the current status information for the order
 |                           | `ITEM_ID`                |                                    |   (Integer)    | ITEM_ID eshop card                                                     |
 |                           | `COUNT`                  |                                    |   (Integer)    | Number of pieces in order                                              |
 |                           | `COUNT_RESERVED`         |                                    |   (Integer)    | Number of reserved pieces in the order                                 |
+|                           | `RESERVATION_ITEMS`      |                                    |    (Array)     | array of items in reservation document                                 |
+|                           |                          | `INVENTORY_ID`                     |   (Integer)    | Inventory ID of the warehouse card                                     |
+|                           |                          | `QR_CODE`                          | (String/null)  | QR code (if have) of the item                                          |
 |                           | `ISSUE_CARD_ITEMS`       |                                    |    (Array)     | array of items in issue card                                           |
 |                           |                          | `INVENTORY_ID`                     |   (Integer)    | Inventory ID of the warehouse card                                     |
 |                           |                          | `QR_CODE`                          | (String/null)  | QR code (if have) of the item                                          |
