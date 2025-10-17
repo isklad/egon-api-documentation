@@ -67,6 +67,7 @@ The method returns the current status information for the order
 |                           | `RESERVATION_ITEMS`      |                                    |    (Array)     | array of items in reservation document                                 |
 |                           |                          | `INVENTORY_ID`                     |   (Integer)    | Inventory ID of the warehouse card                                     |
 |                           |                          | `QR_CODE`                          | (String/null)  | QR code (if have) of the item                                          |
+|                           |                          | `IS_PACKED`                        |   (Boolean)    | If the inventory item is packed in a package                           |
 |                           | `ISSUE_CARD_ITEMS`       |                                    |    (Array)     | array of items in issue card                                           |
 |                           |                          | `INVENTORY_ID`                     |   (Integer)    | Inventory ID of the warehouse card                                     |
 |                           |                          | `QR_CODE`                          | (String/null)  | QR code (if have) of the item                                          |
@@ -98,6 +99,11 @@ The method returns the current status information for the order
 | `order_errors`            |                          |                                    |    (Array)     | Wrong order parameters                                                 |
 | `invoice_url`             |                          |                                    | (String/null)  | Order invoice url                                                      |
 | `invoice_id`              |                          |                                    | (Integer/null) | Order invoice id (specific for invoicing system)                       |     
+| `returned_items`          |                          |                                    |    (Array)     | If the order has returned items, they will be listed here.             |
+|                           | `inventory_id`           |                                    |   (Integer)    | Inventory ID of the returned item                                      |
+|                           | `package_id`             |                                    |   (Integer)    | ID of the package from which the item was returned                     |
+|                           | `barcode`                |                                    |    (String)    | Barcode of the returned item                                           |
+|                           | `is_damaged`             |                                    |   (Boolean)    | Indicates whether the item was returned as damaged or not              |
 
 ### Sample response
 
