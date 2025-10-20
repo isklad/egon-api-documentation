@@ -83,6 +83,7 @@ Request to write an order status to the client system.
           "ITEM_ID": 123,
           "COUNT": 1,
           "COUNT_RESERVED": 1,
+          "RESERVATION_ITEMS": [],
           "ISSUE_CARD_ITEMS": [
             {
               "INVENTORY_ID": 321,
@@ -128,7 +129,8 @@ Request to write an order status to the client system.
       "order_errors": {
       },
       "invoice_url": "https://domain.tld/invoices/invoice1.pdf",
-      "invoice_id": 123
+      "invoice_id": 123,
+      "returned_items": []
     }
   }
 }

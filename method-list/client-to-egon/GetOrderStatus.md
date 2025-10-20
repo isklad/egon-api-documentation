@@ -130,6 +130,7 @@ The method returns the current status information for the order
           "ITEM_ID": 123,
           "COUNT": 1,
           "COUNT_RESERVED": 1,
+          "RESERVATION_ITEMS": [],
           "ISSUE_CARD_ITEMS": [
             {
               "INVENTORY_ID": 321,
@@ -175,7 +176,8 @@ The method returns the current status information for the order
       "order_errors": {
       },
       "invoice_url": "https://domain.tld/invoices/invoice1.pdf",
-      "invoice_id": 123
+      "invoice_id": 123,
+      "returned_items": []
     }
   }
 }
