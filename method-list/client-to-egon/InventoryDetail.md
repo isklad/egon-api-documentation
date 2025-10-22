@@ -69,7 +69,7 @@ Method returns product details (name, count,...)
 |                     |                 | `reserved`          |          | (Integer) | Quantity of reserved items                                          |
 |                     |                 | `expirationBlocked` |          | (Integer) | Quantity of blocked items by expiration, but not expired yet        |
 |                     |                 | `changed_at`        |          | (String)  | Last change datetime                                                |
-|                     | `paired_cards`  |                     |          | (Object)  |                                                                     |
+|                     | `paired_cards`  |                     |          | (Array)  |                                                                      |
 |                     |                 | `id`                |          | (Integer) | ID of paired inventory                                              |
 |                     |                 | `type_id`           |          | (Integer) | ID of inventory type [^1]                                           |
 |                     |                 | `size`              |          | (Object)  |                                                                     |
