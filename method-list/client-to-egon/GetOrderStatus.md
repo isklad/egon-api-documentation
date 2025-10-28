@@ -102,6 +102,7 @@ The method returns the current status information for the order
 | `returned_items`          |                          |                                    |    (Array)     | If the order has returned items, they will be listed here.             |
 |                           | `inventory_id`           |                                    |   (Integer)    | Inventory ID of the returned item                                      |
 |                           | `package_id`             |                                    |   (Integer)    | ID of the package from which the item was returned                     |
+|                           | `shipping_company_name`  |                                    |    (String)    | Name of the shipping company used for the return                       |
 |                           | `barcode`                |                                    |    (String)    | Barcode of the returned item                                           |
 |                           | `is_damaged`             |                                    |   (Boolean)    | Indicates whether the item was returned as damaged or not              |
 
