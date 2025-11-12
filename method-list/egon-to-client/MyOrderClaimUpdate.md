@@ -9,7 +9,7 @@ Request to trigger the update of the claim status in the client's system.
 | `claim`   |             |                     |        |    (Object)    | The claim object                                         |
 |           | `id`        |                     |        |   (Integer)    | Claim ID                                                 |
 |           | `status`    |                     |        |    (Object)    | Claim status object                                      |
-|           |             | `id`                |        |   (integer)    | Claim status ID [Status list](myorder_claim_statuses.md) |
+|           |             | `id`                |        |   (integer)    | Claim status ID [Status list](../../code-lists/myorder_claim_statuses.md) |
 |           |             | `name`              |        |    (String)    | Claim status name                                        |
 |           | `order`     |                     |        |    (Object)    | Order object                                             |
 |           |             | `id`                |        |   (integer)    | Order ID                                                 |
