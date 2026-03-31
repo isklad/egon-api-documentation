@@ -29,8 +29,8 @@ Request to trigger the update of the claim status in the client's system.
 |           |                  | `awb`               |        |    (String)    | Package AWB (barcode)                                                      |
 |           |                  | `password`          |        | (String/null)  | Package password                                                           |
 |           |                  | `label`             |        | (String/null)  | Package label url address                                                  |
-|           | `prices`         |                     |        |    (Object)    | Prices object                                                              |
 |           | `refund_variant` |                     |        |    (String)    | Variant of refund (bankAccount/coupon/couponBonus)                         |
+|           | `prices`         |                     |        |    (Object)    | Prices object                                                              |
 |           |                  | `currency`          |        |    (String)    | Prices currency                                                            |
 |           |                  | `goods`             |        |    (Float)     | Price sum of the claimed items                                             |
 |           |                  | `delivery`          |        |    (Float)     | Price of the delivery (from order)                                         |
