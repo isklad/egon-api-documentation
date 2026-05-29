@@ -37,6 +37,7 @@ List the stock movements for the specified date range.
 | `created_at`         |                         |        |   (DateTime)   | format Y-m-d H:i:s                             |
 | `inventory`          |                         |        |    (Object)    | Inventory details                              |
 |                      | `inventory_id`          |        |   (Integer)    | ID of the movement inventory                   | 
+|                      | `barcode`               |        |    (String)    | barcode of the movement inventory              | 
 |                      | `item_id`               |        |    (String)    | ITEM_ID of the paired inventory                | 
 |                      | `catalog_nr`            |        |    (String)    | Catalog number of the paired inventory         | 
 |                      | `inventory_name`        |        |    (String)    | Name of the paired inventory                   |
@@ -73,6 +74,7 @@ List the stock movements for the specified date range.
           "created_at": "2024-06-01 12:00:00",
           "inventory": {
             "inventory_id": 123,
+            "barcode": "654654654",
             "item_id": "ITEM_ID",
             "catalog_nr": "CATALOG_NR",
             "inventory_name": "INVENTORY_NAME"
