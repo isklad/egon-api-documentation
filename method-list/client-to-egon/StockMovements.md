@@ -32,23 +32,29 @@ List the stock movements for the specified date range.
 
 ## :arrow_forward: Output parameters:
 
-| parameter            |                  |        |   format   | description                                    |
-|:---------------------|:-----------------|--------|:----------:|:-----------------------------------------------|
-| `created_at`         |                  |        | (DateTime) | format Y-m-d H:i:s                             |
-| `inventory`          |                  |        |  (Object)  | Inventory details                              |
-|                      | `inventory_id`   |        | (Integer)  | ID of the movement inventory                   | 
-|                      | `item_id`        |        |  (String)  | ITEM_ID of the paired inventory                | 
-|                      | `catalog_nr`     |        |  (String)  | Catalog number of the paired inventory         | 
-|                      | `inventory_name` |        |  (String)  | Name of the paired inventory                   |
-| `document`           |                  |        |  (Object)  | Movement document details                      |
-|                      | `id`             |        | (Integer)  | Document ID                                    |
-|                      | `type_name`      |        |  (String)  | Document type name                             |
-|                      | `source`         |        | (Integer)  | Document source ID (package, order, ...)       |
-|                      | `direction`      |        |  (String)  | in/out                                         |
-| `count`              |                  |        | (Integer)  | inventory movement count                       |
-| `smallest_count`     |                  |        | (Integer)  | smallest inventory movement count              |
-| `in_package_box_id`  |                  |        | (Integer)  | package box id - in case of incoming products  |
-| `in_package_box_ean` |                  |        |  (String)  | package box ean - in case of incoming products |
+| parameter            |                         |        |     format     | description                                    |
+|:---------------------|:------------------------|--------|:--------------:|:-----------------------------------------------|
+| `created_at`         |                         |        |   (DateTime)   | format Y-m-d H:i:s                             |
+| `inventory`          |                         |        |    (Object)    | Inventory details                              |
+|                      | `inventory_id`          |        |   (Integer)    | ID of the movement inventory                   | 
+|                      | `item_id`               |        |    (String)    | ITEM_ID of the paired inventory                | 
+|                      | `catalog_nr`            |        |    (String)    | Catalog number of the paired inventory         | 
+|                      | `inventory_name`        |        |    (String)    | Name of the paired inventory                   |
+| `document`           |                         |        |    (Object)    | Movement document details                      |
+|                      | `id`                    |        |   (Integer)    | Document ID                                    |
+|                      | `type_name`             |        |    (String)    | Document type name                             |
+|                      | `source`                |        |   (Integer)    | Document source ID (package, order, ...)       |
+|                      | `direction`             |        |    (String)    | in/out                                         |
+| `count`              |                         |        |   (Integer)    | inventory movement count                       |
+| `smallest_count`     |                         |        |   (Integer)    | smallest inventory movement count              |
+| `in_package_box_id`  |                         |        | (Integer/null) | package box id - in case of incoming products  |
+| `in_package_box_ean` |                         |        | (String/null)  | package box ean - in case of incoming products |
+| `in_package_details` |                         |        | (Object/null)  | package details - in case of incoming products |
+|                      | `id`                    |        |   (Integer)    | package id                                     |
+|                      | `supplier_id`           |        | (Integer/null) | supplier id                                    |
+|                      | `supplier_name`         |        | (String/null)  | supplier name                                  |
+|                      | `shipping_company_id`   |        | (Integer/null) | shipping company id                            |
+|                      | `shipping_company_name` |        | (String/null)  | shipping company name                          |
 
 ### Sample response
 
@@ -80,7 +86,8 @@ List the stock movements for the specified date range.
           "count": 1,
           "smallest_count": 10,
           "in_package_box_id": 123,
-          "in_package_box_ean": "IN_PACKAGE_BOX_EAN"
+          "in_package_box_ean": "IN_PACKAGE_BOX_EAN",
+          "in_package_details": null
         }
       ]
     }
