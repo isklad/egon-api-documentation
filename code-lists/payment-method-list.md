@@ -1,7 +1,5 @@
 # Payment methods
 
-XML Feed: [https://api.isklad.com/xml-feed/payment.xml](https://api.isklad.com/xml-feed/payment.xml)
-
 | ID   | Description                         |
 |------|-------------------------------------|
 | 1    | In cash                             |

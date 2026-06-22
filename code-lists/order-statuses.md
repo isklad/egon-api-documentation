@@ -1,7 +1,5 @@
 # Order status list
 
-XML Feed: [https://api.isklad.com/xml-feed/order-status.xml](https://api.isklad.com/xml-feed/order-status.xml)
-
 | ID  | Description                                                 |
 |-----|-------------------------------------------------------------|
 | 0   | data received (waiting for processing)                      |

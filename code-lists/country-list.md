@@ -1,7 +1,5 @@
 # Country list
 
-XML feed: [https://api.isklad.com/xml-feed/country.xml](https://api.isklad.com/xml-feed/country.xml)
-
 | ID  | Code | Country              |
 |-----|------|----------------------|
 | 2   | AE   | United Arab Emirates |

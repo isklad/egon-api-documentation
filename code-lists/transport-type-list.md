@@ -1,7 +1,5 @@
 # Transport type list
 
-XML feed: [https://api.isklad.com/xml-feed/delivery.xml](https://api.isklad.com/xml-feed/delivery.xml)
-
 | ID  | Description                                      |
 |-----|--------------------------------------------------|
 | 2   | DPD Slovakia                                     |
