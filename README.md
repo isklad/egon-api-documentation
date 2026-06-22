@@ -39,7 +39,6 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
 - **Method list Client -> EGON**
     - [CreateEshopSetting](method-list/client-to-egon/CreateEshopSetting.md)
     - [CreateNewOrder](method-list/client-to-egon/CreateNewOrder.md)
-    - [CreateOrderReturnLabel](method-list/client-to-egon/CreateOrderReturnLabel.md) ![deprecated](/assets/images/deprecated.png)
     - [CreateProducer](method-list/client-to-egon/CreateProducer.md)
     - [CreateSupplier](method-list/client-to-egon/CreateSupplier.md)
     - [GetOrderInventoryExpiration](method-list/client-to-egon/GetOrderInventoryExpiration.md)
@@ -50,7 +49,6 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
     - [ShipmentNotify](method-list/client-to-egon/ShipmentNotify.md)
     - [ShippingOptions](method-list/client-to-egon/ShippingOptions.md)
     - [StornoOrder](method-list/client-to-egon/StornoOrder.md)
-    - [TrackPackage](method-list/client-to-egon/TrackPackage.md) ![deprecated](/assets/images/deprecated.png)
     - [UpdateInventoryCard](method-list/client-to-egon/UpdateInventoryCard.md)
     - [ChangeClaimStatus](method-list/client-to-egon/ChangeClaimStatus.md)
     - [StockMovements](method-list/client-to-egon/StockMovements.md)
@@ -62,9 +60,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
 - **Method list EGON -> Client**
     - [GetInvoiceUrl](method-list/egon-to-client/GetInvoiceUrl.md)
     - [InventoryStatusUpdate](method-list/egon-to-client/InventoryStatusUpdate.md)
-    - [OrderReturnLabelTracking](method-list/egon-to-client/OrderReturnLabelTracking.md) ![deprecated](/assets/images/deprecated.png)
     - [ShipmentNotifyConfirm](method-list/egon-to-client/ShipmentNotifyConfirm.md)
-    - [UpdatePackageTracking](method-list/egon-to-client/UpdatePackageTracking.md) ![deprecated](/assets/images/deprecated.png)
     - [WriteOrderStatus](method-list/egon-to-client/WriteOrderStatus.md)
     - [MyOrderClaimUpdate](method-list/egon-to-client/MyOrderClaimUpdate.md)
     - [GetShippingLabel](method-list/egon-to-client/GetShippingLabel.md)
