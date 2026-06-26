@@ -11,11 +11,11 @@ Creates settings for another eshop.
 | `email`                           |     | (String)  |       -        |    :heavy_check_mark:     | Eshop Email                      |
 | `phone`                           |     | (String)  |       -        |    :heavy_check_mark:     | Eshop Phone                      |
 | `listener_url`                    |     | (String)  |       -        |    :heavy_check_mark:     | URL for reverse API (listener)   |
-| `enable_import_cards `            |     | (Integer) |     0 / 1      |             0             | Allow import of stock cards      |
-| `enable_import_orders `           |     | (Integer) |     0 / 1      |             0             | Allow import of the orders       |
+| `enable_import_cards`            |     | (Integer) |     0 / 1      |             0             | Allow import of stock cards      |
+| `enable_import_orders`           |     | (Integer) |     0 / 1      |             0             | Allow import of the orders       |
 | `enable_api_listener`             |     | (Integer) |     0 / 1      |             0             | Allow api listener               |
-| `enable_inventory_status_update ` |     | (Integer) |     0 / 1      |             0             | Allow updates of stock inventory |
-| `enable_tracking_update `         |     | (Integer) |     0 / 1      |             0             | Allow tracking status updates    |
+| `enable_inventory_status_update` |     | (Integer) |     0 / 1      |             0             | Allow updates of stock inventory |
+| `enable_tracking_update`         |     | (Integer) |     0 / 1      |             0             | Allow tracking status updates    |
 
 ### Sample request
 

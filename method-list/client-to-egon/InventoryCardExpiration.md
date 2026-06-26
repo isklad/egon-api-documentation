@@ -41,12 +41,12 @@ Method returns products and their expirations
 |                    |              | `inventoryItemId`      |                        |                   | (Object)  |                                                                     |
 |                    |              |                        | `warehouseInventoryId` |                   | (Object)  |                                                                     |
 |                    |              |                        |                        | `expiration_date` | (String)  | Expiration date                                                     |
-|                    |              |                        |                        | `count `          | (Integer) | quantity                                                            |
+|                    |              |                        |                        | `count`          | (Integer) | quantity                                                            |
 |                    | `non_paired` |                        |                        |                   | (Object)  |                                                                     |
 |                    |              | `warehouseInventoryId` |                        |                   | (Object)  |                                                                     |
 |                    |              |                        | `expiration_date`      |                   | (String)  | Expiration date                                                     |
-|                    |              |                        | `count `               |                   | (Integer) | quantity                                                            |
-| `inventory_detail` |              |                        |                        |                   | (Object)  |                                                                     |
+|                    |              |                        | `count`               |                   | (Integer) | quantity                                                            |
+| `inventory_details` |              |                        |                        |                   | (Object)  |                                                                     |
 |                    | `{id}`       |                        |                        |                   | (Object)  | inventory ID                                                                    |
 |                    |              | `id`                   |                        |                   | (Integer) | inventory ID                                                        |
 |                    |              | `item_id`              |                        |                   | (Integer) | Item ID form your shop                                              |

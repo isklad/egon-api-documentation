@@ -8,14 +8,14 @@ If the supplier does not exist, the system creates a new supplier.
 | parameter             |     |  format   |              allowed values              | mandatory / default value | description                        |
 |:----------------------|:----|:---------:|:----------------------------------------:|:-------------------------:|:-----------------------------------|
 | `name`                |     | (String)  |                    -                     |    :heavy_check_mark:     | Supplier - Name                    |
-| `auto_shipment_load ` |     | (Integer) |                  0 / 1                   |    :heavy_check_mark:     | Load shipments automatically       |
+| `auto_shipment_load` |     | (Integer) |                  0 / 1                   |    :heavy_check_mark:     | Load shipments automatically       |
 | `country_code`        |     | (String)  | [link](../../code-lists/country-list.md) |    :heavy_check_mark:     | Supplier - Country code            |
 | `delivery_days`       |     | (String)  |                    -                     |           empty           | Delivery time for goods (days)     |
 | `vat_payer`           |     | (Integer) |                  0 / 1                   |             0             | VAT payer                          |
 | `street`              |     | (String)  |                    -                     |           empty           | Supplier - Street                  |
 | `street_number`       |     | (String)  |                    -                     |           empty           | Supplier - Street number           |
 | `postal_code`         |     | (String)  |                    -                     |           empty           | Supplier - ZIP code                |
-| `city `               |     | (String)  |                    -                     |           empty           | Supplier - City                    |
+| `city`               |     | (String)  |                    -                     |           empty           | Supplier - City                    |
 | `ico`                 |     | (String)  |                    -                     |           empty           | Supplier - Company ID              |
 | `dic`                 |     | (String)  |                    -                     |           empty           | Supplier - Tax registration number |
 | `ic_dph`              |     | (String)  |                    -                     |           empty           | Supplier - VAT ID                  |
@@ -81,7 +81,7 @@ If the supplier does not exist, the system creates a new supplier.
 
 | parameter       |  format   | description  |
 |:----------------|:---------:|:-------------|
-| `SUPPLIER_ID `  | (Integer) | Supplier ID  |
+| `SUPPLIER_ID`  | (Integer) | Supplier ID  |
 
 ### Sample response
 

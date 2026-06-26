@@ -46,7 +46,7 @@ Associative field with info about package.
     "req_method": "GetShippingLabel",
     "req_data": {
       "order_id": 789654,
-      "order_original_id": "123456",
+      "original_order_id": "123456",
       "package": {
         "id": 123456,
         "width": 100,

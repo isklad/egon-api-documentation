@@ -14,11 +14,13 @@ Method stores (create or update) information about notified shipment
 | `packages`           |                   |  (Array)   |                               -                               |    :heavy_check_mark:     | Array of packages, at least one is mandatory                                                                                    |
 |                      | `tracking_number` |  (String)  |                               -                               |    :heavy_check_mark:     | Tracking number of the package (printed as barcode on label)                                                                    |
 | `supplier_id`        |                   | (Integer)  |                               -                               |    :heavy_check_mark:     | Supplier ID                                                                                                                     |
-| `reference_number`   |                   |  (String)  |                               -                               |    :heavy_check_mark:     | Reference Nr. of order                                                                                                          |
+| `reference_number`   |                   |  (String)  |                               -                               |           empty           | Reference Nr. of order                                                                                                          |
 | `items`              |                   |  (Array)   |                               -                               |    :heavy_check_mark:     | Items                                                                                                                           |
 |                      | `item_id`         | (Integer)  |                               -                               |   (yes, item_id or ean)   | Advised inventory card item_id (recommended to fill this)                                                                       | 
 |                      | `ean`             |  (String)  |                               -                               |   (yes, item_id or ean)   | Advised inventory ean (optional if you dont have an inventory in system, yet). If the item_id is filled, this param is ignored. |
 |                      | `quantity`        | (Integer)  |                               -                               |    :heavy_check_mark:     | Advised inventory quantity                                                                                                      |
+
+> :information_source: `date_to` must be a date in the future, otherwise the request is rejected.
 
 ### Sample request
 

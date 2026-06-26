@@ -11,7 +11,8 @@ The interface is available at: [https://api.isklad.com/rest/v1](https://api.iskl
 The client's information system initiates communication by sending a request in a defined format and returns a JSON
 response. The `GET` / `POST` method is used.
 
-:warning: The limit on the number of requests per client (based on `auth_id`) is: 180 req / min
+:warning: The limit on the number of requests per client (based on `auth_id`) is: 180 req / min.
+When the limit is exceeded, the API responds with code `429` (Too Many Requests) - both as `resp_code` and as the HTTP status code.
 
 ## :arrow_forward: Input parameters:
 

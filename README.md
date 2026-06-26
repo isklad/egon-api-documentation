@@ -31,7 +31,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
 
 - **Examples**
     - [Create a regular order](examples/orders-fulfilled-by-isklad.md) - if the fulfillment process is **managed by iSklad**
-    - [Create a shipment/label](examples/orders-fullfilled-by-client.md) - if the fulfillment process is **managed by an external company, or client himself**
+    - [Create a shipment/label](examples/orders-fulfilled-by-client.md) - if the fulfillment process is **managed by an external company, or client himself**
 - **Integration manuals**
     - [Client-> EGON](integration/client-to-egon.md)
     - [EGON-> Client](integration/egon-to-client.md)
@@ -74,6 +74,8 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
     - [Attachment type list](code-lists/attachment-type-list.md)
     - [Order status list](code-lists/order-statuses.md)
     - [Package tracking code list](code-lists/package-tracking-codes.md)
+    - [MyOrder claim status list](code-lists/myorder_claim_statuses.md)
+    - [MyOrder claim item type list](code-lists/myorder_claim_item_types.md)
     - [Payment method list](code-lists/payment-method-list.md)
     - [Transport type list](code-lists/transport-type-list.md)
 

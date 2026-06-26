@@ -77,7 +77,7 @@ A `301: Bad Request` is returned in the following cases:
   "resp_note": "301: Bad Request",
   "response": {
     "resp_code": 301,
-    "resp_message": "Attachment already exists for this this combination (inventory and country)",
+    "resp_message": "Attachment already exists for this combination (inventory and country)",
     "resp_data": {
       "attachment_id": 9876
     }

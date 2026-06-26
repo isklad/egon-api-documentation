@@ -6,7 +6,7 @@ The method returns the current status information for the order
 
 | parameter           |     |     format     | allowed values | mandatory / default value | description                                                                        |
 |:--------------------|:----|:--------------:|:--------------:|:-------------------------:|:-----------------------------------------------------------------------------------|
-| `order_id `         |     | (integer/null) |       -        |  :heavy_check_mark: [^1]  | Order id from egon (previously received from [CreateNewOrder](CreateNewOrder.md))  |
+| `order_id`          |     | (integer/null) |       -        |  :heavy_check_mark: [^1]  | Order id from egon (previously received from [CreateNewOrder](CreateNewOrder.md))  |
 | `original_order_id` |     | (string/null)  |       -        |  :heavy_check_mark: [^1]  | Order id from your shop (previously passed to [CreateNewOrder](CreateNewOrder.md)) |
 
 ### Sample request
@@ -188,4 +188,3 @@ The method returns the current status information for the order
 ```
 
 [^1]: - mandatory only one of them, `order_id` has a priority if both filled
-[^2]: Deprecated, will be removed in the future (use lowercase version instead).

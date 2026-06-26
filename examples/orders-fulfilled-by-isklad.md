@@ -64,7 +64,7 @@ Regular order is an order that is fulfilled by iSklad. The client is responsible
 }
 ```
 ### Create an inventory card - [UpdateInventoryCard](../method-list/client-to-egon/UpdateInventoryCard.md) - with details for your order
-- inventory data i needed for some delivery companies (e.g. for customs), so it is recommended to create it
+- inventory data is needed for some delivery companies (e.g. for customs), so it is recommended to create it
 - for customs - needed params: commodity code, declaration description, etc.
 - is recommended to fill all the fields, you have in your system
 ```json
@@ -120,8 +120,8 @@ Regular order is an order that is fulfilled by iSklad. The client is responsible
   "req_data": {
     "original_order_id": 202206015,
     "shop_setting_id": 1,
-    "business_relationship ": "b2c",
-    "reference_number ": "#EAV123",
+    "business_relationship": "b2c",
+    "reference_number": "#EAV123",
     "customer_name": "Customer Name",
     "customer_surname": "Customer Surname",
     "customer_phone": "+421 123 567 789",

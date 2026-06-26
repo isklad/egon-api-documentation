@@ -24,7 +24,8 @@ If the producer does not exist, the system creates a new producer.
   "request": {
     "req_method": "CreateProducer",
     "req_data": {
-      "name": "Producer Name"
+      "name": "Producer Name",
+      "country_code": "SK"
     }
   }
 }
@@ -53,7 +54,7 @@ If the producer does not exist, the system creates a new producer.
 
 | parameter      |  format   | description |
 |:---------------|:---------:|:------------|
-| `PRODUCER_ID ` | (Integer) | Producer ID |
+| `PRODUCER_ID` | (Integer) | Producer ID |
 
 ### Sample response
 

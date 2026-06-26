@@ -7,7 +7,7 @@ logging in to the system.
 
 | parameter           |                  |  format   |                        allowed values                         | mandatory / default value | description             |
 |:--------------------|:-----------------|:---------:|:-------------------------------------------------------------:|:-------------------------:|:------------------------|
-| `order_id`          |                  | (integer) |                               -                               |  :heavy_check_mark: [^1]  | Producer name           |
+| `order_id`          |                  | (integer) |                               -                               |  :heavy_check_mark: [^1]  | Order id from egon      |
 | `original_order_id` |                  | (string)  |                               -                               |  :heavy_check_mark: [^1]  | Order id from your shop |
 | `shop_setting_id`   |                  | (integer) | [link](https://egon.isklad.com/klient/settings-shop-settings) |  :heavy_check_mark: [^2]  | Set-to-order setting ID |
 
@@ -69,7 +69,7 @@ logging in to the system.
   "response": {
     "myorder_url": "https://domain.tld/...",
     "myorder_url_otp": "https://domain.tld/...",
-    "myorder_url_otp_claim": "https://domain.tld/..."
+    "myorder_url_otp_claim": "https://domain.tld/...",
     "resp_code": 401,
     "resp_note": "401: Entry Created"
   }

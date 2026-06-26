@@ -9,8 +9,8 @@ Associative field with info about package.
 | parameter           |     | format         | description       |
 |---------------------|-----|----------------|-------------------|
 | `order_id`          |     | (Integer/null) | Order ID in EGON  |
-| `original_order_id` |     | (String/null)  | Order ID in Eshop |
-| `change_timestamp ` |     | (Datetime)     | Parcel ID in EGON |
+| `order_original_id` |     | (String/null)  | Order ID in Eshop |
+| `change_timestamp` |     | (Datetime)     | Timestamp of the last order status change (Y-m-d H:i:s) |
 
 ### Sample request
 

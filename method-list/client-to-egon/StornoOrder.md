@@ -7,7 +7,7 @@ the order is not sent yet. Otherwise, resp_code = 303: Method Not Allowed
 
 | parameter           |     |     format     |                        allowed values                         | mandatory / default value | description                                                                        |
 |:--------------------|:----|:--------------:|:-------------------------------------------------------------:|:-------------------------:|:-----------------------------------------------------------------------------------|
-| `order_id `         |     | (integer/null) |                               -                               |  :heavy_check_mark: [^1]  | Order id from egon (previously received from [CreateNewOrder](CreateNewOrder.md))  |
+| `order_id`         |     | (integer/null) |                               -                               |  :heavy_check_mark: [^1]  | Order id from egon (previously received from [CreateNewOrder](CreateNewOrder.md))  |
 | `original_order_id` |     | (string/null)  |                               -                               |  :heavy_check_mark: [^1]  | Order id from your shop (previously passed to [CreateNewOrder](CreateNewOrder.md)) |
 | `shop_setting_id`   |     |   (Integer)    | [link](https://egon.isklad.com/klient/settings-shop-settings) |  :heavy_check_mark: [^2]  | Set-to-order setting ID                                                            |
 
