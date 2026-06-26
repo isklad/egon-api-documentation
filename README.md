@@ -50,6 +50,9 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
     - [ShippingOptions](method-list/client-to-egon/ShippingOptions.md)
     - [StornoOrder](method-list/client-to-egon/StornoOrder.md)
     - [UpdateInventoryCard](method-list/client-to-egon/UpdateInventoryCard.md)
+    - [InventoryCardAttachmentCreate](method-list/client-to-egon/InventoryCardAttachmentCreate.md)
+    - [InventoryCardAttachmentList](method-list/client-to-egon/InventoryCardAttachmentList.md)
+    - [InventoryCardAttachmentDelete](method-list/client-to-egon/InventoryCardAttachmentDelete.md)
     - [ChangeClaimStatus](method-list/client-to-egon/ChangeClaimStatus.md)
     - [StockMovements](method-list/client-to-egon/StockMovements.md)
     - [CreateMyOrderOTP](method-list/client-to-egon/CreateMyOrderOTP.md)
@@ -68,6 +71,7 @@ See more at [Managing subscriptions and notifications on GitHub](https://docs.gi
 - **Code lists**
     - [Response and error codes](code-lists/response-codes.md)
     - [Country list](code-lists/country-list.md)
+    - [Attachment type list](code-lists/attachment-type-list.md)
     - [Order status list](code-lists/order-statuses.md)
     - [Package tracking code list](code-lists/package-tracking-codes.md)
     - [Payment method list](code-lists/payment-method-list.md)
